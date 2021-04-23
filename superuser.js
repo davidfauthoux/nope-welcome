@@ -138,7 +138,7 @@ $.getJSON("data.json" , function(globalData) {
 							sequence_(
 								Server.fullHistory(server, eventHeap),
 								// sleep_(0.1),
-								do_(function() {
+								block_(function() {
 									let r = eventHeap.get();
 									console.log(r);
 									
@@ -148,7 +148,7 @@ $.getJSON("data.json" , function(globalData) {
 											setUserData(e.from, e.data, exposePasswordHashHeap);
 										}
 										updateAllUserDivs();
-										return noop_();
+										return;
 									}
 
 									if ((r.from === undefined) || (r.data === undefined)) {
@@ -159,7 +159,7 @@ $.getJSON("data.json" , function(globalData) {
 									setUserData(r.from, r.data, exposePasswordHashHeap);
 									updateUserDiv(r.from);
 
-									return noop_();
+									return;
 								})))
 							.catch_(function(e) {
 								return sequence_(
