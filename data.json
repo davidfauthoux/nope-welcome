@@ -1,0 +1,2077 @@
+{
+	"language": {
+		"back": {
+			"en": "Back",
+			"fr": "Retour",
+			"es": "Regresar",
+			"it": "Ritorno",
+			"_lt": "Atgal",
+			"_lv": "Atpakaļ",
+			"_ru": "Назад",
+			"_fi": "Takaisin",
+			"_et": "tagasi",
+			"_sv": "Tillbaka",
+			"_da": "Tilbage"
+		},
+		"forward": {
+			"en": "Skip",
+			"fr": "Passer",
+			"es": "Ignorar",
+			"it": "Ignorare",
+			"_lt": "Praleisti",
+			"_lv": "Izlaist",
+			"_ru": "Пропускать",
+			"_fi": "Ohita",
+			"_et": "Vahele jätma",
+			"_sv": "Hoppa",
+			"_da": "Springe"
+		},
+		"validate": {
+			"en": "Validate",
+			"fr": "Valider",
+			"es": "Validar",
+			"it": "Convalidare",
+			"_lt": "Patvirtinti",
+			"_lv": "Apstiprināt",
+			"_ru": "Подтвердить",
+			"_fi": "Vahvista",
+			"_et": "Kinnitage",
+			"_sv": "Bekräfta",
+			"_da": "Bekræft"
+		},
+		"set": {
+			"en": "Set",
+			"fr": "Définir",
+			"es": "Definir",
+			"it": "Definire",
+			"_lt": "Nustatyti",
+			"_lv": "Iestatiet",
+			"_ru": "Набор",
+			"_fi": "Aseta",
+			"_et": "Määra",
+			"_sv": "Uppsättning",
+			"_da": "Sæt"
+		},
+		"send": {
+			"en": "Send",
+			"fr": "Envoyer",
+			"es": "Enviar",
+			"it": "Spedire",
+			"_lt": "Siųsti",
+			"_lv": "Nosūtīt",
+			"_ru": "послать",
+			"_fi": "Lähettää",
+			"_et": "Saada",
+			"_sv": "Skicka",
+			"_da": "Sende"
+		},
+		"invaliddate": {
+			"en": "Invalid date",
+			"fr": "Date invalide",
+			"es": "Fecha no reconocida",
+			"it": "Data non riconosciuta",
+			"_lt": "Neteisinga data",
+			"_lv": "Nederīgs datums",
+			"_ru": "Недействительная дата",
+			"_fi": "Väärä päivämäärä",
+			"_et": "Kehtetu kuupäev",
+			"_sv": "Ogiltigt datum",
+			"_da": "Ugyldig dato"
+		},
+		"download": {
+			"en": "Download",
+			"fr": "Télécharger",
+			"es": "Descargar",
+			"it": "Scaricare",
+			"_lt": "parsisiųsti",
+			"_lv": "Lejupielādēt",
+			"_ru": "Скачать",
+			"_fi": "ladata",
+			"_et": "Lae alla",
+			"_sv": "Ladda ner",
+			"_da": "Hent"
+		},
+		"continue": {
+			"en": "Continue",
+			"fr": "Continuer",
+			"es": "Seguir",
+			"it": "Continuare",
+			"_lt": "Tęsti",
+			"_lv": "Turpināt",
+			"_ru": "Продолжать",
+			"_fi": "Jatkaa",
+			"_et": "Jätka",
+			"_sv": "Fortsätta",
+			"_da": "Blive ved"
+		},
+		"delete": {
+			"en": "Delete",
+			"fr": "Supprimer",
+			"es": "Eliminar",
+			"it": "Rimuovere",
+			"_lt": "Ištrinti",
+			"_lv": "Dzēst",
+			"_ru": "Удалить",
+			"_fi": "Poistaa",
+			"_et": "Kustuta",
+			"_sv": "Radera",
+			"_da": "Slet"
+		},
+		"confirm": {
+			"en": "Sure?",
+			"fr": "Confirmer ?",
+			"es": "¿ Seguro ?",
+			"it": "Conferma ?",
+			"_lt": "Aišku?",
+			"_lv": "Protams?",
+			"_ru": "Конечно?",
+			"_fi": "Varma?",
+			"_et": "Muidugi?",
+			"_sv": "Säker?",
+			"_da": "Jo da?"
+		},
+		"upload": {
+			"en": "Upload",
+			"fr": "Envoyer",
+			"es": "Enviar",
+			"it": "Mandare",
+			"_lt": "Įkelti",
+			"_lv": "Augšupielādēt",
+			"_ru": "Загрузить",
+			"_fi": "Lähetä",
+			"_et": "Laadi üles",
+			"_sv": "Ladda upp",
+			"_da": "Upload"
+		},
+		"saving": {
+			"en": "Saving...",
+			"fr": "Sauvegarde...",
+			"es": "Guardando...",
+			"it": "Backup...",
+			"_lt": "Išsaugoma ...",
+			"_lv": "Notiek saglabāšana ...",
+			"_ru": "Сохранение ...",
+			"_fi": "Tallentaa...",
+			"_et": "Salvestamine ...",
+			"_sv": "Sparande...",
+			"_da": "Gemmer ..."
+		},
+		"example": {
+			"en": "Example:",
+			"fr": "Exemple :",
+			"es": "Ejemplo :",
+			"it": "Esempio :",
+			"_lt": "Pavyzdys:",
+			"_lv": "Piemērs:",
+			"_ru": "Пример:",
+			"_fi": "Esimerkki:",
+			"_et": "Näide:",
+			"_sv": "Exempel:",
+			"_da": "Eksempel:"
+		},
+		"disconnect": {
+			"en": "Disconnect",
+			"fr": "Déconnexion",
+			"es": "Cerrar sesión",
+			"it": "Disconnettersi",
+			"_lt": "Atsijungti",
+			"_lv": "Atvienojiet",
+			"_ru": "Отключить",
+			"_fi": "Katkaista",
+			"_et": "Katkesta ühendus",
+			"_sv": "Koppla ifrån",
+			"_da": "Koble fra"
+		},
+		"account": {
+			"create": {
+				"title": {
+					"en": "Email address",
+					"fr": "Adresse email",
+					"es": "Direccion de correo electronico",
+					"it": "Indirizzo email",
+					"_lt": "Elektroninio pašto adresas",
+					"_lv": "Epasta adrese",
+					"_ru": "Адрес электронной почты",
+					"_fi": "Sähköpostiosoite",
+					"_et": "E-posti aadress",
+					"_sv": "E-postadress",
+					"_da": "Email adresse"
+				},
+				"text": {
+					"en": "Please enter your email address to create or recover your account.",
+					"fr": "Entrez votre adresse email qui vous permettra de créer ou récupérer votre compte.",
+					"es": "Ingrese una dirección de correo electrónico que le permitirá crear o recuperar su cuenta.",
+					"it": "Inserisci un indirizzo email che ti permetterà di creare o recuperare il tuo account.",
+					"_lt": "Įveskite savo el. Pašto adresą, kad sukurtumėte ar atkurtumėte paskyrą.",
+					"_lv": "Lūdzu, ievadiet savu e-pasta adresi, lai izveidotu vai atkoptu kontu.",
+					"_ru": "Пожалуйста, введите свой адрес электронной почты, чтобы создать или восстановить свою учетную запись.",
+					"_fi": "Anna sähköpostiosoitteesi, jos haluat luoda tai palauttaa tilisi.",
+					"_et": "Konto loomiseks või taastamiseks sisestage oma e-posti aadress.",
+					"_sv": "Ange din e-postadress för att skapa eller återställa ditt konto.",
+					"_da": "Indtast din e-mail-adresse for at oprette eller gendanne din konto."
+				},
+				"example": "david.fauthoux@gmail.com",
+				"type": "text"
+			},
+			"created": {
+				"title": {
+					"en": "Account created",
+					"fr": "Compte créé",
+					"es": "Cuenta creada",
+					"it": "Account creato",
+					"_lt": "Paskyra sukurta",
+					"_lv": "Konts ir izveidots",
+					"_ru": "Аккаунт создан",
+					"_fi": "Tili luotu",
+					"_et": "Konto loodud",
+					"_sv": "Konto skapat",
+					"_da": "Konto oprettet"
+				},
+				"text": {
+					"en": "Your account is now created. Please check your email box to validate it.",
+					"fr": "Votre compte est maintenant créé. Veuillez vérifier votre boîte e-mail pour la valider.",
+					"es": "Su cuenta ya está creada. Marque su casilla de correo electrónico para validarlo.",
+					"it": "Il tuo account è ora creato. Controlla la tua casella di posta elettronica per convalidarla.",
+					"_lt": "Jūsų paskyra dabar sukurta. Norėdami patvirtinti, patikrinkite savo el. Pašto dėžutę.",
+					"_lv": "Jūsu konts tagad ir izveidots. Lūdzu, pārbaudiet savu e-pasta lodziņu, lai to apstiprinātu.",
+					"_ru": "Ваша учетная запись создана. Пожалуйста, проверьте свой электронный ящик, чтобы подтвердить его.",
+					"_fi": "Tilisi on nyt luotu. Tarkista sähköpostiosoitteesi vahvistaaksesi sen.",
+					"_et": "Teie konto on nüüd loodud. Selle kinnitamiseks märkige oma e-posti kast.",
+					"_sv": "Ditt konto har nu skapats. Kontrollera din e-postruta för att validera den.",
+					"_da": "Din konto er nu oprettet. Kontroller dit e-mail-felt for at validere det."
+				},
+				"type": "text"
+			},
+			"recovery": {
+				"title": {
+					"en": "Account recovery",
+					"fr": "Récupération du compte",
+					"es": "Recuperación de cuenta",
+					"it": "Recupero dell'account",
+					"_lt": "Sąskaitos atkūrimas",
+					"_lv": "Konta atkopšana",
+					"_ru": "Восстановление аккаунта",
+					"_fi": "Tilin palautus",
+					"_et": "Konto taastamine",
+					"_sv": "Kontoåterhämtning",
+					"_da": "Kontogendannelse"
+				},
+				"text": {
+					"en": "We sent you a recovery email, please check your email box.",
+					"fr": "Nous vous avons envoyé un e-mail de récupération, veuillez vérifier votre boîte e-mail.",
+					"es": "Le enviamos un correo electrónico de recuperación, verifique su casilla de correo electrónico.",
+					"it": "Ti abbiamo inviato un'e-mail di recupero, controlla la tua casella di posta elettronica.",
+					"_lt": "Išsiuntėme jums atkūrimo el. Laišką, pažymėkite savo el. Pašto dėžutę.",
+					"_lv": "Mēs nosūtījām jums atkopšanas e-pastu. Lūdzu, atzīmējiet savu e-pasta lodziņu.",
+					"_ru": "Мы отправили вам резервное письмо по электронной почте, проверьте свой адрес электронной почты.",
+					"_fi": "Lähetimme sinulle palauttamisen sähköpostin, tarkista sähköpostiosoitteesi.",
+					"_et": "Saatsime teile varuaadressi. Palun kontrollige oma e-posti kasti.",
+					"_sv": "Vi skickade ett återställnings-e-postmeddelande. Kontrollera din e-postruta.",
+					"_da": "Vi sendte dig en gendannelses-e-mail. Tjek venligst din e-mail-boks."
+				},
+				"type": "text"
+			},
+			"failed": {
+				"title": {
+					"en": "Error",
+					"fr": "Échec",
+					"es": "Error",
+					"it": "Errore",
+					"_lt": "Klaida",
+					"_lv": "Kļūda",
+					"_ru": "Ошибка",
+					"_fi": "Virhe",
+					"_et": "Viga",
+					"_sv": "Fel",
+					"_da": "Fejl"
+				},
+				"text": {
+					"en": "Validation failed, please try again.",
+					"fr": "La validation a échoué, veuillez réessayer.",
+					"es": "Error de validación, inténtelo de nuevo.",
+					"it": "Convalida non riuscita, riprova.",
+					"_lt": "Patvirtinti nepavyko, bandykite dar kartą.",
+					"_lv": "Validēšana neizdevās, lūdzu, mēģiniet vēlreiz.",
+					"_ru": "Проверка не удалась, попробуйте еще раз.",
+					"_fi": "Vahvistus epäonnistui. Yritä uudelleen.",
+					"_et": "Valideerimine nurjus, proovige uuesti.",
+					"_sv": "Valideringen misslyckades. Försök igen.",
+					"_da": "Validering mislykkedes. Prøv igen."
+				},
+				"type": "text"
+			},
+			"email": {
+				"subject": {
+					"en": "The Travel Team - Account creation or recovery",
+					"fr": "The Travel Team - Création ou récupération de compte",
+					"es": "The Travel Team - Creación o recuperación de cuenta",
+					"it": "The Travel Team - Creazione o recupero dell'account",
+					"_lt": "The Travel Team - Paskyros sukūrimas arba atkūrimas",
+					"_lv": "The Travel Team - Konta izveide vai atkopšana",
+					"_ru": "The Travel Team - Создание или восстановление учетной записи",
+					"_fi": "The Travel Team - Tilin luominen tai palauttaminen",
+					"_et": "The Travel Team - Konto loomine või taastamine",
+					"_sv": "The Travel Team - Skapande eller återställning av konto",
+					"_da": "The Travel Team - Oprettelse eller gendannelse af konto"
+				},
+				"pleaseconfirm": {
+					"en": "Please confirm the creation or recovery of your account by clicking on the link below.",
+					"fr": "Merci de valider la création ou récupération de votre compte en cliquant sur le lien ci-dessous.",
+					"es": "Confirme la creación o recuperación de su cuenta con el enlace de abajo.",
+					"it": "Conferma la creazione o il ripristino del tuo account con il link sottostante.",
+					"_lt": "Patvirtinkite savo paskyros sukūrimą ar atkūrimą spustelėdami toliau pateiktą nuorodą.",
+					"_lv": "Lūdzu, apstipriniet sava konta izveidi vai atkopšanu, noklikšķinot uz tālāk redzamās saites.",
+					"_ru": "Подтвердите создание или восстановление вашей учетной записи, нажав на ссылку ниже.",
+					"_fi": "Vahvista tilisi luominen tai palauttaminen napsauttamalla alla olevaa linkkiä.",
+					"_et": "Kinnitage oma konto loomine või taastamine, klõpsates alloleval lingil.",
+					"_sv": "Bekräfta skapandet eller återställningen av ditt konto genom att klicka på länken nedan.",
+					"_da": "Bekræft oprettelsen eller gendannelsen af din konto ved at klikke på nedenstående link."
+				},
+				"clickhere": {
+					"en": "Click here.",
+					"fr": "Cliquer ici.",
+					"es": "Clic aquí.",
+					"it": "Clicca qui.",
+					"_lt": "Paspauskite čia.",
+					"_lv": "Noklikšķiniet šeit.",
+					"_ru": "Кликните сюда.",
+					"_fi": "Klikkaa tästä.",
+					"_et": "Kliki siia.",
+					"_sv": "Klicka här.",
+					"_da": "Klik her."
+				},
+				"pastelink": {
+					"en": "Or paste this link into your browser:",
+					"fr": "Ou collez ce lien dans votre navigateur :",
+					"es": "O pegue este enlace en su navegador :",
+					"it": "Oppure incolla questo link nel tuo browser :",
+					"_lt": "Arba įklijuokite šią nuorodą į savo naršyklę:",
+					"_lv": "Vai ielīmējiet šo saiti savā pārlūkprogrammā:",
+					"_ru": "Или вставьте эту ссылку в свой браузер:",
+					"_fi": "Tai liitä tämä linkki selaimeesi:",
+					"_et": "Või kleepige see link oma brauserisse:",
+					"_sv": "Eller klistra in den här länken i din webbläsare:",
+					"_da": "Eller indsæt dette link i din browser:"
+				}
+			}
+		}
+	},
+	"presentation": {
+		"text": {
+			"en": "We list here all the information we need for your child to be ready to travel.",
+			"fr": "Nous allons lister ensemble les informations dont nous avons besoin à propos de votre enfant.",
+			"es": "Enumeraremos las informaciones que necesitamos sobre su hijo.",
+			"it": "Elencheremo insieme le informazioni di cui abbiamo bisogno su tuo figlio.",
+			"_lt": "Čia pateikiame visą reikalingą informaciją, kad jūsų vaikas būtų pasirengęs keliauti.",
+			"_lv": "Mēs šeit uzskaitām visu nepieciešamo informāciju, lai jūsu bērns būtu gatavs ceļot.",
+			"_ru": "Мы перечисляем здесь всю информацию, которая нам нужна, чтобы ваш ребенок был готов к поездке.",
+			"_fi": "Tässä luetellaan kaikki tarvittavat tiedot, jotta lapsesi olisi valmis matkustamaan.",
+			"_et": "Loetleme siia kogu teabe, mida vajame, et teie laps oleks reisivalmis.",
+			"_sv": "Vi listar här all information vi behöver för att ditt barn ska vara redo att resa.",
+			"_da": "Vi viser her alle de oplysninger, vi har brug for, for at dit barn skal være klar til at rejse."
+		},
+		"icon": "pen",
+		"type": "none"
+	},
+	"firstname": {
+		"title": {
+			"en": "First name of your child",
+			"fr": "Prénom de votre enfant",
+			"es": "Nombre de su hijo",
+			"it": "Conome di tuo figlio",
+			"_lt": "Jūsų vaiko vardas",
+			"_lv": "Jūsu bērna vārds",
+			"_ru": "Имя вашего ребенка",
+			"_fi": "Lapsesi etunimi",
+			"_et": "Teie lapse eesnimi",
+			"_sv": "Ditt barns förnamn",
+			"_da": "Dit barns fornavn"
+		},
+		"example": {
+			"en": "Abraham",
+			"fr": "Louis",
+			"es": "Pablo",
+			"it": "Leonardo",
+			"_lt": "Abraomas",
+			"_lv": "Ābrahāms",
+			"_ru": "Авраам",
+			"_fi": "Abraham",
+			"_et": "Aabraham",
+			"_sv": "Abraham",
+			"_da": "Abraham"
+		},
+		"type": "line"
+	},
+	"lastname": {
+		"title": {
+			"en": "Last name of your child",
+			"fr": "Nom de votre enfant",
+			"es": "Apellido de su hijo",
+			"it": "Nome di tuo figlio",
+			"_lt": "Jūsų vaiko pavardė",
+			"_lv": "Jūsu bērna uzvārds",
+			"_ru": "Фамилия вашего ребенка",
+			"_fi": "Lapsesi sukunimi",
+			"_et": "Teie lapse perekonnanimi",
+			"_sv": "Ditt efternamn",
+			"_da": "Dit barns efternavn"
+		},
+		"example": {
+			"en": "Lincoln",
+			"fr": "Pasteur",
+			"es": "Picasso",
+			"it": "Da Vinci",
+			"_lt": "Linkolnas",
+			"_lv": "Linkolns",
+			"_ru": "Линкольн",
+			"_fi": "Lincoln",
+			"_et": "Lincoln",
+			"_sv": "Lincoln",
+			"_da": "Lincoln"
+		},
+		"type": "line"
+	},
+	"dateofbirth": {
+		"title": {
+			"en": "Date of birth of your child",
+			"fr": "Date de naissance de votre enfant",
+			"es": "Fecha de nacimiento de su hijo",
+			"it": "Data di nascita di tuo figlio",
+			"_lt": "Jūsų vaiko gimimo data",
+			"_lv": "Jūsu bērna dzimšanas datums",
+			"_ru": "Дата рождения вашего ребенка",
+			"_fi": "Lapsesi syntymäaika",
+			"_et": "Teie lapse sünniaeg",
+			"_sv": "Födelsedatum för ditt barn",
+			"_da": "Fødselsdato for dit barn"
+		},
+		"example": "2009-02-13",
+		"type": "date"
+	},
+	"passportface": {
+		"title": {
+			"en": "Passport / ID",
+			"fr": "Passeport / Carte d'identité",
+			"es": "Pasaporte / DNI",
+			"it": "Passaporto / Carta d'identità",
+			"_lt": "Paso ID",
+			"_lv": "Pases identifikācijas numurs",
+			"_ru": "Номер паспорта",
+			"_fi": "Passin ID",
+			"_et": "Isikut tõendav dokument",
+			"_sv": "Pass",
+			"_da": "Pas / ID"
+		},
+		"text": {
+			"en": "Please take a picture of the passport or ID of your child.",
+			"fr": "Prenez une photo du passeport ou de la carte d'identité de votre enfant.",
+			"es": "Tome una foto del pasaporte o documento de identidad de su hijo.",
+			"it": "Fai una foto del passaporto o della carta d'identità di tuo figlio.",
+			"_lt": "Prašome nufotografuoti savo vaiko pasą arba asmens tapatybės dokumentą.",
+			"_lv": "Lūdzu, nofotografējiet sava bērna pasi vai personu apliecinošu dokumentu.",
+			"_ru": "Пожалуйста, сфотографируйте паспорт или удостоверение личности вашего ребенка.",
+			"_fi": "Ota kuva lapsesi passista tai henkilötodistuksesta.",
+			"_et": "Palun pildistage oma lapse pass või isikutunnistus.",
+			"_sv": "Ta en bild av ditt barns pass eller ID.",
+			"_da": "Tag et billede af dit barns pas eller ID."
+		},
+		"type": "upload"
+	},
+	"passportbackneeded": {
+		"text": {
+			"en": "Do you need to upload another picture of the passport or ID?",
+			"fr": "Avez-vous besoin de fournir une photo de la face arrière du passeport ou de la carte d'identité ?",
+			"es": "¿ Necesita proporcionar una foto de la parte posterior del pasaporte o del DNI ?",
+			"it": "Hai bisogno di fornire una foto del retro del passaporto o della carta d'identità ?",
+			"_lt": "Ar jums reikia įkelti kitą paso ar asmens dokumento nuotrauką?",
+			"_lv": "Vai jums ir nepieciešams augšupielādēt citu pases vai personas apliecības attēlu?",
+			"_ru": "Вам нужно загрузить еще одну фотографию паспорта или удостоверения личности?",
+			"_fi": "Täytyykö sinun ladata toinen kuva passista tai henkilötodistuksesta?",
+			"_et": "Kas peate mõne teise passi või isikutunnistuse pildi üles laadima?",
+			"_sv": "Behöver du ladda upp en ny bild av passet eller ID?",
+			"_da": "Har du brug for at uploade endnu et billede af pas eller ID?"
+		},
+		"options": {
+			"yes": {
+				"en": "Yes",
+				"fr": "Oui",
+				"es": "Sí",
+				"it": "Sì",
+				"_lt": "Taip",
+				"_lv": "Jā",
+				"_ru": "да",
+				"_fi": "Joo",
+				"_et": "Jah",
+				"_sv": "Ja",
+				"_da": "Ja"
+			},
+			"no": {
+				"en": "No",
+				"fr": "Non",
+				"es": "No",
+				"it": "Non",
+				"_lt": "Ne",
+				"_lv": "Nē",
+				"_ru": "Нет",
+				"_fi": "Ei",
+				"_et": "Ei",
+				"_sv": "Nej",
+				"_da": "Ingen"
+			}
+		},
+		"type": "choice"
+	},
+	"passportback": {
+		"if": {
+			"passportbackneeded": "yes"
+		},
+		"title": {
+			"en": "Passport/ID (2)",
+			"fr": "Passeport / Carte d'identité (2)",
+			"es": "Pasaporte / DNI (2)",
+			"it": "Passaporto / Carta d'identità (2)",
+			"_lt": "Pasas / ID (2)",
+			"_lv": "Pase / ID (2)",
+			"_ru": "Паспорт / удостоверение личности (2)",
+			"_fi": "Passi / henkilötodistus (2)",
+			"_et": "Pass / ID (2)",
+			"_sv": "Pass / ID (2)",
+			"_da": "Pas / ID (2)"
+		},
+		"text": {
+			"en": "Please upload the other picture of his passport or ID.",
+			"fr": "Fournissez une photo de la face arrière du passeport ou de la carte d'identité de votre enfant.",
+			"es": "Tome una foto del reverso del pasaporte o documento de identidad de su hijo.",
+			"it": "Fornire una foto del retro del passaporto o della carta d'identità del bambino.",
+			"_lt": "Įkelkite kitą jo paso ar asmens dokumento nuotrauką.",
+			"_lv": "Lūdzu, augšupielādējiet otru viņa pases vai personas apliecības attēlu.",
+			"_ru": "Загрузите вторую фотографию его паспорта или удостоверения личности.",
+			"_fi": "Lataa toinen kuva passista tai henkilötodistuksesta.",
+			"_et": "Palun laadige üles teine pilt tema passist või isikut tõendavast dokumendist.",
+			"_sv": "Ladda upp den andra bilden av hans pass eller ID.",
+			"_da": "Upload det andet billede af hans pas eller ID."
+		},
+		"type": "upload"
+	},
+	"parentinformation": {
+		"text": {
+			"en": "We also need to have the contact details of the parents.",
+			"fr": "Nous avons également besoin de quelques informations à propos des parents.",
+			"es": "También necesitamos algunas informaciones sobre los padres.",
+			"it": "Abbiamo anche bisogno di alcune informazioni sui genitori.",
+			"_lt": "Taip pat turime turėti tėvų kontaktinius duomenis.",
+			"_lv": "Mums ir nepieciešama arī vecāku kontaktinformācija.",
+			"_ru": "Также нам нужны контактные данные родителей.",
+			"_fi": "Meillä on oltava myös vanhempien yhteystiedot.",
+			"_et": "Samuti peavad meil olema vanemate kontaktandmed.",
+			"_sv": "Vi måste också ha kontaktuppgifter för föräldrarna.",
+			"_da": "Vi skal også have forældrenes kontaktoplysninger."
+		},
+		"icon": "matryoshka",
+		"type": "none"
+	},
+	"phone": {
+		"title": {
+			"en": "Phone Numbers",
+			"fr": "Numéros de téléphone",
+			"es": "Números telefónicos",
+			"it": "Numeri di telefono",
+			"_lt": "Telefono numeriai",
+			"_lv": "Tālruņa numuri",
+			"_ru": "Телефонные номера",
+			"_fi": "Puhelinnumerot",
+			"_et": "Telefoninumbrid",
+			"_sv": "Telefonnummer",
+			"_da": "Telefonnumre"
+		},
+		"text": {
+			"en": "Please enter the phone numbers of the parents.",
+			"fr": "Entrez le ou les numéros de téléphone où il est possible de vous joindre.",
+			"es": "Ingrese los números de teléfono donde sea posible comunicarse con usted.",
+			"it": "Inserisci i numeri di telefono dove sarà possibile raggiungerti.",
+			"_lt": "Įveskite tėvų telefono numerius.",
+			"_lv": "Lūdzu, ievadiet vecāku tālruņa numurus.",
+			"_ru": "Пожалуйста, введите номера телефонов родителей.",
+			"_fi": "Anna vanhempien puhelinnumerot.",
+			"_et": "Palun sisestage vanemate telefoninumbrid.",
+			"_sv": "Ange föräldrarnas telefonnummer.",
+			"_da": "Indtast venligst forældrenes telefonnumre."
+		},
+		"example": "+33 6 20 96 16 81",
+		"type": "text"
+	},
+	"emails": {
+		"title": {
+			"en": "Email addresses",
+			"fr": "Adresses email",
+			"es": "Direcciones de correo electronico",
+			"it": "Indirizzi email",
+			"_lt": "El. Pašto adresai",
+			"_lv": "E-pasta adreses",
+			"_ru": "Адрес электронной почты",
+			"_fi": "Sähköpostiosoitteet",
+			"_et": "E-posti aadressid",
+			"_sv": "Mejladresser",
+			"_da": "Email adresse"
+		},
+		"predefined": "email",
+		"text": {
+			"en": "Please enter the email addresses of the parents.",
+			"fr": "Merci de nous fournir une ou plusieurs adresses email.",
+			"es": "Ingrese una dirección de correo electrónico. Puedes dar varias.",
+			"it": "Inserisci un indirizzo email. Puoi dare diversi.",
+			"_lt": "Įveskite tėvų el. Pašto adresus.",
+			"_lv": "Lūdzu, ievadiet vecāku e-pasta adreses.",
+			"_ru": "Пожалуйста, введите адреса электронной почты родителей.",
+			"_fi": "Anna vanhempien sähköpostiosoitteet.",
+			"_et": "Palun sisestage vanemate e-posti aadressid.",
+			"_sv": "Ange föräldrarnas e-postadresser.",
+			"_da": "Indtast venligst forældrenes e-mail-adresser."
+		},
+		"example": "david.fauthoux@gmail.com",
+		"type": "text"
+	},
+	"postaladdress": {
+		"title": {
+			"en": "Postal Address",
+			"fr": "Adresse postale",
+			"es": "Dirección postal",
+			"it": "Indirizzo postale",
+			"_lt": "Pašto adresas",
+			"_lv": "Pasta adrese",
+			"_ru": "Почтовый адрес",
+			"_fi": "Postiosoite",
+			"_et": "Postiaadress",
+			"_sv": "Postadress",
+			"_da": "Postadresse"
+		},
+		"text": {
+			"en": "Please enter the complete postal address.",
+			"fr": "Merci de donner votre adresse postale complète.",
+			"es": "Gracias por dar su dirección postal completa.",
+			"it": "Grazie per aver dato il tuo indirizzo postale completo.",
+			"_lt": "Įveskite visą pašto adresą.",
+			"_lv": "Lūdzu, ievadiet pilnu pasta adresi.",
+			"_ru": "Пожалуйста, введите полный почтовый адрес.",
+			"_fi": "Anna täydellinen postiosoite.",
+			"_et": "Sisestage täielik postiaadress.",
+			"_sv": "Ange hela postadressen.",
+			"_da": "Indtast den komplette postadresse."
+		},
+		"example": "5 avenue Anatole France, 75007 Paris, France",
+		"type": "text"
+	},
+	"childinformation": {
+		"text": {
+			"en": "You might also tell us the following information about your child.",
+			"fr": "Nous aurons également besoin de connaître quelques informations de santé à propos de votre enfant.",
+			"es": "También necesitaremos saber algo de información médica sobre su hijo.",
+			"it": "Avremo anche bisogno di conoscere alcune informazioni sulla salute di tuo figlio.",
+			"_lt": "Taip pat galite mums pasakyti šią informaciją apie savo vaiką.",
+			"_lv": "Jūs varētu arī pastāstīt mums šādu informāciju par savu bērnu.",
+			"_ru": "Вы также можете сообщить нам следующую информацию о своем ребенке.",
+			"_fi": "Voit myös kertoa meille seuraavat tiedot lapsestasi.",
+			"_et": "Samuti võite meile oma lapse kohta öelda järgmist teavet.",
+			"_sv": "Du kan också berätta följande information om ditt barn.",
+			"_da": "Du kan også fortælle os følgende oplysninger om dit barn."
+		},
+		"icon": "megaphone",
+		"type": "none"
+	},
+	"health": {
+		"title": {
+			"en": "Health",
+			"fr": "Traitements en cours",
+			"es": "Tratamientos en curso",
+			"it": "Trattamenti in corso",
+			"_lt": "Sveikata",
+			"_lv": "Veselība",
+			"_ru": "Здоровье",
+			"_fi": "Terveys",
+			"_et": "Tervis",
+			"_sv": "Hälsa",
+			"_da": "Sundhed"
+		},
+		"text": {
+			"en": "If your child has a health treatment, tell us here.",
+			"fr": "Si votre enfant suit un traitement, merci de nous en faire part, avec les détails nécessaires.",
+			"es": "Si su hijo está recibiendo tratamiento, háganoslo saber con los detalles necesarios.",
+			"it": "Se tuo figlio sta ricevendo un trattamento, ti preghiamo di comunicarcelo, con i dettagli necessari.",
+			"_lt": "Jei jūsų vaikas gydosi sveikatą, pasakykite mums čia.",
+			"_lv": "Ja jūsu bērnam tiek veikta veselības aprūpe, pastāstiet mums šeit.",
+			"_ru": "Если ваш ребенок проходит курс лечения, сообщите нам об этом здесь.",
+			"_fi": "Jos lapsellasi on terveydenhoito, kerro meille täällä.",
+			"_et": "Kui teie lapsel on terviseravi, rääkige meile siit.",
+			"_sv": "Berätta för oss här om ditt barn har en hälsobehandling.",
+			"_da": "Fortæl os her, hvis dit barn har en sundhedsbehandling."
+		},
+		"example": {
+			"en": "One pill of XYZ every morning before breakfast",
+			"fr": "Une gélule de XYZ tous les matins avant le petit-déjeuner",
+			"es": "Una cápsula de XYZ cada mañana antes del desayuno.",
+			"it": "Una capsula di XYZ ogni mattina prima di colazione",
+			"_lt": "Viena tabletė XYZ kiekvieną rytą prieš pusryčius",
+			"_lv": "Viena tablete XYZ katru rītu pirms brokastīm",
+			"_ru": "Одна таблетка XYZ каждое утро перед завтраком",
+			"_fi": "Yksi XYZ-pilleri joka aamu ennen aamiaista",
+			"_et": "Üks tablett XYZ-i igal hommikul enne hommikusööki",
+			"_sv": "Ett piller XYZ varje morgon före frukost",
+			"_da": "En pille XYZ hver morgen før morgenmaden"
+		},
+		"default": {
+			"en": "None",
+			"fr": "Aucun",
+			"es": "Nada",
+			"it": "Nulla",
+			"_lt": "Nė vienas",
+			"_lv": "Nav",
+			"_ru": "Никто",
+			"_fi": "Ei mitään",
+			"_et": "Puudub",
+			"_sv": "Ingen",
+			"_da": "Ingen"
+		},
+		"type": "text"
+	},
+	"injuries": {
+		"title": {
+			"en": "Injuries",
+			"fr": "Blessures",
+			"es": "Lesiones",
+			"it": "Lesioni",
+			"_lt": "Traumos",
+			"_lv": "Traumas",
+			"_ru": "Травмы",
+			"_fi": "Loukkaantumiset",
+			"_et": "Vigastused",
+			"_sv": "Skador",
+			"_da": "Skader"
+		},
+		"text": {
+			"en": "If your child has injuries, tell us here. Tell us also the past injuries we should be aware of.",
+			"fr": "Si votre enfant est blessé, ou a récemment subi une blessure, merci de nous en faire part.",
+			"es": "Si su hijo está lesionado o recientemente se lesionó, háganoslo saber.",
+			"it": "Se tuo figlio è ferito o è stato ferito di recente, faccelo sapere.",
+			"_lt": "Jei jūsų vaikas susižeidė, pasakykite mums čia. Taip pat pasakykite mums apie praeities traumas, apie kurias turėtume žinoti.",
+			"_lv": "Ja jūsu bērnam ir traumas, pastāstiet mums šeit. Pastāstiet arī par pagātnes traumām, par kurām mums būtu jāzina.",
+			"_ru": "Если у вашего ребенка травмы, сообщите нам об этом. Расскажите нам также о прошлых травмах, о которых нам следует знать.",
+			"_fi": "Jos lapsellasi on vammoja, kerro meille tästä. Kerro myös menneistä vammoista, joista meidän tulisi olla tietoisia.",
+			"_et": "Kui teie lapsel on vigastusi, rääkige meile siit. Räägi meile ka varasematest vigastustest, millest peaksime teadlikud olema.",
+			"_sv": "Berätta för oss här om ditt barn har skador. Berätta också de tidigare skadorna vi borde vara medvetna om.",
+			"_da": "Fortæl os her, hvis dit barn har skader. Fortæl os også de tidligere skader, vi burde være opmærksomme på."
+		},
+		"example": {
+			"en": "Broke his arm 3 months ago",
+			"fr": "A cassé son bras il y a 3 mois",
+			"es": "Se rompió el brazo hace 3 meses",
+			"it": "Ha rotto il braccio 3 mese fa",
+			"_lt": "Sulaužė ranką prieš 3 mėnesius",
+			"_lv": "Pirms 3 mēnešiem salauza roku",
+			"_ru": "Сломал руку 3 месяца назад",
+			"_fi": "Rikkoi kätensä 3 kuukautta sitten",
+			"_et": "Murdis käe 3 kuud tagasi",
+			"_sv": "Bröt armen för 3 månader sedan",
+			"_da": "Brækkede armen for 3 måneder siden"
+		},
+		"default": {
+			"en": "None",
+			"fr": "Aucune",
+			"es": "Nada",
+			"it": "Nulla",
+			"_lt": "Nė vienas",
+			"_lv": "Nav",
+			"_ru": "Никто",
+			"_fi": "Ei mitään",
+			"_et": "Puudub",
+			"_sv": "Ingen",
+			"_da": "Ingen"
+		},
+		"type": "text"
+	},
+	"allergies": {
+		"title": {
+			"en": "Allergies",
+			"fr": "Allergies",
+			"es": "Alergias",
+			"it": "Allergie",
+			"_lt": "Alergija",
+			"_lv": "Alerģijas",
+			"_ru": "Аллергии",
+			"_fi": "Allergiat",
+			"_et": "Allergiad",
+			"_sv": "Allergier",
+			"_da": "Allergier"
+		},
+		"text": {
+			"en": "If your child has allergies, tell us here.",
+			"fr": "Ditez-nous à quoi votre enfant est allergique.",
+			"es": "Díganos a qué es alérgico su hijo.",
+			"it": "Dicci a cosa è allergico tuo figlio.",
+			"_lt": "Jei jūsų vaikas turi alergiją, pasakykite mums čia.",
+			"_lv": "Ja jūsu bērnam ir alerģija, pastāstiet mums šeit.",
+			"_ru": "Если у вашего ребенка аллергия, сообщите нам об этом.",
+			"_fi": "Jos lapsellasi on allergioita, kerro meille tästä.",
+			"_et": "Kui teie lapsel on allergia, rääkige meile siit.",
+			"_sv": "Berätta för oss här om ditt barn har allergier.",
+			"_da": "Fortæl os her, hvis dit barn har allergi."
+		},
+		"example": {
+			"en": "Strawberry",
+			"fr": "Fraises",
+			"es": "Fresas",
+			"it": "Fragole",
+			"_lt": "Braškių",
+			"_lv": "Zemeņu",
+			"_ru": "клубника",
+			"_fi": "Mansikka",
+			"_et": "Maasikas",
+			"_sv": "Jordgubbe",
+			"_da": "Jordbær"
+		},
+		"default": {
+			"en": "None",
+			"fr": "Aucune",
+			"es": "Nada",
+			"it": "Nulla",
+			"_lt": "Nė vienas",
+			"_lv": "Nav",
+			"_ru": "Никто",
+			"_fi": "Ei mitään",
+			"_et": "Puudub",
+			"_sv": "Ingen",
+			"_da": "Ingen"
+		},
+		"type": "text"
+	},
+	"diet": {
+		"title": {
+			"en": "Diet",
+			"fr": "Régime alimentaire",
+			"es": "Dieta",
+			"it": "Dieta",
+			"_lt": "Dieta",
+			"_lv": "Diēta",
+			"_ru": "Рацион питания",
+			"_fi": "Ruokavalio",
+			"_et": "Dieet",
+			"_sv": "Diet",
+			"_da": "Kost"
+		},
+		"text": {
+			"en": "If your child has a special diet, tell us here.",
+			"fr": "Si votre enfant suit un régime alimentaire particulier, merci de nous en faire part.",
+			"es": "Si su hijo tiene una dieta particular, háganoslo saber.",
+			"it": "Se tuo figlio ha una dieta particolare, faccelo sapere.",
+			"_lt": "Jei jūsų vaikas turi specialią dietą, pasakykite mums čia.",
+			"_lv": "Ja jūsu bērnam ir īpaša diēta, pastāstiet mums šeit.",
+			"_ru": "Если у вашего ребенка особая диета, сообщите нам об этом.",
+			"_fi": "Jos lapsellasi on erityinen ruokavalio, kerro meille täällä.",
+			"_et": "Kui teie lapsel on eriline dieet, rääkige meile siin.",
+			"_sv": "Berätta för oss här om ditt barn har en speciell diet.",
+			"_da": "Fortæl os her, hvis dit barn har en særlig diæt."
+		},
+		"example": {
+			"en": "Does not eat fish",
+			"fr": "Ne mange pas de poisson",
+			"es": "No come pescado",
+			"it": "Non mangiare pesce",
+			"_lt": "Nevalgo žuvies",
+			"_lv": "Neēd zivis",
+			"_ru": "Не ест рыбу",
+			"_fi": "Ei syö kalaa",
+			"_et": "Ei söö kala",
+			"_sv": "Äter inte fisk",
+			"_da": "Spiser ikke fisk"
+		},
+		"default": {
+			"en": "None",
+			"fr": "Aucun",
+			"es": "Nada",
+			"it": "Nulla",
+			"_lt": "Nė vienas",
+			"_lv": "Nav",
+			"_ru": "Никто",
+			"_fi": "Ei mitään",
+			"_et": "Puudub",
+			"_sv": "Ingen",
+			"_da": "Ingen"
+		},
+		"type": "text"
+	},
+	"swim": {
+		"title": {
+			"en": "Swimming-pool",
+			"fr": "Piscine",
+			"es": "Piscina",
+			"it": "Piscina",
+			"_lt": "Plaukiojimo baseinas",
+			"_lv": "Peldbaseins",
+			"_ru": "Плавательный бассейн",
+			"_fi": "Uima-allas",
+			"_et": "Bassein",
+			"_sv": "Simbassäng",
+			"_da": "Svømmepøl"
+		},
+		"text": {
+			"en": "Does your child know how to swim?",
+			"fr": "Votre enfant sait-il nager ?",
+			"es": "¿ Sabe su hijo nadar ?",
+			"it": "Il tuo bambino sa nuotare ?",
+			"_lt": "Ar jūsų vaikas moka plaukti?",
+			"_lv": "Vai jūsu bērns zina, kā peldēties?",
+			"_ru": "Ваш ребенок умеет плавать?",
+			"_fi": "Tietääkö lapsesi kuinka uida?",
+			"_et": "Kas teie laps oskab ujuda?",
+			"_sv": "Vet ditt barn att simma?",
+			"_da": "Ved dit barn, hvordan man svømmer?"
+		},
+		"options": {
+			"swimgood": {
+				"en": "Yes",
+				"fr": "Oui",
+				"es": "Sí",
+				"it": "Sì",
+				"_lt": "Taip",
+				"_lv": "Jā",
+				"_ru": "да",
+				"_fi": "Joo",
+				"_et": "Jah",
+				"_sv": "Ja",
+				"_da": "Ja"
+			},
+			"swimaverage": {
+				"en": "Not good",
+				"fr": "Pas bien",
+				"es": "No bien",
+				"it": "Non bene",
+				"_lt": "Negerai",
+				"_lv": "Nav labi",
+				"_ru": "Фигово",
+				"_fi": "Ei hyvä",
+				"_et": "Pole hea",
+				"_sv": "Inte bra",
+				"_da": "Ikke godt"
+			},
+			"swimbad": {
+				"en": "No",
+				"fr": "Non",
+				"es": "No",
+				"it": "Non",
+				"_lt": "Ne",
+				"_lv": "Nē",
+				"_ru": "Нет",
+				"_fi": "Ei",
+				"_et": "Ei",
+				"_sv": "Nej",
+				"_da": "Ingen"
+			}
+		},
+		"type": "choice"
+	},
+	"height": {
+		"title": {
+			"en": "Height",
+			"fr": "Taille",
+			"es": "Tamaño",
+			"it": "Formato",
+			"_lt": "Aukštis",
+			"_lv": "Augstums",
+			"_ru": "Высота",
+			"_fi": "Korkeus",
+			"_et": "Kõrgus",
+			"_sv": "Höjd",
+			"_da": "Højde"
+		},
+		"text": {
+			"en": "Please enter the height of your child, we'll try to find the matching uniform size for him.",
+			"fr": "Donnez la taille de votre enfant. Nous essaierons de trouver un surmaillot à sa taille !",
+			"es": "Da el tamaño de su hijo. ¡ Intentaremos encontrar un equipación a su tamaño !",
+			"it": "Dai la misura del tuo bambino. Cercheremo di trovare una divisa alle sue dimensioni !",
+			"_lt": "Įveskite vaiko ūgį, mes bandysime rasti jam tinkamą vienodą dydį.",
+			"_lv": "Lūdzu, ievadiet sava bērna augumu, mēs centīsimies atrast viņam piemērotu vienotu izmēru.",
+			"_ru": "Укажите рост вашего ребенка, мы постараемся подобрать для него подходящий размер формы.",
+			"_fi": "Anna lapsesi pituus, yritämme löytää lapselle sopivan yhtenäisen koon.",
+			"_et": "Sisestage oma lapse pikkus, proovime leida talle sobiva ühtse suuruse.",
+			"_sv": "Ange ditt barns höjd, vi försöker hitta matchande enhetlig storlek för honom.",
+			"_da": "Indtast højden på dit barn, vi prøver at finde den matchende ensartede størrelse til ham."
+		},
+		"example": "145 cm",
+		"type": "line"
+	},
+	"travelteam": {
+		"text": {
+			"en": "We state here the different principles that animate The Travel Team. You'll be welcome to give your impressions by selecting one of the three buttons under each part.",
+			"fr": "Nous énonçons ici les différents principes qui animent Travel Team. Exprimez-vous en choisissant un des trois boutons sous chacune des parties !",
+			"es": "Aquí expresamos los diferentes principios que animan al Travel Team. ¡ Expresarse eligiendo uno de los tres botones debajo de cada una de las partes !",
+			"it": "Indichiamo qui i diversi principi che animano il Travel Team. Esprimi te stesso scegliendo uno dei tre pulsanti sotto ciascuna delle parti !",
+			"_lt": "Čia mes nurodome skirtingus principus, kurie animuoja kelionių komandą. Maloniai pateiksime savo įspūdžius pasirinkdami vieną iš trijų mygtukų po kiekviena dalimi.",
+			"_lv": "Mēs šeit izklāstām dažādos principus, kas atdzīvina ceļojumu komandu. Būsit laipni aicināts sniegt savus iespaidus, zem katras daļas atlasot vienu no trim pogām.",
+			"_ru": "Мы заявляем здесь о различных принципах, которые вдохновляют The Travel Team. Вы сможете поделиться своими впечатлениями, выбрав одну из трех кнопок под каждой частью.",
+			"_fi": "Esitämme täällä erilaiset periaatteet, jotka animoivat matkatiimin. Voit antaa vaikutelmia valitsemalla jokaisen osan alla olevasta kolmesta painikkeesta.",
+			"_et": "Me ütleme siin välja erinevad põhimõtted, mis elavad reisimeeskonda. Olete teretulnud oma muljeid jagama, valides ühe osa kolmest nupust.",
+			"_sv": "Vi anger här de olika principerna som animerar The Travel Team. Du är välkommen att ge dina intryck genom att välja en av de tre knapparna under varje del.",
+			"_da": "Vi angiver her de forskellige principper, der animerer rejseteamet. Du er velkommen til at give dine indtryk ved at vælge en af de tre knapper under hver del."
+		},
+		"icon": "idea",
+		"type": "none"
+	},
+	"philosophy": {
+		"title": {
+			"en": "Philosophy",
+			"fr": "Philosophie",
+			"es": "Filosofía",
+			"it": "Filosofia",
+			"_lt": "Filosofija",
+			"_lv": "Filozofija",
+			"_ru": "Философия",
+			"_fi": "Filosofia",
+			"_et": "Filosoofia",
+			"_sv": "Filosofi",
+			"_da": "Filosofi"
+		},
+		"text": {
+			"en": "The goal of 3T is both very simple and very strong: that children from all over the <span class=\"emph\">world</span> meet, become <span class=\"emph\">friends</span>, share their culture and their differences, through an authentic and outstanding sporting moment, thus requiring them for a big involvement.",
+			"fr": "L'objectif de 3T est à la fois très simple et très fort : que des enfants du <span class=\"emph\">monde entier</span> se rencontrent, deviennent <span class=\"emph\">amis</span>, partagent leur culture et leurs différences, à travers un moment sportif, donc leur demandant un engagement important.",
+			"es": "El objetivo de 3T es muy simple y muy fuerte : que los niños de <span class=\"emph\">todo el mundo</span> se encuentren, se hagan <span class=\"emph\">amigos</span>, compartan su cultura y sus diferencias a través de un momento deportivo, solicitándoles un compromiso importante.",
+			"it": "L'obiettivo di 3T è molto semplice e molto forte : i bambini di <span class=\"emph\">tutto il mondo</span> si incontrano, diventano <span class=\"emph\">amici</span>, condividono la loro cultura e le loro differenze, attraverso un momento sportivo, chiedendo loro un impegno importante.",
+			"_lt": "3T tikslas yra labai paprastas ir labai stiprus: kad vaikai iš viso <span class = \"emph\"> pasaulio </span> susitiktų, taptų <span class = \"emph\"> draugais </span>, pasidalintų savo kultūra ir jų skirtumai, pasitelkiant autentišką ir išskirtinį sportinį momentą, taigi reikalaujant jų aktyvaus dalyvavimo.",
+			"_lv": "3T mērķis ir gan ļoti vienkāršs, gan ļoti spēcīgs: lai bērni no visas <span class = \"emph\"> pasaules </span> satiktos, kļūtu par <span class = \"emph\"> draugiem </span>, dalītos savos kultūru un to atšķirībām, izmantojot autentisku un izcilu sporta brīdi, tādējādi pieprasot viņiem lielu iesaistīšanos.",
+			"_ru": "Цель 3T очень проста и очень сильна: дети со всего <span class = \"emph\"> мира </span> встречаются, становятся <span class = \"emph\"> друзьями </span>, делятся своими культуры и их различий в подлинном и выдающемся спортивном моменте, что требует от них большого участия.",
+			"_fi": "3T: n tavoite on sekä hyvin yksinkertainen että erittäin vahva: että lapset kaikkialta <span class = \"emph\"> maailmasta </span> tapaavat, tulevat <span class = \"emph\"> ystäviksi </span>, jakavat lapsensa kulttuuria ja heidän erojaan aidon ja erinomaisen urheiluhetken kautta, mikä vaatii heiltä suurta osallistumista.",
+			"_et": "3T eesmärk on nii väga lihtne kui ka väga tugev: et lapsed kogu <span class = \"emph\"> maailmast </span> kohtuksid, saaksid <span class = \"emph\"> sõpradeks </span>, jagaksid oma kultuur ja nende erinevused läbi eheda ja silmapaistva spordihetke, nõudes seeläbi nende suurt osalust.",
+			"_sv": "Målet med 3T är både mycket enkelt och mycket starkt: att barn från hela <span class = \"emph\"> världen </span> möts, blir <span class = \"emph\"> vänner </span>, delar sina kultur och deras skillnader genom ett autentiskt och enastående idrottsmoment, vilket kräver dem för ett stort engagemang.",
+			"_da": "Målet med 3T er både meget simpelt og meget stærkt: at børn fra hele <span class = \"emph\"> verden </span> mødes, bliver <span class = \"emph\"> venner </span>, deler deres kultur og deres forskelle gennem et autentisk og enestående sportsligt øjeblik, hvilket kræver dem til et stort engagement."
+		},
+		"options": {
+			"happy": {
+				"en": "Happy",
+				"fr": "Super !",
+				"es": "¡ Súper !",
+				"it": "Eccellente",
+				"_lt": "Laimingas",
+				"_lv": "Laimīgs",
+				"_ru": "Счастливый",
+				"_fi": "Onnellinen",
+				"_et": "Õnnelik",
+				"_sv": "Lycklig",
+				"_da": "Lykkelig"
+			},
+			"neutral": {
+				"en": "Neutral",
+				"fr": "Hum...",
+				"es": "...",
+				"it": "Non lo so...",
+				"_lt": "Neutralus",
+				"_lv": "Neitrāls",
+				"_ru": "Нейтральный",
+				"_fi": "Neutraali",
+				"_et": "Neutraalne",
+				"_sv": "Neutral",
+				"_da": "Neutral"
+			},
+			"unhappy": {
+				"en": "Unhappy",
+				"fr": "Bof",
+				"es": "Inoportuno",
+				"it": "Dissentire",
+				"_lt": "Nelaimingas",
+				"_lv": "Nelaimīgs",
+				"_ru": "Несчастный",
+				"_fi": "Onneton",
+				"_et": "Õnnetu",
+				"_sv": "Olycklig",
+				"_da": "Ulykkelig"
+			}
+		},
+		"type": "choice"
+	},
+	"commitment": {
+		"title": {
+			"en": "Commitment of the children",
+			"fr": "Engagement des enfants",
+			"es": "Compromiso de los niños",
+			"it": "Impegno dei bambini",
+			"_lt": "Vaikų įsipareigojimas",
+			"_lv": "Bērnu apņemšanās",
+			"_ru": "Приверженность детей",
+			"_fi": "Lasten sitoutuminen",
+			"_et": "Laste pühendumus",
+			"_sv": "Barnens engagemang",
+			"_da": "Forpligtelse for børnene"
+		},
+		"text": {
+			"en": "<span class=\"dot\">1</span> Building a group is not automatic, everyone will have to make efforts. Talk, exchange and help each other despite the language barrier. Be generous and attentive to others. Do not let yourself go, but instead be active... <span class=\"dot\">2</span> The moment lived is short and intense. The adventure will be a success if we manage to create a bubble of happiness that will remain in the mind of the children as an exceptional and magical moment of their life, a moment during which they will have been major <span class=\"emph\">actors</span>.",
+			"fr": "<span class=\"dot\">1</span> Construire un groupe n'est pas automatique, chacun et tous devront faire des efforts. Échanger et s'entraider malgré la barrière de la langue. Être généreux et attentif aux autres. Ne pas se laisser porter mais au contraire être actif... <span class=\"dot\">2</span> Le moment vécu est court et intense. L'aventure sera une réussite si nous arrivons à créer un bulle de bonheur qui restera en tête des enfants comme un instant exceptionnel et magique de leur vie, un instant durant lequel ils auront été <span class=\"emph\">acteurs</span> majeurs.",
+			"es": "<span class=\"dot\">1</span> Construir un grupo no es automático, todos deberán hacer esfuerzos. Hablar, intercambiar y ayudarse unos a otros a pesar de la barrera del idioma. Ser generoso y atento a los demás. No dejarse llevar, sino que ser activo... <span class=\"dot\">2</span> El momento vivido es corto e intenso. La aventura será un éxito si logramos crear una burbuja de felicidad que permanecerá en la cima de los niños como un momento excepcional y mágico de su vida, un momento durante el cual habrán sido <span class=\"emph\">actores</span> importantes.",
+			"it": "<span class=\"dot\">1</span> Costruire un gruppo non è automatico, tutti dovranno fare sforzi. Scambiarsi e aiutarsi a vicenda nonostante la barriera linguistica. Sii generoso e attento agli altri. Non lasciarti andare ma invece essere attivo... <span class=\"dot\">2</span> Il momento vissuto è breve e intenso. L'avventura sarà un successo se riusciremo a creare una bolla di felicità che rimarrà ai vertici dei bambini come un momento eccezionale e magico della loro vita, un momento durante il quale saranno stati <span class=\"emph\">attori</span> importanti.",
+			"_lt": "<span class = \"dot\"> 1 </span> Grupės kūrimas nėra automatinis, visi turės stengtis. Kalbėkitės, keiskitės ir padėkite vieni kitiems, nepaisant kalbos barjero. Būkite dosnus ir dėmesingas kitiems. Nepaleisk savęs, verčiau būk aktyvus ... <span class = \"dot\"> 2 </span> Gyvenama akimirka yra trumpa ir intensyvi. Nuotykis bus sėkmingas, jei pavyks sukurti laimės burbulą, kuris išliks vaikų mintyse kaip išskirtinis ir stebuklingas jų gyvenimo momentas, momentas, kurio metu jie bus svarbiausi <span class = \"emph\" > aktoriai </span>.",
+			"_lv": "<span class = \"dot\"> 1 </span> Grupas veidošana nav automātiska, visiem būs jāpieliek pūles. Runājiet, apmainieties un palīdziet viens otram, neskatoties uz valodas barjeru. Esiet dāsns un uzmanīgs pret citiem. Nepalaidiet sevi vaļā, bet tā vietā esiet aktīvs ... <span class = \"dot\"> 2 </span> Pārdzīvotais brīdis ir īss un intensīvs. Piedzīvojums būs veiksmīgs, ja mums izdosies izveidot laimes burbuli, kas paliks bērnu prātā kā ārkārtējs un maģisks dzīves brīdis, brīdis, kurā viņi būs bijuši galvenie <span class = \"emph\" > aktieri </span>.",
+			"_ru": "<span class = \"dot\"> 1 </span> Создание группы не происходит автоматически, всем придется приложить усилия. Общайтесь, обменивайтесь информацией и помогайте друг другу, несмотря на языковой барьер. Будьте щедры и внимательны к другим. Не позволяйте себе уйти, а вместо этого будьте активными ... <span class = \"dot\"> 2 </span> Прожитый момент короткий и напряженный. Приключение будет успешным, если нам удастся создать пузырь счастья, который останется в сознании детей как исключительный и волшебный момент их жизни, момент, в течение которого они будут главными <span class = \"emph\" > актеры </span>.",
+			"_fi": "<span class = \"dot\"> 1 </span> Ryhmän rakentaminen ei ole automaattista, kaikkien on ponnisteltava. Keskustele, vaihda ja auta toisiamme kielimuurista huolimatta. Ole antelias ja tarkkaavainen muita kohtaan. Älä päästä itseäsi, vaan ole aktiivinen ... <span class = \"dot\"> 2 </span> Elämä hetki on lyhyt ja intensiivinen. Seikkailu tulee olemaan menestys, jos onnistumme luomaan onnen kuplan, joka pysyy lasten mielessä poikkeuksellisena ja maagisena hetkenä heidän elämäänsä, hetkenä, jonka aikana he ovat olleet merkittäviä <span class = \"emph\" > näyttelijät </span>.",
+			"_et": "<span class = \"dot\"> 1 </span> Grupi loomine ei ole automaatne, kõik peavad pingutama. Rääkige, vahetage ja aidake üksteist hoolimata keelebarjäärist. Ole teiste vastu helde ja tähelepanelik. Ärge laske end lahti lasta, vaid olge selle asemel aktiivne ... <span class = \"dot\"> 2 </span> Elatud hetk on lühike ja intensiivne. Seiklus saab olema edukas, kui meil õnnestub luua õnnemull, mis jääb laste meeltesse kui erakordne ja maagiline hetk nende elus, hetk, mille jooksul nad on olnud suuremad <span class = \"emph\" > näitlejad </span>.",
+			"_sv": "<span class = \"dot\"> 1 </span> Att bygga en grupp är inte automatiskt, alla måste göra ansträngningar. Prata, utbyta och hjälpa varandra trots språkbarriären. Var generös och uppmärksam på andra. Släpp inte dig själv, utan var istället aktiv ... <span class = \"dot\"> 2 </span> Det levda ögonblicket är kort och intensivt. Äventyret kommer att bli en succé om vi lyckas skapa en bubbla av lycka som kommer att förbli hos barnen som ett exceptionellt och magiskt ögonblick i deras liv, ett ögonblick under vilket de kommer att ha varit stora <span class = \"emph\" > skådespelare </span>.",
+			"_da": "<span class = \"dot\"> 1 </span> Opbygning af en gruppe er ikke automatisk, alle bliver nødt til at gøre en indsats. Tal, udveksling og hjælp hinanden på trods af sprogbarrieren. Vær generøs og opmærksom på andre. Lad ikke dig gå, men vær i stedet aktiv ... <span class = \"dot\"> 2 </span> Det øjeblik, du har levet, er kort og intens. Eventyret vil blive en succes, hvis det lykkes os at skabe en boble af lykke, der forbliver i børnenes sind som et ekstraordinært og magisk øjeblik i deres liv, et øjeblik, hvor de vil have været store <span class = \"emph\" > skuespillere </span>."
+		},
+		"options": {
+			"happy": {
+				"en": "Happy",
+				"fr": "Super !",
+				"es": "¡ Súper !",
+				"it": "Eccellente",
+				"_lt": "Laimingas",
+				"_lv": "Laimīgs",
+				"_ru": "Счастливый",
+				"_fi": "Onnellinen",
+				"_et": "Õnnelik",
+				"_sv": "Lycklig",
+				"_da": "Lykkelig"
+			},
+			"neutral": {
+				"en": "Neutral",
+				"fr": "Hum...",
+				"es": "...",
+				"it": "Non lo so...",
+				"_lt": "Neutralus",
+				"_lv": "Neitrāls",
+				"_ru": "Нейтральный",
+				"_fi": "Neutraali",
+				"_et": "Neutraalne",
+				"_sv": "Neutral",
+				"_da": "Neutral"
+			},
+			"unhappy": {
+				"en": "Unhappy",
+				"fr": "Bof",
+				"es": "Inoportuno",
+				"it": "Dissentire",
+				"_lt": "Nelaimingas",
+				"_lv": "Nelaimīgs",
+				"_ru": "Несчастный",
+				"_fi": "Onneton",
+				"_et": "Õnnetu",
+				"_sv": "Olycklig",
+				"_da": "Ulykkelig"
+			}
+		},
+		"type": "choice"
+	},
+	"pedagogy": {
+		"title": {
+			"en": "Three main pedagogical axes",
+			"fr": "Trois axes pédagogiques principaux",
+			"es": "Tres ejes pedagógicos principales",
+			"it": "Tre assi pedagogici principali",
+			"_lt": "Trys pagrindinės pedagoginės ašys",
+			"_lv": "Trīs galvenās pedagoģiskās asis",
+			"_ru": "Три основных педагогических оси",
+			"_fi": "Kolme pääpedagogista akselia",
+			"_et": "Kolm peamist pedagoogilist telge",
+			"_sv": "Tre huvudpedagogiska axlar",
+			"_da": "Tre hovedpædagogiske akser"
+		},
+		"text": {
+			"en": "<span class=\"dot\">1</span> Our moto: a group outside the court for a team inside the court. <span class=\"dot\">2</span> Physical security + Emotional security. All our coaches check the following traits: support and listening, tolerance and caring, empathy and complicity. <span class=\"dot\">3</span> Our way of playing is based on encouragement and initiative. The team supports the initiatives of each of its elements, and each element contributes in his way to the team. Talent, energy, leadership, enthusiasm, singularity, creativity...",
+			"fr": "<span class=\"dot\">1</span> Notre leitmotiv : un groupe hors du terrain pour une équipe sur le terrain. <span class=\"dot\">2</span> Sécurité physique + Sécurité affective. Nos entraîneurs ont toutes ces qualités : soutien et écoute, tolérance et bienveillance, empathie et complicité. <span class=\"dot\">3</span> Notre jeu est basé sur l'encouragement et l'initiative. L'équipe soutient les initiatives de chacun de ses éléments, et chaque élément apporte à l'équipe. Talent, énergie, leadership, enthousiasme, singularité, créativité...",
+			"es": "<span class=\"dot\">1</span> Nuestro leitmotiv : un grupo fuera del campo para un equipo en el campo. <span class=\"dot\">2</span> Seguridad física + Seguridad emocional. Nuestros entrenadores tienen todas estas cualidades : apoyo y escucha, tolerancia y cuidado, empatía y complicidad. <span class=\"dot\">3</span> Nuestro juego se basa en el aliento y la iniciativa. El equipo apoya las iniciativas de cada uno de sus elementos, y cada elemento aporta al equipo. Talento, energía, liderazgo, entusiasmo, singularidad, creatividad...",
+			"it": "<span class=\"dot\">1</span> Il nostro leitmotiv : un gruppo fuori dal campo per una squadra sul campo. <span class=\"dot\">2</span> Sicurezza fisica + Sicurezza emotiva. I nostri allenatori hanno tutte queste qualità : supporto e ascolto, tolleranza e cura, empatia e complicità. <span class=\"dot\">3</span> Il nostro gioco è basato su incoraggiamento e iniziativa. La squadra supporta le iniziative di ciascuno dei suoi elementi e ogni elemento porta alla squadra. Talento, energia, leadership, entusiasmo, singolarità, creatività...",
+			"_lt": "<span class = \"dot\"> 1 </span> Mūsų motyvas: grupė už aikštės ribų komandai aikštėje. <span class = \"dot\"> 2 </span> Fizinis saugumas + Emocinis saugumas. Visi mūsų treneriai tikrina šias savybes: palaikymas ir išklausymas, tolerancija ir rūpestis, empatija ir bendrininkavimas. <span class = \"dot\"> 3 </span> Mūsų žaidimo būdas pagrįstas paskatinimu ir iniciatyvumu. Komanda palaiko kiekvieno jos elemento iniciatyvas, o kiekvienas elementas prisideda prie savo komandos. Talentas, energija, lyderystė, entuziazmas, išskirtinumas, kūrybiškumas ...",
+			"_lv": "<span class = \"dot\"> 1 </span> Mūsu moto: grupa ārpus laukuma komandai laukumā. <span class = \"dot\"> 2 </span> Fiziskā drošība + Emocionālā drošība. Visi mūsu treneri pārbauda šādas iezīmes: atbalsts un klausīšanās, iecietība un gādība, empātija un līdzdalība. <span class = \"dot\"> 3 </span> Mūsu spēles veids ir balstīts uz iedrošinājumu un iniciatīvu. Komanda atbalsta katra tā elementa iniciatīvas, un katrs elements savā veidā dod ieguldījumu komandā. Talants, enerģija, līderība, entuziasms, savdabība, radošums ...",
+			"_ru": "<span class = \"dot\"> 1 </span> Наш девиз: группа вне корта для команды внутри корта. <span class = \"dot\"> 2 </span> Физическая безопасность + эмоциональная безопасность. Все наши тренеры проверяют следующие качества: поддержка и слушание, терпимость и забота, сочувствие и соучастие. <span class = \"dot\"> 3 </span> Наш стиль игры основан на поощрении и инициативе. Команда поддерживает инициативы каждого из своих элементов, и каждый элемент вносит свой вклад в команду. Талант, энергия, лидерство, энтузиазм, необычность, креативность ...",
+			"_fi": "<span class = \"dot\"> 1 </span> Meidän moto: ryhmä kentän ulkopuolella joukkueelle kentän sisällä. <span class = \"dot\"> 2 </span> fyysinen turvallisuus + emotionaalinen turvallisuus. Kaikki valmentajamme tarkistavat seuraavat piirteet: tuki ja kuuntelu, suvaitsevaisuus ja huolehtiminen, empatia ja osallisuus. <span class = \"dot\"> 3 </span> Pelitapamme perustuu rohkaisuun ja aloitteellisuuteen. Tiimi tukee kunkin elementin aloitteita, ja jokainen elementti osallistuu tiimiinsä. Lahjakkuus, energia, johtajuus, innostus, ainutlaatuisuus, luovuus ...",
+			"_et": "<span class = \"dot\"> 1 </span> Meie moto: rühm väljaspool väljakut meeskonnale väljaku sees. <span class = \"dot\"> 2 </span> Füüsiline turvalisus + emotsionaalne turvalisus. Kõik meie treenerid kontrollivad järgmisi jooni: tugi ja kuulamine, sallivus ja hoolivus, empaatia ja kaasosalus. <span class = \"dot\"> 3 </span> Meie mänguviis põhineb julgustusel ja algatusvõimel. Meeskond toetab iga selle elemendi algatusi ja iga element annab oma panuse meeskonda. Andekus, energia, juhtimine, entusiasm, singulaarsus, loovus ...",
+			"_sv": "<span class = \"dot\"> 1 </span> Vår moto: en grupp utanför banan för ett lag på banan. <span class = \"dot\"> 2 </span> Fysisk säkerhet + Emotionell säkerhet. Alla våra tränare kontrollerar följande egenskaper: stöd och lyssnande, tolerans och omtänksamhet, empati och medverkan. <span class = \"dot\"> 3 </span> Vårt sätt att spela bygger på uppmuntran och initiativ. Teamet stöder initiativen för vart och ett av dess element, och varje element bidrar på sitt sätt till laget. Talang, energi, ledarskap, entusiasm, singularitet, kreativitet ...",
+			"_da": "<span class = \"dot\"> 1 </span> Vores motor: en gruppe uden for banen for et hold inden for banen. <span class = \"dot\"> 2 </span> Fysisk sikkerhed + Følelsesmæssig sikkerhed. Alle vores trænere kontrollerer følgende træk: støtte og lytning, tolerance og omsorg, empati og medvirken. <span class = \"dot\"> 3 </span> Vores måde at spille på er baseret på opmuntring og initiativ. Holdet understøtter initiativerne fra hvert af dets elementer, og hvert element bidrager på sin måde til teamet. Talent, energi, lederskab, entusiasme, singularitet, kreativitet ..."
+		},
+		"options": {
+			"happy": {
+				"en": "Happy",
+				"fr": "Super !",
+				"es": "¡ Súper !",
+				"it": "Eccellente",
+				"_lt": "Laimingas",
+				"_lv": "Laimīgs",
+				"_ru": "Счастливый",
+				"_fi": "Onnellinen",
+				"_et": "Õnnelik",
+				"_sv": "Lycklig",
+				"_da": "Lykkelig"
+			},
+			"neutral": {
+				"en": "Neutral",
+				"fr": "Hum...",
+				"es": "...",
+				"it": "Non lo so...",
+				"_lt": "Neutralus",
+				"_lv": "Neitrāls",
+				"_ru": "Нейтральный",
+				"_fi": "Neutraali",
+				"_et": "Neutraalne",
+				"_sv": "Neutral",
+				"_da": "Neutral"
+			},
+			"unhappy": {
+				"en": "Unhappy",
+				"fr": "Bof",
+				"es": "Inoportuno",
+				"it": "Dissentire",
+				"_lt": "Nelaimingas",
+				"_lv": "Nelaimīgs",
+				"_ru": "Несчастный",
+				"_fi": "Onneton",
+				"_et": "Õnnetu",
+				"_sv": "Olycklig",
+				"_da": "Ulykkelig"
+			}
+		},
+		"type": "choice"
+	},
+	"parents": {
+		"title": {
+			"en": "The parents, actors of the adventure",
+			"fr": "Les parents, acteurs de l'aventure",
+			"es": "Padres, actores de la aventura",
+			"it": "Genitori, attori dell'avventura",
+			"_lt": "Tėvai, nuotykių aktoriai",
+			"_lv": "Vecāki, piedzīvojuma dalībnieki",
+			"_ru": "Родители, актеры приключения",
+			"_fi": "Vanhemmat, seikkailun toimijat",
+			"_et": "Vanemad, seikluse näitlejad",
+			"_sv": "Föräldrarna, äventyrets skådespelare",
+			"_da": "Forældrene, skuespillerne til eventyret"
+		},
+		"text": {
+			"en": "<span class=\"dot\">1</span> The parents are unconditional supporters of the team, even if it plays badly, they are present and active in the stands. They adhere to the project, with positive attitudes and words only (no negative message, even to their son). They are welcome to help us to transmit the messages. <span class=\"dot\">2</span> When the group is under construction, the parents encourage autonomy. No 'game debriefing', no over-correction of the child's attitudes, respect for the places dedicated to the teams, respect for the availability moments of the coaches... They are aware of the intensity of the day, they search the information by themselves and they try to be both present when we need them and invisible when the group of children is running well alone.",
+			"fr": "<span class=\"dot\">1</span> Les parents sont un soutien inconditionnel à l'équipe, même quand elle joue mal. Ils sont présents et actifs dans les tribunes. Ils adhérent au projet, avec attitudes et paroles positives uniquement (aucun message négatif, même à son fils). Ils sont les bienvenus pour nous aider à passer les messages. <span class=\"dot\">2</span> Lorsque le groupe est en construction, les parents encouragent l'autonomie. Pas de debriefing de match, pas de sur-correction des attitudes de l'enfant, respect des lieux dédiés aux équipes, respect de la disponibilité des entraîneurs... Ils ont conscience de l'intensité des journées, ils vont à la pêche aux informations et ils essaient d'être à la fois présents lorsque l'on a besoin d'eux et invisibles lorsque le groupe d'enfants fonctionne tout seul.",
+			"es": "<span class=\"dot\">1</span> Los padres son partidarios incondicionales del equipo, incluso cuando juegan mal. Están presentes y activos en las gradas. Se adhieren al proyecto, con actitudes y palabras positivas solamente (ningún mensaje negativo, incluso para su hijo). Son bienvenidos a ayudarnos a pasar los mensajes. <span class=\"dot\">2</span> Cuando el grupo está en construcción, los padres estimulan la autonomía. No debriefing de partido, no sobrecorrección de las actitudes del niño, se respetan los lugares dedicados a los equipos, se respetan la disponibilidad de entrenadores... Son conscientes de la intensidad de los días, van de pesca por información e intentan estar presentes cuando los necesitamos e invisibles cuando el grupo de niños functiona solo.",
+			"it": "<span class=\"dot\">1</span> I genitori sono un sostenitore incondizionato della squadra, anche quando giocano male. Sono presenti e attivi sugli spalti. Aderiscono al progetto, con atteggiamenti positivi e solo parole (nessun messaggio negativo, anche a suo figlio). Sono invitati ad aiutarci a passare i messaggi. <span class=\"dot\">2</span> Quando il gruppo è in costruzione, i genitori incoraggiano l'autonomia. Nessun debriefing della partita, nessuna correzione eccessiva delle attitudini del bambino, rispetto dei luoghi dedicati alle squadre, rispetto per la disponibilità degli allenatori... Sono consapevoli dell'intensità delle giornate, vanno a pescare informazioni e cercano di essere presenti entrambi quando ne abbiamo bisogno e invisibili quando il gruppo di bambini lavora da solo.",
+			"_lt": "<span class = \"dot\"> 1 </span> Tėvai yra besąlygiški komandos šalininkai, net jei komanda žaidžia blogai, jie yra ir yra aktyvūs tribūnose. Jie laikosi projekto, tik teigiamai nusiteikę ir tik žodžiais (jokios neigiamos žinutės net savo sūnui). Jie mielai padės mums perduoti žinutes. <span class = \"dot\"> 2 </span> Kai grupė kuriama, tėvai skatina autonomiją. Jokio „žaidimo aprašymo“, per didelio vaiko požiūrio korekcijos, pagarbos komandoms skirtoms vietoms, pagarbos trenerių pasiekiamumo momentams ... Jie žino dienos intensyvumą, informacijos ieško pagal patys ir jie stengiasi būti ir šalia, kai mums to reikia, ir nematomi, kai vaikų grupė gerai veikia vieni.",
+			"_lv": "<span class = \"dot\"> 1 </span> Vecāki ir bezierunu komandas atbalstītāji, pat ja komanda spēlē slikti, viņi ir klāt un aktīvi tribīnēs. Viņi pieturas pie projekta, tikai ar pozitīvu attieksmi un vārdiem (nav negatīvas ziņas pat savam dēlam). Viņi ir laipni aicināti palīdzēt mums pārsūtīt ziņojumus. <span class = \"dot\"> 2 </span> Kad grupa tiek būvēta, vecāki veicina autonomiju. Nekādas “spēles pārskatu sniegšanas”, bērna attieksmes pārmērīgas korekcijas, cieņas pret komandām atvēlētajām vietām, cieņas pret treneru pieejamības momentiem ... Viņi apzinās dienas intensitāti, informāciju meklē pēc paši un viņi cenšas būt gan klāt, kad mums tie ir vajadzīgi, gan neredzami, kad bērnu grupa labi darbojas.",
+			"_ru": "<span class = \"dot\"> 1 </span> Родители безоговорочно болеют за команду, даже если она играет плохо, они присутствуют и активны на трибунах. Они придерживаются проекта только с положительным отношением и словами (без отрицательного послания даже своему сыну). Они могут помочь нам передать сообщения. <span class = \"dot\"> 2 </span> Когда группа строится, родители поощряют автономию. Никакого «подведения итогов игры», никакой чрезмерной коррекции отношения ребенка, уважение к местам, отведенным командам, уважение к моментам готовности тренеров ... Они осознают интенсивность дня, они ищут информацию по сами, и они стараются присутствовать, когда они нам нужны, и быть невидимыми, когда группа детей хорошо работает в одиночку.",
+			"_fi": "<span class = \"dot\"> 1 </span> Vanhemmat ovat ehdottomasti kannattajia joukkueelle, vaikka joukkue pelaa huonosti, he ovat läsnä ja aktiivisia katsojilla. He noudattavat hanketta positiivisilla asenteilla ja sanoilla (ei negatiivista viestiä edes pojalleen). He ovat tervetulleita auttamaan meitä viestien välittämisessä. <span class = \"dot\"> 2 </span> Kun ryhmää rakennetaan, vanhemmat kannustavat autonomiaan. Ei \"pelin selostamista\", lapsen asenteiden liiallista korjaamista, joukkueille omistettujen paikkojen kunnioittamista, valmentajien saatavuushetkien kunnioittamista ... He ovat tietoisia päivän intensiivisyydestä, etsivät tietoja itseään ja he yrittävät olla sekä läsnä, kun tarvitsemme niitä, että näkymättömiä, kun lasten ryhmä juoksee hyvin yksin.",
+			"_et": "<span class = \"dot\"> 1 </span> Vanemad on meeskonna tingimusteta toetajad, isegi kui meeskond mängib halvasti, on nad tribüünil kohal ja aktiivsed. Nad peavad projektist kinni, ainult positiivsete hoiakute ja sõnadega (negatiivset sõnumit pole isegi pojale). Nad on teretulnud aitama meil sõnumeid edastada. <span class = \"dot\"> 2 </span> Kui rühm on ehitamisel, julgustavad vanemad autonoomiat. Ei mingit „mängu tutvustamist”, lapse suhtumise liigset korrigeerimist, meeskondadele pühendatud kohtade austamist, treenerite kättesaadavuse hetkede austamist ... Nad on teadlikud päeva intensiivsusest, nad otsivad teavet ise ja nad püüavad olla nii kohal, kui me neid vajame, kui ka nähtamatud, kui lasterühm töötab üksi hästi.",
+			"_sv": "<span class = \"dot\"> 1 </span> Föräldrarna är ovillkorliga anhängare av laget, även om det spelar dåligt är de närvarande och aktiva på läktaren. De följer projektet, endast med positiva attityder och ord (inget negativt meddelande, inte ens till sin son). De är välkomna att hjälpa oss att överföra meddelandena. <span class = \"dot\"> 2 </span> När gruppen är under uppbyggnad uppmuntrar föräldrarna autonomi. Ingen '' spelöversikt '', ingen överkorrigering av barnets attityder, respekt för platserna tillägnad lagen, respekt för tränarnas tillgänglighetsmoment ... De är medvetna om dagens intensitet, de söker informationen genom att själva och de försöker vara båda närvarande när vi behöver dem och osynliga när barngruppen springer bra ensam.",
+			"_da": "<span class = \"dot\"> 1 </span> Forældrene er ubetingede tilhængere af holdet, selvom det spiller dårligt, er de til stede og aktive på tribunen. De overholder projektet med kun positive holdninger og ord (ingen negativ besked, selv til deres søn). De er velkomne til at hjælpe os med at overføre meddelelserne. <span class = \"dot\"> 2 </span> Når gruppen er under opbygning, opfordrer forældrene autonomi. Ingen 'spildebriefing', ingen overkorrektion af barnets holdninger, respekt for de steder, der er dedikeret til holdene, respekt for coachernes tilgængelighedsmomenter ... De er opmærksomme på dagens intensitet, de søger informationen ved sig selv, og de prøver at være begge til stede, når vi har brug for dem, og usynlige, når børnegruppen kører godt alene."
+		},
+		"options": {
+			"happy": {
+				"en": "Happy",
+				"fr": "Super !",
+				"es": "¡ Súper !",
+				"it": "Eccellente",
+				"_lt": "Laimingas",
+				"_lv": "Laimīgs",
+				"_ru": "Счастливый",
+				"_fi": "Onnellinen",
+				"_et": "Õnnelik",
+				"_sv": "Lycklig",
+				"_da": "Lykkelig"
+			},
+			"neutral": {
+				"en": "Neutral",
+				"fr": "Hum...",
+				"es": "...",
+				"it": "Non lo so...",
+				"_lt": "Neutralus",
+				"_lv": "Neitrāls",
+				"_ru": "Нейтральный",
+				"_fi": "Neutraali",
+				"_et": "Neutraalne",
+				"_sv": "Neutral",
+				"_da": "Neutral"
+			},
+			"unhappy": {
+				"en": "Unhappy",
+				"fr": "Bof",
+				"es": "Inoportuno",
+				"it": "Dissentire",
+				"_lt": "Nelaimingas",
+				"_lv": "Nelaimīgs",
+				"_ru": "Несчастный",
+				"_fi": "Onneton",
+				"_et": "Õnnetu",
+				"_sv": "Olycklig",
+				"_da": "Ulykkelig"
+			}
+		},
+		"type": "choice"
+	},
+	"signatures": {
+		"text": {
+			"en": "We also need your approval for a few things.",
+			"fr": "Nous avons également besoin de votre approbation à propos de trois points.",
+			"es": "También necesitamos su aprobación en tres puntos.",
+			"it": "Abbiamo anche bisogno della tua approvazione su tre punti.",
+			"_lt": "Mums taip pat reikia jūsų patvirtinimo keliems dalykams.",
+			"_lv": "Mums ir nepieciešams arī jūsu apstiprinājums dažām lietām.",
+			"_ru": "Нам также нужно ваше одобрение для некоторых вещей.",
+			"_fi": "Tarvitsemme myös hyväksyntänne muutamaan asiaan.",
+			"_et": "Samuti vajame teie heakskiitu mõne asja jaoks.",
+			"_sv": "Vi behöver också ditt godkännande för några saker.",
+			"_da": "Vi har også brug for din godkendelse til et par ting."
+		},
+		"icon": "contract",
+		"type": "none"
+	},
+	"urgentmeasures": {
+		"title": {
+			"en": "Urgent measures",
+			"fr": "Mesures urgentes",
+			"es": "Medidas urgentes",
+			"it": "Misure urgenti",
+			"_lt": "Skubios priemonės",
+			"_lv": "Steidzami pasākumi",
+			"_ru": "Срочные меры",
+			"_fi": "Kiireelliset toimenpiteet",
+			"_et": "Kiireloomulised meetmed",
+			"_sv": "Brådskande åtgärder",
+			"_da": "Hastende foranstaltninger"
+		},
+		"text": {
+			"en": "Do you authorize David Fauthoux, president of the association, to take, if necessary and after phone contact with you, all the urgent necessary measures for your child (hospitalization and/or surgical operation)?",
+			"fr": "Autorisez-vous David Fauthoux, président de l'association, à prendre, le cas échéant et après contact téléphonique avec vous, toutes les mesures nécessaires urgentes pour votre enfant (hospitalisation et/ou intervention chirurgicale) ?",
+			"es": "¿ Autoriza a David Fauthoux, presidente de la asociación, a tomar, si es necesario y después del contacto telefónico con usted, todas las medidas urgentes necesarias para su hijo (hospitalización y/o intervención quirúrgica) ?",
+			"it": "Autorizzi David Fauthoux, presidente dell'associazione, a prendere, se necessario e dopo aver contattato telefonicamente, tutte le misure urgenti necessarie per tuo bambino (ospedalizzazione e/o intervento chirurgico) ?",
+			"_lt": "Ar leidžiate asociacijos prezidentui Davidui Fauthouxui prireikus ir susisiekus su jumis imtis visų skubių būtinų priemonių jūsų vaikui (hospitalizavimas ir (arba) chirurginė operacija)?",
+			"_lv": "Vai jūs pilnvarojat asociācijas prezidentu Deividu Fauthou, ja nepieciešams un pēc sazināšanās ar jums, veikt visus steidzamos pasākumus, kas nepieciešami jūsu bērnam (hospitalizācija un / vai ķirurģiska operācija)?",
+			"_ru": "Разрешаете ли вы Дэвиду Фаутуксу, президенту ассоциации, принимать, в случае необходимости и после телефонного разговора с вами, все неотложные необходимые меры для вашего ребенка (госпитализация и / или хирургическая операция)?",
+			"_fi": "Annatteko valtuudet yhdistyksen presidentille David Fauthouxille ryhtyä tarvittaessa ja puhelinkontaktin jälkeen kaikki lapsellenne tarvittavat kiireelliset toimenpiteet (sairaalahoito ja / tai kirurginen toimenpide)?",
+			"_et": "Kas volitate assotsiatsiooni president David Fauthouxit võtma vajaduse korral ja pärast teiega telefonitsi võtmist kõik teie lapse jaoks vajalikud kiireloomulised meetmed (haiglaravi ja / või kirurgiline operatsioon)?",
+			"_sv": "Auktoriserar du David Fauthoux, föreningspresident, att vid behov vidta och efter telefonkontakt med dig alla brådskande nödvändiga åtgärder för ditt barn (sjukhusvistelse och / eller kirurgisk operation)?",
+			"_da": "Tillader du David Fauthoux, formand for foreningen, om nødvendigt og efter telefonkontakt med dig at tage alle de hastende nødvendige foranstaltninger for dit barn (indlæggelse og / eller kirurgisk operation)?"
+		},
+		"options": {
+			"yes": {
+				"en": "Yes",
+				"fr": "Oui",
+				"es": "Sí",
+				"it": "Sì",
+				"_lt": "Taip",
+				"_lv": "Jā",
+				"_ru": "да",
+				"_fi": "Joo",
+				"_et": "Jah",
+				"_sv": "Ja",
+				"_da": "Ja"
+			},
+			"no": {
+				"en": "No",
+				"fr": "Non",
+				"es": "No",
+				"it": "Non",
+				"_lt": "Ne",
+				"_lv": "Nē",
+				"_ru": "Нет",
+				"_fi": "Ei",
+				"_et": "Ei",
+				"_sv": "Nej",
+				"_da": "Ingen"
+			}
+		},
+		"type": "choice"
+	},
+	"vehicles": {
+		"title": {
+			"en": "Transport",
+			"fr": "Transport",
+			"es": "Transporte",
+			"it": "Trasporto",
+			"_lt": "Transportas",
+			"_lv": "Transports",
+			"_ru": "Транспорт",
+			"_fi": "Kuljetus",
+			"_et": "Transport",
+			"_sv": "Transport",
+			"_da": "Transportere"
+		},
+		"text": {
+			"en": "Do you authorize David Fauthoux as well as the parents of the other children and the supervisors to transport your child within their vehicles and to accompany your child during the flights?",
+			"fr": "Autorisez-vous David Fauthoux ainsi que les autres parents et accompagnateurs présent sur les lieux du voyage à transporter votre enfant avec leurs véhicules ?",
+			"es": "¿ Autoriza a David Fauthoux, así como a los otros padres y personas acompañantes presentes en el lugar del viaje, para transportar a su hijo con sus vehículos ?",
+			"it": "Autorizzi David Fauthoux e gli altri genitori e accompagnatori presenti nel luogo del viaggio a trasportare il tuo bambino con i loro veicoli ?",
+			"_lt": "Ar leidžiate Davidui Fauthouxui, kitų vaikų tėvams ir prižiūrėtojams gabenti jūsų vaiką savo transporto priemonėse ir lydėti jūsų vaiką skrydžių metu?",
+			"_lv": "Vai jūs pilnvarojat Deividu Fauthou, kā arī citu bērnu vecākus un uzraugus pārvadāt jūsu bērnu transportlīdzekļos un pavadīt jūsu bērnu lidojumu laikā?",
+			"_ru": "Разрешаете ли вы Дэвиду Фаутуксу, а также родителям других детей и руководителям перевозить вашего ребенка в своих транспортных средствах и сопровождать его во время полета?",
+			"_fi": "Annatteko David Fauthouxille, muiden lasten vanhemmille ja valvojille luvan kuljettaa lastanne ajoneuvoissaan ja seurata lastanne lentojen aikana?",
+			"_et": "Kas lubate David Fauthouxil, teiste laste vanematel ja juhendajatel teie last oma sõidukites vedada ja teie lastega lendude ajal kaasas olla?",
+			"_sv": "Auktoriserar du David Fauthoux liksom föräldrarna till de andra barnen och handledarna att transportera ditt barn i sina fordon och att följa med ditt barn under flygningarna?",
+			"_da": "Tillader du David Fauthoux samt forældrene til de andre børn og tilsynsførerne at transportere dit barn inden for deres køretøjer og ledsage dit barn under flyvningerne?"
+		},
+		"options": {
+			"yes": {
+				"en": "Yes",
+				"fr": "Oui",
+				"es": "Sí",
+				"it": "Sì",
+				"_lt": "Taip",
+				"_lv": "Jā",
+				"_ru": "да",
+				"_fi": "Joo",
+				"_et": "Jah",
+				"_sv": "Ja",
+				"_da": "Ja"
+			},
+			"no": {
+				"en": "No",
+				"fr": "Non",
+				"es": "No",
+				"it": "Non",
+				"_lt": "Ne",
+				"_lv": "Nē",
+				"_ru": "Нет",
+				"_fi": "Ei",
+				"_et": "Ei",
+				"_sv": "Nej",
+				"_da": "Ingen"
+			}
+		},
+		"type": "choice"
+	},
+	"publishphotos": {
+		"title": {
+			"en": "Photos",
+			"fr": "Photos",
+			"es": "Fotografías",
+			"it": "Fotografie",
+			"_lt": "Nuotraukos",
+			"_lv": "Fotoattēli",
+			"_ru": "Фото",
+			"_fi": "Valokuvat",
+			"_et": "Fotod",
+			"_sv": "Foton",
+			"_da": "Fotos"
+		},
+		"text": {
+			"en": "Do you authorize David Fauthoux as well as the parents of the other children and the supervisors to publish the photos of your child taken in public places (games, training practices, travels, meals, outdoor activities) on the Facebook page?",
+			"fr": "Autorisez-vous David Fauthoux ainsi que les autres parents et accompagnateurs présent sur les lieux du voyage à publier les photos de votre enfant prises dans les espaces publics (matchs, entraînements, déplacements, repas, activités de plein-air) sur la page Facebook de l'association ?",
+			"es": "¿ Autoriza a David Fauthoux y otros padres y personas acompañantes presentes en el sitio de viajes para publicar las fotografías de sus hijos tomadas en áreas públicas (juegos, entrenamientos, viajes, comidas, actividades al aire libre) en la página Facebook de la asociación ?",
+			"it": "Autorizzi David Fauthoux e altri genitori e accompagnatori presenti nel sito di viaggi a pubblicare le fotografie di tuo figlio scattate in aree pubbliche (giochi, formazione, viaggi, pasti, attività all'aperto) nella pagina Facebook dell'associazione ?",
+			"_lt": "Ar jūs suteikiate teisę Davidui Fauthouxui, taip pat kitų vaikų tėvams ir prižiūrėtojams paskelbti jūsų vaiko nuotraukas, darytas viešose vietose (žaidimai, treniruočių praktikos, kelionės, maitinimas, veikla lauke) „Facebook“ puslapyje?",
+			"_lv": "Vai jūs pilnvarojat Deividu Fauthou, kā arī citu bērnu vecākus un uzraugus publicēt jūsu bērna fotoattēlus, kas uzņemti publiskās vietās (spēles, treniņu prakse, ceļojumi, ēdienreizes, aktivitātes brīvā dabā) Facebook lapā?",
+			"_ru": "Разрешаете ли вы Дэвиду Фаутуксу, а также родителям других детей и руководителям публиковать фотографии вашего ребенка, сделанные в общественных местах (игры, тренировки, путешествия, питание, мероприятия на свежем воздухе) на странице Facebook?",
+			"_fi": "Annatteko David Fauthouxille, muiden lasten vanhemmille ja valvojille luvan julkaista lapsesi julkisissa paikoissa otetut kuvat (pelit, harjoittelutavat, matkat, ateriat, ulkoilma) Facebook-sivulla?",
+			"_et": "Kas volitate David Fauthouxit, aga ka teiste laste vanemaid ja juhendajaid avaldama teie avalikes kohtades tehtud fotosid teie lapsest (mängud, treeningpraktikad, reisid, söögid, tegevused õues) Facebooki lehel?",
+			"_sv": "Auktoriserar du David Fauthoux liksom föräldrarna till de andra barnen och handledarna att publicera bilderna på ditt barn tagna på offentliga platser (spel, träningsmetoder, resor, måltider, utomhusaktiviteter) på Facebook-sidan?",
+			"_da": "Tillader du David Fauthoux såvel som forældrene til de andre børn og tilsynsførende at offentliggøre billederne af dit barn taget på offentlige steder (spil, træning, rejser, måltider, udendørs aktiviteter) på Facebook-siden?"
+		},
+		"options": {
+			"yes": {
+				"en": "Yes",
+				"fr": "Oui",
+				"es": "Sí",
+				"it": "Sì",
+				"_lt": "Taip",
+				"_lv": "Jā",
+				"_ru": "да",
+				"_fi": "Joo",
+				"_et": "Jah",
+				"_sv": "Ja",
+				"_da": "Ja"
+			},
+			"no": {
+				"en": "No",
+				"fr": "Non",
+				"es": "No",
+				"it": "Non",
+				"_lt": "Ne",
+				"_lv": "Nē",
+				"_ru": "Нет",
+				"_fi": "Ei",
+				"_et": "Ei",
+				"_sv": "Nej",
+				"_da": "Ingen"
+			}
+		},
+		"type": "choice"
+	},
+	"covid": {
+		"title": {
+			"en": "Health situation",
+			"fr": "Situation sanitaire",
+			"es": "Situación de salud",
+			"it": "Situazione sanitaria",
+			"_lt": "Sveikatos situacija",
+			"_lv": "Veselības situācija",
+			"_ru": "Состояние здоровья",
+			"_fi": "Terveystilanne",
+			"_et": "Tervise olukord",
+			"_sv": "Hälsosituation",
+			"_da": "Sundhedssituation"
+		},
+		"text": {
+			"en": "As all participants will have a negative covid test before coming, we will not wear face masks during daily life, when the group, kids, coaches and parents, will be together. Are you aware that there is a risk you are willing to take?",
+			"fr": "Comme tous les participants auront un test covid négatif avant de venir, nous ne porterons pas de masque au quotidien, lorsque le groupe, les enfants, les entraîneurs et les parents seront ensemble? Êtes-vous conscient du risque et êtes-vous prêt à le prendre?",
+			"es": "Como todos los participantes tendrán una prueba de covid negativa antes de venir, no usaremos mascarillas durante la vida diaria, cuando el grupo, los niños, los entrenadores y los padres estarán juntos. ¿Es consciente de que existe un riesgo que está dispuesto a correr?",
+			"it": "Poiché tutti i partecipanti avranno un test covid negativo prima di venire, non indosseremo maschere per il viso durante la vita quotidiana, quando il gruppo, i bambini, gli allenatori e i genitori saranno insieme. Sei consapevole del rischio che sei disposto a correre?",
+			"_lt": "Kadangi visiems dalyviams prieš atvykstant bus atliktas neigiamas bandos testas, kasdieniame gyvenime, kai grupė, vaikai, treneriai ir tėvai, bus kartu, nedėvėsime veido kaukių. Ar žinote, kad yra rizika, kurią norite prisiimti?",
+			"_lv": "Tā kā visiem dalībniekiem pirms ierašanās būs negatīvs covid tests, ikdienas laikā, kad grupa, bērni, treneri un vecāki būs kopā, mēs nenēsāsim sejas maskas. Vai jūs zināt, ka pastāv risks, kuru esat gatavs uzņemties?",
+			"_ru": "Поскольку перед приездом у всех участников будет отрицательный тест на covid, мы не будем носить маски для лица в повседневной жизни, когда группа, дети, тренеры и родители будут вместе. Осознаёте ли вы, что готовы пойти на риск?",
+			"_fi": "Koska kaikilla osallistujilla on negatiivinen covid-testi ennen tulemista, emme käytä kasvonaamioita jokapäiväisessä elämässä, kun ryhmä, lapset, valmentajat ja vanhemmat ovat yhdessä. Tiedätkö, että on olemassa riski, jonka olet valmis ottamaan?",
+			"_et": "Kuna kõigil osalejatel on enne tulekut negatiivne covid-test, ei kanna me igapäevases elus näomaske, kui rühm, lapsed, treenerid ja vanemad on koos. Kas olete teadlik, et on olemas risk, mida olete nõus võtma?",
+			"_sv": "Eftersom alla deltagare kommer att ha ett negativt covid-test innan de kommer kommer vi inte att bära ansiktsmasker under det dagliga livet, när gruppen, barn, tränare och föräldrar, kommer att vara tillsammans. Är du medveten om att det finns en risk du är villig att ta?",
+			"_da": "Da alle deltagere vil have en negativ covid-test inden de kommer, vil vi ikke bære ansigtsmasker i det daglige liv, når gruppen, børn, trænere og forældre, vil være sammen. Er du klar over, at der er en risiko, du er villig til at tage?"
+		},
+		"options": {
+			"yes": {
+				"en": "Yes",
+				"fr": "Oui",
+				"es": "Sí",
+				"it": "Sì",
+				"_lt": "Taip",
+				"_lv": "Jā",
+				"_ru": "да",
+				"_fi": "Joo",
+				"_et": "Jah",
+				"_sv": "Ja",
+				"_da": "Ja"
+			},
+			"no": {
+				"en": "No",
+				"fr": "Non",
+				"es": "No",
+				"it": "Non",
+				"_lt": "Ne",
+				"_lv": "Nē",
+				"_ru": "Нет",
+				"_fi": "Ei",
+				"_et": "Ei",
+				"_sv": "Nej",
+				"_da": "Ingen"
+			}
+		},
+		"type": "choice"
+	},
+	"funding": {
+		"title": {
+			"en": "Funding",
+			"fr": "Financement",
+			"es": "Fondos",
+			"it": "Finanziamento",
+			"_lt": "Finansavimas",
+			"_lv": "Finansējums",
+			"_ru": "Финансирование",
+			"_fi": "Rahoitus",
+			"_et": "Rahastamine",
+			"_sv": "Finansiering",
+			"_da": "Finansiering"
+		},
+		"text": {
+			"en": "3T (The Travel Team) is funded partly by the parents of participating children and partly by the company Fauthoux Software Development (chaired by D. Fauthoux), as a social component and promotion of new information technologies for the organization of sporting events for the next generations.",
+			"fr": "3T (The Travel Team) est financée en partie par les parents des enfants participant et en partie par la société Fauthoux Software Development (présidence conduite par D. Fauthoux), en tant que volet social et promotion des nouvelles technologies de l'information pour l'organisation d'événements sportifs à destination des nouvelles générations.",
+			"es": "3T (The Travel Team) está financiada en parte por los padres de los niños que participan y en parte por la empresa Fauthoux Software Development (presidida por D. Fauthoux), como componente social y promoción de las nuevas tecnologías de la información para la organización de eventos deportivos para las nuevas generaciones.",
+			"it": "3T (The Travel Team) è finanziato in parte dai genitori dei bambini partecipanti e in parte dalla società Fauthoux Software Development (presieduta da D. Fauthoux), come componente sociale e promozione delle nuove tecnologie informatiche per il organizzazione di eventi sportivi per le nuove generazioni.",
+			"_lt": "„3T“ („Kelionių komanda“) iš dalies finansuoja dalyvaujančių vaikų tėvai, iš dalies - bendrovė „Fauthoux Software Development“ (pirmininkauja D. Fauthoux), kaip socialinis komponentas ir naujų informacinių technologijų skatinimas organizuojant kitų sporto renginius kartos.",
+			"_lv": "3T (Ceļojumu komanda) daļēji finansē iesaistīto bērnu vecāki un daļēji uzņēmums Fauthoux Software Development (D. Fauthoux vadībā), kā sociālo komponentu un jaunu informācijas tehnoloģiju veicināšanu nākamo sporta pasākumu organizēšanai. paaudzēm.",
+			"_ru": "3T (The Travel Team) частично финансируется родителями участвующих детей и частично компанией Fauthoux Software Development (под председательством Д. Фаутха) в качестве социального компонента и продвижения новых информационных технологий для организации спортивных мероприятий на следующий год. поколения.",
+			"_fi": "3T (matkatiimi) rahoittavat osittain osallistuvien lasten vanhemmat ja osittain Fauthoux Software Development -yritys (puheenjohtajana D. Fauthoux) sosiaalisena komponenttina ja uusien tietotekniikoiden edistämiseksi seuraavien urheilutapahtumien järjestämiseksi. sukupolvien ajan.",
+			"_et": "3T-d (reisimeeskonda) rahastavad osalevate laste vanemad ja osaliselt ettevõte Fauthoux Software Development (juhatab D. Fauthoux) sotsiaalse komponendina ja uute infotehnoloogiate edendamisena järgmiste spordiürituste korraldamiseks. põlvkondi.",
+			"_sv": "3T (The Travel Team) finansieras delvis av föräldrarna till deltagande barn och delvis av företaget Fauthoux Software Development (ordförande av D. Fauthoux), som en social komponent och marknadsföring av ny informationsteknik för anordnande av sportevenemang för nästa generationer.",
+			"_da": "3T (Travel Team) finansieres dels af forældrene til de deltagende børn og dels af virksomheden Fauthoux Software Development (med D. Fauthoux som formand) som en social komponent og fremme af nye informationsteknologier til organisering af sportsbegivenheder til den næste generationer."
+		},
+		"type": "none"
+	},
+	"signingparent": {
+		"title": {
+			"en": "First name and last name of the signing parent",
+			"fr": "Prénom et nom du parent signataire",
+			"es": "Nombre y apellido del padre firmante",
+			"it": "Nome e cognome del genitore firmatario",
+			"_lt": "Pasirašiusio tėvo vardas ir pavardė",
+			"_lv": "Parakstītāja vecāka vārds un uzvārds",
+			"_ru": "Имя и фамилия подписывающего родителя",
+			"_fi": "Allekirjoittavan vanhemman etu- ja sukunimi",
+			"_et": "Allakirjutanud vanema ees- ja perekonnanimi",
+			"_sv": "Förnamn och efternamn på den undertecknande föräldern",
+			"_da": "Fornavn og efternavn på den underskrivende forælder"
+		},
+		"text": {
+			"en": "Please enter the name of the parent which will sign the authorization.",
+			"fr": "Veuillez saisir le nom du parent qui signera l'autorisation.",
+			"es": "Ingrese el nombre del padre que firmará la autorización.",
+			"it": "Inserisci il nome del genitore che firmerà l'autorizzazione.",
+			"_lt": "Įveskite tėvų, kurie pasirašys įgaliojimą, vardą.",
+			"_lv": "Lūdzu, ievadiet tā vecāka vārdu, kurš parakstīs pilnvarojumu.",
+			"_ru": "Пожалуйста, введите имя родителя, который подпишет авторизацию.",
+			"_fi": "Anna valtuutuksen allekirjoittavan vanhemman nimi.",
+			"_et": "Palun sisestage volituse allkirjastava vanema nimi.",
+			"_sv": "Ange namnet på den förälder som ska underteckna auktoriseringen.",
+			"_da": "Indtast navnet på den forælder, der vil underskrive autorisationen."
+		},
+		"type": "line"
+	},
+	"departuredate": {
+		"title": {
+			"en": "Date of departure",
+			"fr": "Date du départ",
+			"es": "Fecha de salida",
+			"it": "Data di partenza",
+			"_lt": "Išvykimo data",
+			"_lv": "Aizbraukšanas datums",
+			"_ru": "Дата выезда",
+			"_fi": "Lähtö päivämäärä",
+			"_et": "Lahkumiskuupäev",
+			"_sv": "Avresedatum",
+			"_da": "Afrejse dato"
+		},
+		"text": {
+			"en": "Mention here the date on which your son starts the trip (including the flight).",
+			"fr": "Mentionnez ici la date à laquelle votre fils commence le voyage (incluant le vol).",
+			"es": "Mencione aquí la fecha en la que su hijo inicia el viaje (incluido el vuelo).",
+			"it": "Indica qui la data in cui tuo figlio inizia il viaggio (compreso il volo).",
+			"_lt": "Čia paminėkite datą, kurią jūsų sūnus pradeda kelionę (įskaitant skrydį).",
+			"_lv": "Šeit miniet datumu, kurā jūsu dēls sāk ceļojumu (ieskaitot lidojumu).",
+			"_ru": "Укажите здесь дату, когда ваш сын отправится в поездку (включая перелет).",
+			"_fi": "Mainitse tässä päivä, jona poikasi aloittaa matkan (mukaan lukien lento).",
+			"_et": "Mainige siin kuupäeva, millal teie poeg reisi alustab (ka lend).",
+			"_sv": "Nämn här datumet då din son börjar resan (inklusive flygningen).",
+			"_da": "Nævn her datoen, hvor din søn starter rejsen (inklusive flyvningen)."
+		},
+		"type": "date",
+		"example": "2021-03-30"
+	},
+	"returndate": {
+		"title": {
+			"en": "Date back home",
+			"fr": "Date du retour à la maison",
+			"es": "Fecha de vuelta a casa",
+			"it": "Data di ritorno",
+			"_lt": "Data grįžo namo",
+			"_lv": "Datums atgriezies mājās",
+			"_ru": "Дата возвращения домой",
+			"_fi": "Päivämäärä takaisin kotiin",
+			"_et": "Kuupäev koju tagasi",
+			"_sv": "Datum hemma",
+			"_da": "Dato derhjemme"
+		},
+		"text": {
+			"en": "Mention here the date on which your son is back home.",
+			"fr": "Mentionnez ici la date à laquelle votre fils sera de retour à la maison.",
+			"es": "Mencione la fecha en que su hijo estará en casa.",
+			"it": "Menziona la data in cui tuo figlio sarà a casa.",
+			"_lt": "Čia paminėkite datą, kada jūsų sūnus grįžo namo.",
+			"_lv": "Pieminiet šeit datumu, kurā jūsu dēls ir atgriezies mājās.",
+			"_ru": "Укажите здесь дату, когда ваш сын вернется домой.",
+			"_fi": "Mainitse tässä päivä, jona poikasi on kotona.",
+			"_et": "Mainige siin kuupäeva, millal teie poeg on kodus.",
+			"_sv": "Nämn här datumet då din son är hemma.",
+			"_da": "Nævn her datoen, hvor din søn er hjemme."
+		},
+		"type": "date",
+		"example": "2021-04-06"
+	},
+	"parentalauthorization": {
+		"title": {
+			"en": "Parental Authorization",
+			"fr": "Autorisation parentale",
+			"es": "Autorización parental",
+			"it": "Autorizzazione genitoriale",
+			"_lt": "Tėvų įgaliojimai",
+			"_lv": "Vecāku atļauja",
+			"_ru": "Родительская авторизация",
+			"_fi": "Vanhempien valtuutus",
+			"_et": "Vanemate volitused",
+			"_sv": "Föräldrabehörighet",
+			"_da": "Forældreautorisation"
+		},
+		"text": {
+			"en": "Please download the parental authorization ('Download' button below), print it, fill and sign it.",
+			"fr": "Téléchargez l'autorisation parentale ci-dessous (bouton \"Télécharger\"), imprimez-la, complétez-la et signez-la.",
+			"es": "Descargue el autorización parental debajo (botón \"Descargar\"), complételo y firme.",
+			"it": "Scarica l'autorizzazione genitoriale (pulsante \"Scaricare\" di seguito), compila e firma.",
+			"_lt": "Atsisiųskite tėvų įgaliojimus (žemiau esantį mygtuką „Atsisiųsti“), atsispausdinkite, užpildykite ir pasirašykite.",
+			"_lv": "Lūdzu, lejupielādējiet vecāku atļauju (zemāk redzama poga Lejupielādēt), izdrukājiet to, aizpildiet un parakstiet.",
+			"_ru": "Загрузите разрешение родителей (кнопка «Загрузить» ниже), распечатайте его, заполните и подпишите.",
+			"_fi": "Lataa vanhempainvaltuutus (Lataa-painike alla), tulosta se, täytä ja allekirjoita se.",
+			"_et": "Laadige alla vanemlik volitus (allpool olev nupp „Laadi alla”), printige see välja, täitke ja allkirjastage.",
+			"_sv": "Ladda ner föräldrabehörigheten (knappen 'Ladda ner' nedan), skriv ut den, fyll i och underteckna den.",
+			"_da": "Download venligst forældreautorisationen (knappen 'Download' nedenfor), udskriv den, udfyld og underskriv den."
+		},
+		"generate": [
+			{
+				"icon": "logo"
+			},
+			{
+				"text": {
+					"en": "I undersigned, {signingparent}, authorize my child {firstname} {lastname} been born {dateofbirth} to participate in the journey proposed by the association from {departuredate} to {returndate}.",
+					"fr": "Je soussigné(e), {signingparent}, autorise mon enfant {firstname} {lastname} né le {dateofbirth} à participer au voyage proposé par l’association du {departuredate} au {returndate}.",
+					"es": "Yo firmado, {signingparent}, autorizo a mi niño {firstname} {lastname} nacido {dateofbirth} a participar en el viaje propuesto por la asociación 3T de {departuredate} a {returndate}.",
+					"it": "Io sottoscritto, {signingparent}, autorizzo mio figlio {firstname} {lastname} nato il {dateofbirth} partecipare al viaggio proposto dall'associazione da {departuredate} a {returndate}.",
+					"_lt": "Aš, pasirašęs {signingparent}, įgalioju savo vaiką {firstname} {pavardė} gimti {dateofbirth} dalyvauti asociacijos pasiūlytoje kelionėje nuo {departuredate} iki {returndate}.",
+					"_lv": "Es, parakstījies, {signingparent}, pilnvaroju savu bērnu {firstname} {lastname}, kas dzimis {dateofbirth} piedalīties asociācijas ierosinātajā ceļojumā no {departuredate} līdz {returndate}.",
+					"_ru": "Я нижеподписался, {signedparent}, разрешаю моему ребенку {firstname} {lastname}, рожденному {dateofbirth}, участвовать в предложенном ассоциацией путешествии от {leaveuredate} до {returnndate}.",
+					"_fi": "Allekirjoittanut {signingparent}, valtuutan lapseni {etunimi} {sukunimi} syntynyt {dateofbirth} osallistumaan yhdistyksen ehdottamaan matkaan {departuredate} - {returndate}.",
+					"_et": "Allakirjutanu, {signingparent}, volitan oma last {eesnimi} {perekonnanimi} sündima {dateofbirth} osalema ühenduse pakutud teekonnal {departuredate} - {returndate}.",
+					"_sv": "Jag undertecknade, {underteckningsförälder}, tillåter mitt barn {förnamn} {efternamn} född {dateofbirth} att delta i den resa som föreningen föreslår från {departuredate} till {returndate}.",
+					"_da": "Jeg undertegnede, {undertegnelsesforælder}, autoriserer mit barn {fornavn} {efternavn} er født {fødselsdato} til at deltage i den rejse, som foreningen har foreslået fra {departuredate} til {returndate}."
+				}
+			},
+			{
+				"if": {
+					"urgentmeasures": "yes"
+				},
+				"text": {
+					"en": "I authorize David Fauthoux, president of the association, to take, if necessary and after phone contact with me, all the urgent necessary measures for my child (hospitalization and/or surgical operation).",
+					"fr": "J'autorise M. David Fauthoux, président de l’association, à prendre, le cas échéant et après contact téléphonique avec moi, toutes les mesures nécessaires urgentes pour mon enfant (hospitalisation et/ou intervention chirurgicale).",
+					"es": "Autorizo a David Fauthoux, presidente de la asociación, a tomar, si es necesario y después del contacto telefónico con usted, todas las medidas urgentes necesarias para su hijo (hospitalización y/o intervención quirúrgica).",
+					"it": "Autorizzo David Fauthoux, presidente dell'associazione, a prendere, se necessario e dopo aver contattato telefonicamente, tutte le misure urgenti necessarie per tuo bambino (ospedalizzazione e/o intervento chirurgico).",
+					"_lt": "Įgalioju asociacijos prezidentą Davidą Fauthouxą prireikus ir susisiekus su manimi imtis visų skubių būtinų priemonių mano vaikui (hospitalizavimas ir (arba) chirurginė operacija).",
+					"_lv": "Es pilnvaroju asociācijas prezidentu Deividu Fauthoux veikt nepieciešamības gadījumā un pēc tālruņa kontakta ar mani visus steidzamos pasākumus, kas nepieciešami manam bērnam (hospitalizācija un / vai ķirurģiska operācija).",
+					"_ru": "Я разрешаю Дэвиду Фаутуксу, президенту ассоциации, при необходимости и после телефонного контакта со мной принять все срочные необходимые меры для моего ребенка (госпитализация и / или хирургическая операция).",
+					"_fi": "Valtuutan yhdistyksen presidentin David Fauthouxin ryhtymään tarvittaessa ja puhelinkontaktin jälkeen kaikki lapselleni tarvittavat kiireelliset toimenpiteet (sairaalahoito ja / tai kirurginen toimenpide).",
+					"_et": "Volitan assotsiatsiooni president David Fauthouxit võtma vajaduse korral ja pärast minuga telefonikontakti kõik vajalikud meetmed minu lapse jaoks (haiglaravi ja / või kirurgiline operatsioon).",
+					"_sv": "Jag bemyndigar David Fauthoux, föreningens president, att vid behov och efter telefonkontakt med mig vidta alla brådskande åtgärder för mitt barn (sjukhusvistelse och / eller kirurgisk operation).",
+					"_da": "Jeg bemyndiger David Fauthoux, formand for foreningen, til om nødvendigt og efter telefonkontakt med mig at tage alle de hastende nødvendige foranstaltninger for mit barn (indlæggelse og / eller kirurgisk operation)."
+				}
+			},
+			{
+				"if": {
+					"vehicles": "yes"
+				},
+				"text": {
+					"en": "I authorize David Fauthoux as well as the parents of the other children and the supervisors to transport my child within their vehicles and to accompany my child during the flights.",
+					"fr": "J'autorise M. David Fauthoux ainsi que les autres parents et accompagnateurs présent sur les lieux du voyage à transporter mon enfant avec leurs véhicules.",
+					"es": "Autorizo a David Fauthoux, así como a los otros padres y personas acompañantes presentes en el lugar del viaje, para transportar a su hijo con sus vehículos.",
+					"it": "Autorizzo David Fauthoux e gli altri genitori e accompagnatori presenti nel luogo del viaggio a trasportare il tuo bambino con i loro veicoli.",
+					"_lt": "Aš įgaliojau Davidą Fauthouxą, taip pat kitų vaikų tėvus ir prižiūrėtojus vežti mano vaiką savo transporto priemonėse ir lydėti mano vaiką skrydžių metu.",
+					"_lv": "Es pilnvaroju Deividu Fauthou, kā arī citu bērnu vecākus un uzraugus pārvadāt manu bērnu transportlīdzekļos un pavadīt manu bērnu lidojumu laikā.",
+					"_ru": "Я разрешаю Дэвиду Фауту, а также родителям других детей и руководителям перевозить моего ребенка в своих транспортных средствах и сопровождать моего ребенка во время полетов.",
+					"_fi": "Valtuutan David Fauthouxin, muiden lasten vanhemmat ja valvojat kuljettamaan lapseni ajoneuvoissaan ja seuraamaan lastani lennon aikana.",
+					"_et": "Volitan David Fauthouxi, teiste laste vanemaid ja järelevaatajaid vedama minu last oma sõidukites ja saatma mu last lendude ajal.",
+					"_sv": "Jag bemyndigar David Fauthoux liksom föräldrarna till de andra barnen och handledarna att transportera mitt barn i sina fordon och att följa med mitt barn under flygningarna.",
+					"_da": "Jeg bemyndiger David Fauthoux såvel som forældrene til de andre børn og tilsynsførerne til at transportere mit barn inden for deres køretøjer og til at ledsage mit barn under flyvningerne."
+				}
+			},
+			{
+				"if": {
+					"publishphotos": "yes"
+				},
+				"text": {
+					"en": "I authorize David Fauthoux as well as the parents of the other children and the supervisors to publish the photos of my child taken in public places (games, training practices, travels, meals, outdoor activities) on the Facebook page.",
+					"fr": "J'autorise M. David Fauthoux ainsi que les autres parents et accompagnateurs présent sur les lieux du voyage à publier les photos de mon enfant prises dans les espaces publics (matchs, entraînements, déplacements, repas, activités de plein air) sur la page Facebook de l'association.",
+					"es": "Autorizo a David Fauthoux y otros padres y personas acompañantes presentes en el sitio de viajes para publicar las fotografías de sus hijos tomadas en áreas públicas (juegos, entrenamientos, viajes, comidas, actividades al aire libre) en la página Facebook de la asociación.",
+					"it": "Autorizzo David Fauthoux e altri genitori e accompagnatori presenti nel sito di viaggi a pubblicare le fotografie di tuo figlio scattate in aree pubbliche (giochi, formazione, viaggi, pasti, attività all'aperto) nella pagina Facebook dell'associazione.",
+					"_lt": "Aš įgaliojau Davidą Fauthouxą, taip pat kitų vaikų tėvus ir prižiūrėtojus paskelbti mano vaiko nuotraukas, darytas viešose vietose (žaidimai, treniruočių praktikos, kelionės, maitinimas, veikla lauke) „Facebook“ puslapyje.",
+					"_lv": "Es pilnvaroju Deividu Fauthou, kā arī pārējo bērnu vecākus un uzraugus publicēt mana bērna fotogrāfijas, kas uzņemtas publiskās vietās (spēles, treniņu prakse, ceļojumi, maltītes, aktivitātes brīvā dabā) Facebook lapā.",
+					"_ru": "Я разрешаю Дэвиду Фауту, а также родителям других детей и руководителям публиковать фотографии моего ребенка, сделанные в общественных местах (игры, тренировки, путешествия, еда, мероприятия на свежем воздухе) на странице Facebook.",
+					"_fi": "Valtuutan David Fauthouxin, muiden lasten vanhemmat ja valvojat julkaisemaan lapseni julkisissa paikoissa otetut kuvat (pelit, harjoittelutavat, matkat, ateriat, ulkoilma) Facebook-sivulla.",
+					"_et": "Volitan nii David Fauthouxit kui ka teiste laste vanemaid ja juhendajaid avaldama minu lapsest avalikes kohtades tehtud fotod (mängud, treeningpraktikad, reisid, söögid, tegevused õues) Facebooki lehel.",
+					"_sv": "Jag bemyndigar David Fauthoux såväl som föräldrarna till de andra barnen och handledarna att publicera bilderna på mitt barn tagna på offentliga platser (spel, träningsmetoder, resor, måltider, utomhusaktiviteter) på Facebook-sidan.",
+					"_da": "Jeg bemyndiger David Fauthoux såvel som forældrene til de andre børn og vejlederne til at offentliggøre billederne af mit barn taget på offentlige steder (spil, træning, rejser, måltider, udendørs aktiviteter) på Facebook-siden."
+				}
+			},
+			{
+				"if": {
+					"covid": "yes"
+				},
+				"text": {
+					"en": "I am aware that we will not wear face masks during daily life and that there is a risk I am willing to take.",
+					"fr": "Je suis conscient que nous ne porterons pas de masque au quotidien et qu'il y a un risque que je suis prêt à prendre.",
+					"es": "Soy consciente de que no usaremos mascarillas durante la vida diaria y que existe un riesgo que estoy dispuesto a correr.",
+					"it": "Sono consapevole che non indosseremo maschere per il viso durante la vita quotidiana e che c'è un rischio che sono disposto a correre.",
+					"_lt": "Aš žinau, kad kasdieniame gyvenime nedėvėsime veido kaukių ir kad yra rizika, kurią noriu prisiimti.",
+					"_lv": "Es apzinos, ka ikdienas laikā mēs nenēsāsim sejas maskas un ka pastāv risks, kuru es esmu gatavs uzņemties.",
+					"_ru": "Я знаю, что мы не будем носить маски в повседневной жизни и что есть риск, на который я готов пойти.",
+					"_fi": "Tiedän, että emme käytä kasvonaamioita jokapäiväisessä elämässä ja että on olemassa riski, jonka haluan ottaa.",
+					"_et": "Olen teadlik, et me ei kanna igapäevases elus näomaske ja et on oht, mida olen nõus võtma.",
+					"_sv": "Jag är medveten om att vi inte kommer att bära ansiktsmasker under det dagliga livet och att det finns en risk jag är villig att ta.",
+					"_da": "Jeg er opmærksom på, at vi ikke vil bære ansigtsmasker i det daglige liv, og at der er en risiko, jeg er villig til at tage."
+				}
+			},
+			{
+				"text": {
+					"en": "I understand that all of the participants and competent authorities consider the trip to be a family and friend organized trip, the association NOT being a commercial company, and the parents coming along and participating to the costs of the insurance. As a consequence, the journey is a regular stay with families and friends traveling together and does not need any further administrative declaration.",
+					"fr": "J’ai parfaitement conscience que tous les participants ainsi que les autorités compétentes considèrent ce voyage comme un simple voyage entre amis et familles, l’association n’étant en aucun cas une organisation commerciale, les parents participant également au voyage et prenant à leur charge une partie du coût de l’assurance. Par conséquent, le voyage ne nécessite aucune déclaration supplémentaire.",
+					"es": "Soy plenamente consciente de que todos los participantes y las autoridades competentes consideran este viaje como un viaje simple entre amigos y familiares, la asociación no es de ninguna manera una organización comercial, los padres también participan en el viaje y asumen una parte del costo del seguro. Por lo tanto, el viaje no requiere ninguna declaración adicional.",
+					"it": "Sono pienamente consapevole che tutti i partecipanti e le autorità competenti considerano questo viaggio come un semplice viaggio tra amici e famiglie, l'associazione non è in alcun modo un'organizzazione commerciale, i genitori prendono parte al viaggio e prendono in carico parte del costo dell'assicurazione. Pertanto, il viaggio non richiede alcuna dichiarazione aggiuntiva.",
+					"_lt": "Suprantu, kad visi dalyviai ir kompetentingos institucijos mano, kad kelionė yra šeimos ir draugų organizuota kelionė, asociacija NE komercinė įmonė, o tėvai atvyksta ir dalyvauja draudimo išlaidose. Todėl kelionė yra reguliarus buvimas kartu su šeima ir draugais, kuriems nereikia papildomų administracinių deklaracijų.",
+					"_lv": "Es saprotu, ka visi dalībnieki un kompetentās iestādes uzskata, ka ceļojums ir ģimenes un draugu organizēts ceļojums, asociācija NAV komerciāla kompānija, un vecāki nāk līdzi un piedalās apdrošināšanas izmaksās. Tā rezultātā ceļojums ir regulāra uzturēšanās kopā ar ģimenēm un draugiem, kas ceļo kopā, un tam nav nepieciešama papildu administratīvā deklarācija.",
+					"_ru": "Я понимаю, что все участники и компетентные органы считают поездку поездкой, организованной семьей и друзьями, ассоциация НЕ является коммерческой компанией, а родители приезжают и участвуют в покрытии расходов по страхованию. Как следствие, это путешествие является обычным путешествием с семьями и друзьями, путешествующими вместе, и не требует дополнительного административного заявления.",
+					"_fi": "Ymmärrän, että kaikki osallistujat ja toimivaltaiset viranomaiset katsovat matkan olevan perheen ja ystävien järjestämä matka, jossa yhdistys EI ole kaupallinen yritys, ja että vanhemmat tulevat mukaan ja osallistuvat vakuutuksen kustannuksiin. Seurauksena on, että matka on säännöllinen oleskelu yhdessä matkustavien perheiden ja ystävien kanssa eikä vaadi muita hallinnollisia ilmoituksia.",
+					"_et": "Saan aru, et kõik osalejad ja pädevad asutused peavad reisi perekonna ja sõbra korraldatud reisiks, ühendus ei ole äriettevõte ning vanemad tulevad kaasa ja osalevad kindlustuse kulude katmisel. Seetõttu on reis tavaline viibimine koos reisivate perede ja sõpradega ning see ei vaja täiendavat haldusdeklaratsiooni.",
+					"_sv": "Jag förstår att alla deltagare och behöriga myndigheter anser att resan är en familje- och vänorganiserad resa, föreningen är INTE ett kommersiellt företag och att föräldrarna följer med och deltar i kostnaderna för försäkringen. Som en konsekvens är resan en regelbunden vistelse med familjer och vänner som reser tillsammans och behöver ingen ytterligare administrativ deklaration.",
+					"_da": "Jeg forstår, at alle deltagere og kompetente myndigheder betragter rejsen som en familie- og venorganiseret tur, foreningen er IKKE et kommercielt selskab, og forældrene kommer med og deltager i forsikringsomkostningerne. Som følge heraf er rejsen et regelmæssigt ophold med familier og venner, der rejser sammen og behøver ikke yderligere administrativ erklæring."
+				}
+			},
+			{
+				"text": {
+					"en": "Additional information:<p>Health - {health}</p><p>Injuries - {injuries}</p><p>Allergies - {allergies}</p>",
+					"fr": "Informations supplémentaires :<p>Traitements en cours - {health}</p><p>Blessures - {injuries}</p><p>Allergies - {allergies}</p>",
+					"es": "Informaciones adicionales :<p>Tratamientos en curso - {health}</p><p>Lesiones - {injuries}</p><p>Alergias - {allergies}</p>",
+					"it": "Informazioni aggiuntive :<p>Trattamenti in corso - {health}</p><p>Lesioni - {injuries}</p><p>Allergie - {allergies}</p>",
+					"_lt": "Papildoma informacija: <p> sveikata - {sveikata} </p><p> traumos - {traumos} </p><p> alergijos - {alergijos}</p>",
+					"_lv": "Papildinformācija: <p> veselība - {veselība} </p><p> traumas - {traumas} </p><p> alerģijas - {alerģijas}</p>",
+					"_ru": "Дополнительная информация: <p> Здоровье - {здоровье} </p><p> Травмы - {травмы} </p><p> Аллергии - {аллергии}</p>",
+					"_fi": "Lisätietoja: <p> Terveys - {terveys} </p><p> Loukkaantumiset - {vammat} </p><p> Allergiat - {allergiat}</p>",
+					"_et": "Lisateave: <p> tervis - {tervis} </p><p> vigastused - {vigastused} </p><p> allergiad - {allergiad}</p>",
+					"_sv": "Ytterligare information: <p> Hälsa - {hälsa} </p><p> Skador - {skador} </p><p> Allergier - {allergier}</p>",
+					"_da": "Yderligere oplysninger: <p> Sundhed - {sundhed} </p><p> Skader - {skader} </p><p> Allergier - {allergier}</p>"
+				}
+			},
+			{
+				"text": {
+					"en": "Contact information:<p>{phone}</p><p>{postaladdress}</p>",
+					"fr": "Coordonnées :<p>{phone}</p><p>{postaladdress}</p>",
+					"es": "Contacto :<p>{phone}</p><p>{postaladdress}</p>",
+					"it": "Contatto :<p>{phone}</p><p>{postaladdress}</p>",
+					"_lt": "Kontaktinė informacija: <p> {telefonas} </p><p> {postaladdress}</p>",
+					"_lv": "Kontaktinformācija: <p> {tālrunis} </p><p> {postaladdress}</p>",
+					"_ru": "Контактная информация: <p> {phone} </p><p> {postaladdress}</p>",
+					"_fi": "Yhteystiedot: <p> {puhelin} </p><p> {postaladdress}</p>",
+					"_et": "Kontaktandmed: <p> {telefon} </p><p> {postaladdress}</p>",
+					"_sv": "Kontaktinformation: <p> {phone} </p><p> {postaladdress}</p>",
+					"_da": "Kontaktoplysninger: <p> {phone} </p><p> {postaladdress}</p>"
+				}
+			},
+			{
+				"text": {
+					"en": "Date: {today}",
+					"fr": "Date: {today}",
+					"es": "Fecha :{today}",
+					"it": "Data :{today}",
+					"_lt": "Data: {šiandien}",
+					"_lv": "Datums: {šodien}",
+					"_ru": "Дата: {сегодня}",
+					"_fi": "Päivämäärä: {tänään}",
+					"_et": "Kuupäev: {täna}",
+					"_sv": "Datum idag}",
+					"_da": "Dato: {i dag}"
+				}
+			},
+			{
+				"frame": {
+					"en": "Sign here",
+					"fr": "Signature",
+					"es": "Firma",
+					"it": "Firma",
+					"_lt": "Pasirašyti čia",
+					"_lv": "Parakstieties šeit",
+					"_ru": "Подпишите здесь",
+					"_fi": "Allekirjoita tähän",
+					"_et": "Logi siia alla",
+					"_sv": "Logga in här",
+					"_da": "Underskriv her"
+				}
+			},
+			{
+				"text": {
+					"en": "Document edited by: The Travel Team (RNA France W313015056), 13 rue Louis Barthou, 64110 Mazères-Lezons, France",
+					"fr": "Document edité par : The Travel Team (RNA France W313015056), 13 rue Louis Barthou, 64110 Mazères-Lezons, France",
+					"es": "Documento editado por : The Travel Team (RNA France W313015056), 13 rue Louis Barthou, 64110 Mazères-Lezons, France",
+					"it": "Documento a cura di : The Travel Team (RNA France W313015056), 13 rue Louis Barthou, 64110 Mazères-Lezons, France",
+					"_lt": "Dokumentą redagavo: „Travel Team“ (RNA France W313015056), 13 rue Louis Barthou, 64110 Mazères-Lezons, Prancūzija",
+					"_lv": "Dokumentu rediģēja: The Travel Team (RNA France W313015056), 13 rue Louis Barthou, 64110 Mazères-Lezons, Francija",
+					"_ru": "Документ отредактирован: The Travel Team (RNA France W313015056), 13 rue Louis Barthou, 64110 Mazères-Lezons, France",
+					"_fi": "Asiakirjan muokkaaja: The Travel Team (RNA France W313015056), 13 rue Louis Barthou, 64110 Mazères-Lezons, Ranska",
+					"_et": "Dokumendi redigeeris: The Travel Team (RNA France W313015056), 13 rue Louis Barthou, 64110 Mazères-Lezons, Prantsusmaa",
+					"_sv": "Dokument redigerat av: The Travel Team (RNA France W313015056), 13 rue Louis Barthou, 64110 Mazères-Lezons, Frankrike",
+					"_da": "Dokument redigeret af: The Travel Team (RNA France W313015056), 13 rue Louis Barthou, 64110 Mazères-Lezons, Frankrig"
+				}
+			}
+		],
+		"type": "generate"
+	},
+	"signedparentalauthorization": {
+		"title": {
+			"en": "Sign and upload",
+			"fr": "À signer puis envoyer",
+			"es": "Firme y envíe",
+			"it": "Firma e invia",
+			"_lt": "Pasirašykite ir įkelkite",
+			"_lv": "Parakstieties un augšupielādējiet",
+			"_ru": "Подпишите и загрузите",
+			"_fi": "Kirjoita ja lähetä",
+			"_et": "Allkirjastage ja laadige üles",
+			"_sv": "Signera och ladda upp",
+			"_da": "Signer og upload"
+		},
+		"text": {
+			"en": "Please sign and upload the parental authorization you printed previously.",
+			"fr": "Merci de signer et envoyer une photo de l'autorisation parentale téléchargée précédemment.",
+			"es": "Firme y envíe una foto de la autorización parental cargada anteriormente.",
+			"it": "Firma e invia una foto dell'autorizzazione dei genitori caricata in precedenza.",
+			"_lt": "Prašome pasirašyti ir įkelti anksčiau spausdintą tėvų įgaliojimą.",
+			"_lv": "Lūdzu, parakstiet un augšupielādējiet iepriekš izdrukāto vecāku pilnvarojumu.",
+			"_ru": "Пожалуйста, подпишите и загрузите распечатанное ранее разрешение родителей.",
+			"_fi": "Ole hyvä ja allekirjoita ja lataa aiemmin tulostamasi vanhempainvaltuutus.",
+			"_et": "Palun allkirjastage ja laadige üles vanemlik volitus, mille olete varem printinud.",
+			"_sv": "Vänligen underteckna och ladda upp den föräldrabehörighet du skrev ut tidigare.",
+			"_da": "Underskriv og upload den forældremyndighed, du tidligere har udskrevet."
+		},
+		"back": {
+			"parentalauthorization": {
+				"en": "Print again",
+				"fr": "Imprimer à nouveau",
+				"es": "Imprimir de nuevo",
+				"it": "Stampa di nuovo",
+				"_lt": "Spausdinkite dar kartą",
+				"_lv": "Drukājiet vēlreiz",
+				"_ru": "Распечатать еще раз",
+				"_fi": "Tulosta uudelleen",
+				"_et": "Printige uuesti",
+				"_sv": "Skriv ut igen",
+				"_da": "Udskriv igen"
+			}
+		},
+		"type": "upload"
+	},
+	"lastinformation": {
+		"text": {
+			"en": "Last thing! We need a photo of your kid.",
+			"fr": "Dernière chose ! Nous avons besoin d'une photo de votre enfant.",
+			"es": "¡ La ultima cosa ! Necesitamos una foto de su hijo.",
+			"it": "Ultima cosa ! Abbiamo bisogno di una foto di tuo figlio.",
+			"_lt": "Paskutinis dalykas! Mums reikia jūsų vaiko nuotraukos.",
+			"_lv": "Pēdējā lieta! Mums ir nepieciešama jūsu bērna fotogrāfija.",
+			"_ru": "Последнее! Нам нужна фотография вашего ребенка.",
+			"_fi": "Viimeinen asia! Tarvitsemme valokuvan lapsestasi.",
+			"_et": "Viimane asi! Me vajame teie lapse fotot.",
+			"_sv": "Sista sak! Vi behöver ett foto av ditt barn.",
+			"_da": "Sidste ting! Vi har brug for et foto af dit barn."
+		},
+		"icon": "smile",
+		"type": "none"
+	},
+	"face": {
+		"title": {
+			"en": "Face Photo",
+			"fr": "Photo du visage",
+			"es": "Foto de la cara",
+			"it": "Foto del viso",
+			"_lt": "Veido nuotrauka",
+			"_lv": "Sejas foto",
+			"_ru": "Фото лица",
+			"_fi": "Kasvokuva",
+			"_et": "Näofoto",
+			"_sv": "Ansiktsfoto",
+			"_da": "Ansigtsfoto"
+		},
+		"text": {
+			"en": "Smiling face, high quality, frontal or 3/4 frontal, 8 to 10 feet distance.",
+			"fr": "Un grand sourire, en haute résolution, de face ou de trois-quart, à 2 ou 3 mètres de distance.",
+			"es": "Una gran sonrisa, en alta resolución, de cara o de medio lado, y a 2 o 3 metros de distancia.",
+			"it": "Un grande sorriso, ad alta risoluzione, volto o tre quarti, 2 o 3 metri di distanza.",
+			"_lt": "Besišypsantis veidas, aukštos kokybės, priekinis arba 3/4 priekinis, nuo 8 iki 10 pėdų atstumu.",
+			"_lv": "Smaidoša seja, augstas kvalitātes, frontāla vai 3/4 frontāla, 8 līdz 10 pēdu attālumā.",
+			"_ru": "Улыбающееся лицо, высокое качество, фронтальное или 3/4 фронтальное, расстояние от 8 до 10 футов.",
+			"_fi": "Hymyilevät kasvot, korkealaatuiset, edestä tai 3/4 edestä, 8-10 jalan etäisyydellä.",
+			"_et": "Naeratav nägu, kvaliteetne, esi- või 3/4 esiosa, 8–10 jala kaugusel.",
+			"_sv": "Leende ansikte, hög kvalitet, frontal eller 3/4 frontal, 8 till 10 fot avstånd.",
+			"_da": "Smilende ansigt, høj kvalitet, frontal eller 3/4 frontal, 8 til 10 fod afstand."
+		},
+		"type": "upload"
+	},
+	"thanks": {
+		"title": {
+			"en": "Thank you!",
+			"fr": "Merci !",
+			"es": "¡ Gracias !",
+			"it": "Grazie !",
+			"_lt": "Ačiū!",
+			"_lv": "Paldies!",
+			"_ru": "Спасибо!",
+			"_fi": "Kiitos!",
+			"_et": "Aitäh!",
+			"_sv": "Tack!",
+			"_da": "Tak skal du have!"
+		},
+		"text": {
+			"en": "And see you soon!",
+			"fr": "Et à très vite !",
+			"es": "¡ Y hasta pronto !",
+			"it": "E a presto !",
+			"_lt": "Ir greitai susitiksime!",
+			"_lv": "Un drīz tiksimies!",
+			"_ru": "И увижу вас скоро!",
+			"_fi": "Nähdään pian!",
+			"_et": "Ja varsti näeme!",
+			"_sv": "Och vi ses snart!",
+			"_da": "Og vi ses snart!"
+		},
+		"type": "none"
+	},
+	"accounts": {
+		"title": {
+			"en": "Accounts",
+			"fr": "Comptes",
+			"es": "Cuentas",
+			"it": "Account",
+			"_lt": "Sąskaitos",
+			"_lv": "Konti",
+			"_ru": "учетные записи",
+			"_fi": "Tilit",
+			"_et": "Kontod",
+			"_sv": "Konton",
+			"_da": "Konti"
+		},
+		"text": {
+			"en": "Below the accounts for the journey (empty until we fill it for you). The association account number is:<div class=\"bank\">IBAN <span class=\"copiable\">FR76 1027 8022 2200 0204 4250 174</span></div><div class=\"bank\">SWIFT/BIC <span class=\"copiable\">CMCIFR2A</span></div><div class=\"bank\">(Name: The Travel Team).</div>",
+			"fr": "Ci-dessous le total des coûts pour le voyage (rempli par nos soins). Le compte bancaire de l'association est le suivant :<div class=\"bank\">IBAN <span class=\"copiable\">FR76 1027 8022 2200 0204 4250 174</span></div><div class=\"bank\">SWIFT/BIC <span class=\"copiable\">CMCIFR2A</span></div><div class=\"bank\">(Nom : The Travel Team).</div>",
+			"es": "Debajo de las cuentas para el viaje (vacío hasta que lo llenemos por usted). El número de cuenta de la asociación es :<div class=\"bank\">IBAN <span class=\"copiable\">FR76 1027 8022 2200 0204 4250 174</span></div><div class=\"bank\">SWIFT / BIC <span class=\"copiable\">CMCIFR2A</span></div><div class=\"bank\">(Nombre : The Travel Team).</div>",
+			"it": "Sotto gli account per il viaggio (vuoto fino a quando non lo riempiamo per te). Il numero di conto dell'associazione è :<div class=\"bank\">IBAN <span class=\"copiable\">FR76 1027 8022 2200 0204 4250 174</span></div><div class=\"bank\">SWIFT / BIC <span class=\"copiable\">CMCIFR2A</span></div><div class=\"bank\">(Nome : The Travel Team).</div>",
+			"_lt": "Žemiau kelionės sąskaitų (tuščia, kol mes ją užpildysime už jus). Asociacijos sąskaitos numeris yra: <div class = \"bank\"> IBAN <span class = \"copiable\"> FR76 1027 8022 2200 0204 4250 174 </span> </div> <div class = \"bank\"> SWIFT / BIC < span class = \"copiable\"> CMCIFR2A </span> </div> <div class = \"bank\"> (pavadinimas: kelionių komanda). </div>",
+			"_lv": "Zem ceļojuma kontiem (tukšs, līdz mēs to aizpildām jums). Asociācijas konta numurs ir: <div class = \"bank\"> IBAN <span class = \"copiable\"> FR76 1027 8022 2200 0204 4250 174 </span> </div> <div class = \"bank\"> SWIFT / BIC < span class = \"copiable\"> CMCIFR2A </span> </div> <div class = \"bank\"> (nosaukums: Ceļojumu komanda). </div>",
+			"_ru": "Ниже счета за поездку (пустые, пока мы не заполним их за вас). Номер связанного счета: <div class = \"bank\"> IBAN <span class = \"copiable\"> FR76 1027 8022 2200 0204 4250 174 </span> </div> <div class = \"bank\"> SWIFT / BIC < span class = \"copiable\"> CMCIFR2A </span> </div> <div class = \"bank\"> (Название: Команда путешествий). </div>",
+			"_fi": "Matkan tilien alapuolella (tyhjä, kunnes täytämme sen puolestasi). Yhdistystilin numero on: <div class = \"bank\"> IBAN <span class = \"copiable\"> FR76 1027 8022 2200 0204 4250174 </span> </div> <div class = \"bank\"> SWIFT / BIC < span class = \"copiable\"> CMCIFR2A </span> </div> <div class = \"bank\"> (nimi: matkatiimi). </div>",
+			"_et": "Reisi kontode all (tühi, kuni me selle teile täidame). Ühingu kontonumber on: <div class = \"bank\"> IBAN <span class = \"copiable\"> FR76 1027 8022 2200 0204 4250 174 </span> </div> <div class = \"bank\"> SWIFT / BIC < span class = \"copiable\"> CMCIFR2A </span> </div> <div class = \"bank\"> (nimi: reisimeeskond). </div>",
+			"_sv": "Nedanför konton för resan (tom tills vi fyller den åt dig). Föreningens kontonummer är: <div class = \"bank\"> IBAN <span class = \"copiable\"> FR76 1027 8022 2200 0204 4250 174 </span> </div> <div class = \"bank\"> SWIFT / BIC < span class = \"copiable\"> CMCIFR2A </span> </div> <div class = \"bank\"> (Namn: Reseteamet). </div>",
+			"_da": "Nedenfor regnskaberne for rejsen (tom, indtil vi udfylder den for dig). Foreningens kontonummer er: <div class = \"bank\"> IBAN <span class = \"copiable\"> FR76 1027 8022 2200 0204 4250 174 </span> </div> <div class = \"bank\"> SWIFT / BIC < span class = \"copiable\"> CMCIFR2A </span> </div> <div class = \"bank\"> (Navn: Travel Team). </div>"
+		},
+		"filled": {
+			"en": "We will fill it for you",
+			"fr": "Sera rempli par nos soins",
+			"es": "Será completado por nosotros",
+			"it": "Sarà completato da noi",
+			"_lt": "Mes jums tai užpildysime",
+			"_lv": "Mēs to aizpildīsim jums",
+			"_ru": "Мы наполним его для вас",
+			"_fi": "Me täytämme sen sinulle",
+			"_et": "Me täidame selle teie jaoks",
+			"_sv": "Vi fyller det åt dig",
+			"_da": "Vi udfylder det for dig"
+		},
+		"type": "text",
+		"back": {
+			"feedback": {
+				"en": "Continue",
+				"fr": "Continuer",
+				"es": "Seguir",
+				"it": "Continuare",
+				"_lt": "Tęsti",
+				"_lv": "Turpināt",
+				"_ru": "Продолжать",
+				"_fi": "Jatkaa",
+				"_et": "Jätka",
+				"_sv": "Fortsätta",
+				"_da": "Blive ved"
+			}
+		}
+	},
+	"feedback": {
+		"title": {
+			"en": "Testimonial",
+			"fr": "Témoignage",
+			"es": "Testimonial",
+			"it": "Testimonianza",
+			"_lt": "Atsiliepimas",
+			"_lv": "Atsauksme",
+			"_ru": "Отзыв",
+			"_fi": "Suositus",
+			"_et": "Iseloomustus",
+			"_sv": "Rekommendation",
+			"_da": "Udtalelse"
+		},
+		"text": {
+			"en": "We would be very grateful if after the trip you could write a few words about the adventure, and maybe a few words from your child as well :)",
+			"fr": "Nous vous serions très reconnaissants si après le voyage vous pouviez écrire quelques mots à propos de l'aventure, et peut-être également quelques mots venant de votre enfant :)",
+			"es": "Estaríamos muy agradecidos si después del viaje pudiera escribir algunas palabras sobre la aventura, y tal vez también algunas palabras de su hijo :)",
+			"it": "Ti saremmo molto grati se dopo il viaggio potessi scrivere qualche parola sull'avventura, e magari anche qualche parola da tuo figlio :)",
+			"_lt": "Būtume labai dėkingi, jei po kelionės galėtumėte parašyti keletą žodžių apie nuotykį, o galbūt ir keletą žodžių iš savo vaiko :)",
+			"_lv": "Mēs būtu ļoti pateicīgi, ja pēc ceļojuma jūs varētu uzrakstīt dažus vārdus par piedzīvojumu un varbūt dažus vārdus arī no sava bērna :)",
+			"_ru": "Будем очень признательны, если после поездки вы напишете пару слов о приключении, а может, и своего ребенка :)",
+			"_fi": "Olisimme erittäin kiitollisia, jos voisit matkan jälkeen kirjoittaa muutaman sanan seikkailusta ja ehkä muutaman sanan myös lapseltasi :)",
+			"_et": "Oleksime väga tänulikud, kui saaksite pärast reisi kirjutada paar sõna seiklusest ja võib-olla paar sõna ka oma lapselt :)",
+			"_sv": "Vi skulle vara mycket tacksamma om du efter resan kunde skriva några ord om äventyret, och kanske också några ord från ditt barn :)",
+			"_da": "Vi ville være meget taknemmelige, hvis du efter turen kunne skrive et par ord om eventyret, og måske også et par ord fra dit barn :)"
+		},
+		"type": "multipletext"
+	}
+}
