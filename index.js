@@ -259,7 +259,7 @@ $.getJSON("data.json" , function(data) {
 					block_(function() {
 						userIdHeap.set(location.platform + "/" + emailHeap.get());
 					}),
-					try_(EncryptingServer.loadPublicKey(userIdHeap, publicKeyHeap)).catch_(function(_e) { return noop_(); }),
+					try_(EncryptingServer.loadPublicKey(userIdHeap, publicKeyHeap)).catch_(function(_e) { return set_(publicKeyHeap, null); }),
 					if_(equals_(publicKeyHeap, null))
 						.then_(sequence_(
 							EncryptingServer.hash(passwordHeap, passwordHashHeap),
