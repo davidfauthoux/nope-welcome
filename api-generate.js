@@ -7,7 +7,7 @@ Plugins.generate = function(params, language) {
 			let divs = $("<div>").addClass("buttons");
 
 			// let percentDiv = $("<div>").addClass("percent");
-			let rendering = false;
+			// let rendering = false;
 
 			let renderIt = function() {
 				// percentDiv.text(0 + "%");
@@ -101,14 +101,14 @@ Plugins.generate = function(params, language) {
 			i18n(printButton, language.download);
 			divs.append(printButton);
 			printButton.click(function() {
-				if (printButton.attr("href") !== undefined) {
-					console.log("CLICK", printButton.attr("href"));
-					return true;
-				}
-				if (rendering) {
-					return;
-				}
-				rendering = true;
+				// if (printButton.attr("href") !== undefined) {
+				// 	console.log("CLICK", printButton.attr("href"));
+				// 	return true;
+				// }
+				// if (rendering) {
+				// 	return;
+				// }
+				// rendering = true;
 				renderIt();
 				return false;
 			});
