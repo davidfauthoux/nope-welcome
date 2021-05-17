@@ -54,7 +54,7 @@ Plugins.generate = function(params, language) {
 				}
 
 				var w = window.open("", '_blank');
-				w.document.write("<html><head><style>body { width: 500px; margin: 0 auto; font-size: 14px; } img { display: block; margin: 30px auto; width: 300px; } .block { margin-bottom: 5px; text-align: justify; } .frame { width: 300px; margin: 10px auto; border: dotted 1px gray; height: 150px; padding: 5px; background: #eee; color: gray; } </style></head><body>" + render.html() + "<script>window.focus(); window.print(); window.close();</script></body></html>");
+				w.document.write("<html><head><style>body { width: 500px; margin: 0 auto; font-size: 14px; } img { display: block; margin: 30px auto; width: 300px; } .block { margin-bottom: 5px; text-align: justify; } .frame { width: 300px; margin: 10px auto; border: dotted 1px gray; height: 150px; padding: 5px; background: #eee; color: gray; } </style></head><body>" + render.html() + "<script>window.focus(); window.print(); window.onafterprint = function(){ window.close(); };</script></body></html>");
 				w.document.close();
 
 				// let cut = $("<div>");
