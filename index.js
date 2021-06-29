@@ -1,4 +1,6 @@
-"use strict";
+import * as async from "../modules/async-ext.js";
+import { Server, uuid } from "../modules/server-ext.js";
+import { EncryptionServer } from "../modules/encryption.js";
 
 $(function() {
 $.getJSON("data.json" , function(data) {
@@ -20,6 +22,8 @@ $.getJSON("data.json" , function(data) {
 	let contentDiv = $("<div>").addClass("content");
 	body.append(contentDiv);
 	contentDiv.append(spinner());
+
+	//
 
 	let userFrom = null;
 	let server = null;
@@ -48,6 +52,8 @@ $.getJSON("data.json" , function(data) {
 			}
 		}).run();
 	};
+
+	//
 
 	let flagDiv = $("<div>").addClass("flags");
 	for (let l of [ "en", "fr", "es", "it", "lt", "lv", "fi", "ru" ]) {
@@ -91,7 +97,7 @@ $.getJSON("data.json" , function(data) {
 			if (d.text !== undefined) {
 				div.append(i18n($("<div>").addClass("description"), d.text));
 			}
-			div.append(f(userData, callback, allData, server).addClass("sub"));
+			div.append(f(userData, callback, allData).addClass("sub"));
 			if (d.example !== undefined) {
 				let exampleDiv = $("<div>").addClass("example");
 				exampleDiv.append(i18n($("<div>"), dataLanguage.example));

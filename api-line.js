@@ -1,31 +1,35 @@
-"use strict";
+import * as i18n from "./i18n.js";
+// jquery
 
-Plugins.line = function(params, language) {
-	return {
-		create: function(data, callback, allData) {
-			let div = $("<div>");
-			let input = $("<input>");
-			if (data !== undefined) {
-				input.val(data.value);
-			}
-			div.append(input);
-			let divs = $("<div>").addClass("buttons");
-			div.append(divs);
-			let button = $("<div>").addClass("button");
-			i18n(button, language.set);
-			divs.append(button);
-			button.click(function() {
-				let v = input.val().trim();
-				if (v === "") {
-					return;
+export default {
+	line: function(params, language) {
+		return {
+			create: function(data, callback, allData) {
+				let div = $("<div>");
+				let input = $("<input>");
+				if (data !== undefined) {
+					input.val(data.value);
 				}
-				callback({
-					value: v
+				div.append(input);
+				let divs = $("<div>").addClass("buttons");
+				div.append(divs);
+				let button = $("<div>").addClass("button");
+				i18n._(button, language.set);
+				divs.append(button);
+				button.on("click", function() {
+					let v = input.val().trim();
+					if (v === "") {
+						return;
+					}
+					callback({
+						value: v
+					});
 				});
-			});
-			return div;
-		},
-		destroy: function() {
-		}
-	};
+				return div;
+			},
+
+			destroy: function() {
+			}
+		};
+	},
 };

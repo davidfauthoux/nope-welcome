@@ -1,18 +1,21 @@
-"use strict";
+import * as i18n from "./i18n.js";
+// jquery
 
-Plugins.none = function(params, language) {
-	return {
-		create: function(data, callback, allData) {
-			let divs = $("<div>").addClass("buttons");
-			let button = $("<div>").addClass("button");
-			i18n(button, language.continue);
-			button.click(function() {
-				callback("");
-			});
-			divs.append(button);
-			return divs;
-		},
-		destroy: function() {
-		}
-	};
+export default {
+	none: function(params, language) {
+		return {
+			create: function(data, callback, allData) {
+				let divs = $("<div>").addClass("buttons");
+				let button = i18n._($("<div>").addClass("button"), language.continue);
+				button.on("click", function() {
+					callback("");
+				});
+				divs.append(button);
+				return divs;
+			},
+
+			destroy: function() {
+			},
+		};
+	},
 };
