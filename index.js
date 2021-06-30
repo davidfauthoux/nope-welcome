@@ -1,10 +1,101 @@
-import * as async from "../modules/async-ext.js";
-import { Server, uuid } from "../modules/server-ext.js";
+import * as async from "../modules/async.js";
+import { Server, history } from "../modules/server.js";
 import { EncryptionServer } from "../modules/encryption.js";
+import * as i18n from "./i18n.js";
+// jquery
+
+import pluginNone from "./api-none.js";
+import pluginStop from "./api-stop.js";
+import pluginLine from "./api-line.js";
+import pluginDate from "./api-date.js";
+import pluginText from "./api-text.js";
+import pluginMultipleText from "./api-multipletext.js";
+import pluginChoice from "./api-choice.js";
+import pluginGenerate from "./api-generate.js";
+import pluginUpload from "./api-upload.js";
+
+let plugins = {};
+for (let plugin of [ pluginNone, pluginStop, pluginLine, pluginDate, pluginText, pluginMultipleText, pluginChoice, pluginGenerate, pluginUpload ]) {
+	for (let typeName in plugin) {
+		plugins[typeName] = plugin[typeName];
+	}
+}
+
+let platform = "welcome";
+let userRoot = "users/" + platform + "/";
+let recoverUrlBase = platform + "/";
 
 $(function() {
-$.getJSON("data.json" , function(data) {
-	let location = Server.location();
+async.run([
+new Server("/" + platform).download("data.json"),
+(dataContents) => JSON.parse(dataContents),
+(data) => {
+// $.getJSON("data.json" , function(data) {
+	console.log(data);
+
+	let dataLanguage = data.language;
+	let userData = {};
+	let localStoreKey = platform + "/default";
+
+	userData.platform = platform;
+
+	let windowParams = (function() {
+		let u = window.location.search;
+		let i = u.indexOf('?');
+		if (i < 0) {
+			return {};
+		}
+		u = u.substring(i + 1);
+		let p = {};
+		for (let kv of u.split(/\&/g)) {
+			let s = kv.trim().split(/\=/g);
+			let key;
+			let value;
+			if (s.length === 1) {
+				key = s;
+				value = "";
+			} else {
+				key = decodeURIComponent(s[0]);
+				value = decodeURIComponent(s[1]);
+			}
+			p[key] = value;
+			// let values = p[key];
+			// if (values === undefined) {
+			// 	values = [];
+			// 	p[key] = values;
+			// }
+			// values.push(value);
+		}
+		return p;
+	})();
+
+	/****************/
+	/* SERVER       */
+	/****************/
+
+	let encryptionServer = new EncryptionServer();
+	let superuserUser = userRoot + "superuser";
+
+	let stack = function(toStack) {
+		console.log("STACKING", toStack);
+		let userId = encryptionServer.user.id;
+		async.run([
+			encryptionServer.stack({
+				to: superuserUser,
+				from: userId,
+				data: toStack
+			}),
+			() => {
+				toStack.from = userId;
+				toStack.to = userId;
+			},
+			() => encryptionServer.stack(toStack),
+		]);
+	};
+
+	/**********/
+	/* HEADER */
+	/**********/
 
 	let header = $("<div>").addClass("header");
 	$("body").append(header);
@@ -23,43 +114,30 @@ $.getJSON("data.json" , function(data) {
 	body.append(contentDiv);
 	contentDiv.append(spinner());
 
-	//
+	let saving = i18n._($("<div>").addClass("saving"), dataLanguage.saving).addClass("hide");
+	header.append(saving);
 
-	let userFrom = null;
-	let server = null;
-	let superuserUser = location.platform + "/superuser";
-	let superuserServer = new Server("/" + superuserUser);
-	superuserServer = new EncryptingServer(null, superuserServer);
+	/**********/
+	/* FLAGS  */
+	/**********/
 
-	let dataLanguage = data.language;
-
-	let userData = {};
-
-	let stack = function(toStack, callback) {
-		toStack.from = userFrom;
-		toStack.to = userFrom;
-		console.log("STACKING", superuserUser, userFrom, toStack);
-		sequence_(
-			server.stack(new Heap({
-				to: superuserUser,
-				from: userFrom,
-				data: toStack
-			})),
-			server.stack(new Heap(toStack)),
-		).res(function() {
-			if (callback !== undefined) {
-				callback();
-			}
-		}).run();
+	let updateLanguage = function(language) {
+		if (language !== undefined) {
+			userData.language = language;
+			i18n.update(userData.language);
+			$(".language").removeClass("selected");
+			$(".language-" + language).addClass("selected");
+		} else {
+			i18n.update(undefined);
+		}
 	};
 
-	//
-
 	let flagDiv = $("<div>").addClass("flags");
+	header.append(flagDiv);
 	for (let l of [ "en", "fr", "es", "it", "lt", "lv", "fi", "ru" ]) {
 		let d = $("<div>").addClass("language").addClass("language-" + l).append($("<img>").attr("src", "res/" + l + ".png"));
-		d.click(function() {
-			if (server === null) {
+		d.on("click", function() {
+			if (encryptionServer.user === undefined) {
 				updateLanguage(l);
 			} else {
 				stack({
@@ -70,539 +148,478 @@ $.getJSON("data.json" , function(data) {
 		flagDiv.append(d);
 	}
 
-	let saving = i18n($("<div>").addClass("saving"), dataLanguage.saving).addClass("hide");
-	header.append(saving);
-	header.append(flagDiv);
+	let initialLanguage = windowParams["language"];
+	if (initialLanguage === undefined) {
+		initialLanguage = "en";
+	}
+	updateLanguage(initialLanguage);
 
-	let updateLanguage = function(language) {
-		userData.language = language;
-		i18nLanguage = userData.language;
-		i18nUpdateAll();
-		$(".language").removeClass("selected");
-		$(".language-" + language).addClass("selected");
-	};
+	/****************/
+	/* NAVIGATION   */
+	/****************/
 
 	let createForKey;
 
-	let overloadCreate = function(mapped, d) {
-		let f = mapped.create;
-		mapped.create = function(userData, callback, allData) {
-			let div = $("<div>").addClass(d.type);
-			if (d.title !== undefined) {
-				div.append(i18n($("<div>").addClass("title"), d.title));
-			}
-			if (d.icon !== undefined) {
-				div.append($("<img>").addClass("image").attr("src", "res/" + d.icon + ".png"));
-			}
-			if (d.text !== undefined) {
-				div.append(i18n($("<div>").addClass("description"), d.text));
-			}
-			div.append(f(userData, callback, allData).addClass("sub"));
-			if (d.example !== undefined) {
-				let exampleDiv = $("<div>").addClass("example");
-				exampleDiv.append(i18n($("<div>"), dataLanguage.example));
-				exampleDiv.append(i18n($("<div>"), d.example));
-				div.append(exampleDiv);
-			}
-
-			if (d.back !== undefined) {
-				let divs = $("<div>").addClass("buttons");
-				for (let back in d.back) {
-					let backButton = $("<div>").addClass("button").addClass("secondary");
-					i18n(backButton, d.back[back]);
-					backButton.click(function() {
-						createForKey(back);
-					});
-					divs.append(backButton);
-				}
-				div.append(divs);
-			}
-
-			return div;
-		};
-	};
-
-	let localStoreKey = location.platform + "/default";
-
-	let reload = function() {
-		let url = location.url + "/" + location.platform + "/";
-		console.log(url);
-		window.location.href = url;
-	};
-
-	let disconnectButton = i18n($("<div>"), dataLanguage.disconnect);
-	$("body").append($("<div>").addClass("disconnect").append(disconnectButton));
-	disconnectButton.click(function() {
-		sequence_(
-			localClear_(localStoreKey),
-			if_(not_(equals_(new Heap(userFrom), undefined))).then_(EncryptingServer.clearUser(new Heap(userFrom))),
-			block_(reload))
-		.run();
-	});
-
-	let initEverything = function(runWhenLoaded) {
-		let windowParams = {
-			recover: null,
-			supervise: undefined,
-			id: null,
-		};
-		(function() {
-			let windowUrlParameters = DomUtils.windowUrlParameters();
-
-			let recover = windowUrlParameters["recover"];
-			if (recover !== undefined) {
-				windowParams.recover = recover[0];
-			}
-
-			let supervise = windowUrlParameters["supervise"];
-			if (supervise !== undefined) {
-				windowParams.supervise = true;
-			}
-
-			let id = windowUrlParameters["id"];
-			if (id !== undefined) {
-				windowParams.id = id[0];
-			}
-		})();
-		// console.log(windowParams);
-
-		let emailHeap = new Heap();
-		let userIdHeap = new Heap();
-		let publicKeyHeap = new Heap();
-		let passwordHeap = new Heap();
-		let passwordHashHeap = new Heap();
-		let userHeap = new Heap();
-
-		let emailHtml = {
-			get: function() {
-				return {
-					subject: i18nGetText(dataLanguage.account.email.subject, true),
-					text: "<html>"
-						+ "<body style='background:white; color:black; font-size: 14px;'>"
-
-						+ "<div style=''>"
-						+ i18nGetText(dataLanguage.account.email.pleaseconfirm, true)
-						+ "</div>"
-
-						+ "<div style=''>"
-						+ "<a href='{url}'>"
-						+ i18nGetText(dataLanguage.account.email.clickhere, true)
-						+ "</a>"
-						+ "</div>"
-
-						+ "<div style=''>"
-						+ i18nGetText(dataLanguage.account.email.pastelink, true)
-						+ "</div>"
-						+ "<div style=''>"
-						+ "{url}"
-						+ "</div>"
-
-						+ "</body>"
-						+ "</html>"
-				};
-			}
-		};
-
-		let createBlock = function(d, finish) {
-			saving.addClass("hide");
-			body.removeClass("fulldisabled");
-
-			let mapped = (finish === undefined) ? {
-				create: function(_data, _callback) {
-					return $("<div>");
-				}
-			} : Plugins.line(d, dataLanguage);
-			overloadCreate(mapped, d);
-
-			let createdDiv = mapped.create(undefined, function(update) {
-				createdDiv.addClass("disabled");
-				i18nUpdateAll();
-
-				saving.removeClass("hide");
-				body.addClass("fulldisabled");
-
-				if (finish !== undefined) {
-					setTimeout(function() {
-						emailHeap.set(update.value.toLowerCase());
-						finish();
-					}, 100);
-				}
-			}, userData);
-			contentDiv.empty().append(createdDiv);
-		};
-
-		updateLanguage(i18nLanguage);
-
-		if (windowParams.recover !== null) {
-			userIdHeap.set(windowParams.id);
-			sequence_(
-				localClear_(localStoreKey),
-				try_(EncryptingServer.validate(userIdHeap, new Heap(windowParams.recover), emailHtml, new Heap(), new Heap(), new Heap(windowParams.supervise)))
-					.catch_(function(e) {
-						console.log(e);
-						return sequence_(
-							new Async(function(_finish) {
-								createBlock(dataLanguage.account.failed);
-							}),
-							localClear_(localStoreKey),
-							new Async(function(_finish) {
-								setTimeout(finish, 3 * 1000);
-							}));
-					}),
-				localSave_(localStoreKey, userIdHeap),
-				block_(reload))
-			.run();
-			return;
-		}
-	
-		sequence_(
-			localLoad_(localStoreKey, userIdHeap),
-			if_(equals_(userIdHeap, undefined))
-				.then_(sequence_(
-					new Async(function(finish) {
-						createBlock(dataLanguage.account.create, finish);
-					}),
-					block_(function() {
-						userIdHeap.set(location.platform + "/" + emailHeap.get());
-					}),
-					try_(EncryptingServer.loadPublicKey(userIdHeap, publicKeyHeap)).catch_(function(_e) { return set_(publicKeyHeap, null); }),
-					if_(equals_(publicKeyHeap, null))
-						.then_(sequence_(
-							EncryptingServer.hash(passwordHeap, passwordHashHeap),
-							EncryptingServer.newUser(userIdHeap, passwordHashHeap, emailHeap, emailHtml),
-							EncryptingServer.loadUser(userIdHeap, passwordHashHeap, userHeap),
-							localSave_(localStoreKey, userIdHeap),
-							EncryptingServer.recover(userIdHeap, emailHtml, new Heap(windowParams.supervise)),
-							new Async(function(_finish) {
-								createBlock(dataLanguage.account.created);
-							})))
-						.else_(sequence_(
-							EncryptingServer.recover(userIdHeap, emailHtml, new Heap(windowParams.supervise)),
-							new Async(function(_finish) {
-								createBlock(dataLanguage.account.recovery);
-							})))))
-				.else_(sequence_(
-					EncryptingServer.hash(passwordHeap, passwordHashHeap),
-					EncryptingServer.loadUser(userIdHeap, passwordHashHeap, userHeap),
-					block_(function() {
-						userData["email"] = userIdHeap.get().substring(userIdHeap.get().indexOf('/') + 1);
-						runWhenLoaded(userIdHeap.get(), userHeap.get());
-					})
-					/*%%
-					new Async(function(_finish) {
-						createBlock({
-							title: "Account OK",
-							text: "Account loaded",
-							type: "text",
-						});
-					})
-					*/)))
-		.run();
-	};
-
-
-	let runEverything = function(userId, userForEncryption) {
-		// userForEncryption = undefined; // Remove to encrypt
-
-		userFrom = userId;
-		server = new Server("/" + userId);
-		if (userForEncryption !== undefined) {
-			server = new EncryptingServer(userForEncryption, server);
-		}
-	
-		let maySkipKey;
-		let findNextForKey;
-		let findPreviousForKey;
-
-		let map = {};
-		for (let k in data) {
-			let d = data[k];
-			if (d.type === "none") {
-				map[k] = Plugins.none(d, dataLanguage);
-			} else if (d.type === "line") {
-				map[k] = Plugins.line(d, dataLanguage);
-			} else if (d.type === "date") {
-				map[k] = Plugins.date(d, dataLanguage);
-			} else if (d.type === "text") {
-				map[k] = Plugins.text(d, dataLanguage);
-			} else if (d.type === "multipletext") {
-				map[k] = Plugins.multipletext(d, dataLanguage);
-			} else if (d.type === "choice") {
-				map[k] = Plugins.choice(d, dataLanguage);
-			} else if (d.type === "upload") {
-				map[k] = Plugins.upload(d, dataLanguage);
-			} else if (d.type === "generate") {
-				map[k] = Plugins.generate(d, dataLanguage);
-			} else {
-				continue;
-				/*
-				console.log("INVALID", k, d.type);
-				map[k] = Plugins.none(d, dataLanguage);
-				*/
-			}
-
-			overloadCreate(map[k], d);
-		}
-
-		let backButton = $("<div>").addClass("back");
-		let indexButton = $("<div>").addClass("menu").append($("<div>"));
-		let forwardButton = $("<div>").addClass("forward");
-		backButton.addClass("disabled");
-		forwardButton.addClass("disabled");
-
-		let currentKey = null;
-		let currentMapped = null;
-		let currentMappedDiv = null;
-
-		maySkipKey = function(key) {
-			if (data[key].type === undefined) {
-				return true;
-			}
-			if (data[key].if !== undefined) {
-				for (let kk in data[key].if) {
-					if ((userData[kk] !== undefined) && (data[key].if[kk] !== userData[kk].value)) {
-						return true;
-					}
-				}
-			}
-			return false;
-		}
-		findNextForKey = function(key) {
-			let found = false;
-			for (let k in data) {
-				if (k === key) {
-					found = true;
-				} else {
-					if (maySkipKey(k)) {
-						continue;
-					}
-					if (found) {
-						console.log("NEXT", key, k);
-						return k;
-					}
-				}
-			}
-			return null;
-		};
-		findPreviousForKey = function(key) {
-			let previous = null;
-			for (let k in data) {
-				if (k === key) {
-					break;
-				}
-				if (maySkipKey(k)) {
-					continue;
-				}
-				previous = k;
-			}
-			console.log("PREVIOUS", key, previous);
-			return previous;
-		};
-
-		let showIndex = function() {
-			header.hide();
-			footer.hide();
-			body.hide();
-
-			window.location.hash = "";
-
-			indexDiv.empty();
-			indexDiv.append($("<div>").addClass("close").click(function() {
-				createForKey(currentKey);
-			}));
-			for (let k in data) {
-				if (maySkipKey(k)) {
-					continue;
-				}
-				let d = data[k];
+	let overloadCreate = function(createDestroy, d) {
+		return {
+			create: function(userData, callback, allData) {
+				let div = $("<div>").addClass(d.type);
 				if (d.title !== undefined) {
-					let div = i18n($("<div>"), d.title).click(function() {
-						createForKey(k);
-					});
-					if (userData[k] !== undefined) {
-						div.addClass("filled");
+					div.append(i18n._($("<div>").addClass("title"), d.title));
+				}
+				if (d.icon !== undefined) {
+					div.append($("<img>").addClass("image").attr("src", "res/" + d.icon + ".png"));
+				}
+				if (d.text !== undefined) {
+					div.append(i18n._($("<div>").addClass("description"), d.text));
+				}
+				div.append(createDestroy.create(userData, callback, allData).addClass("sub"));
+				if (d.example !== undefined) {
+					let exampleDiv = $("<div>").addClass("example");
+					exampleDiv.append(i18n._($("<div>"), dataLanguage.example));
+					exampleDiv.append(i18n._($("<div>"), d.example));
+					div.append(exampleDiv);
+				}
+	
+				if (d.back !== undefined) {
+					let divs = $("<div>").addClass("buttons");
+					for (let back in d.back) {
+						let backButton = $("<div>").addClass("button").addClass("secondary");
+						i18n._(backButton, d.back[back]);
+						backButton.on("click", function() {
+							createForKey(back);
+						});
+						divs.append(backButton);
 					}
-					indexDiv.append(div);
+					div.append(divs);
 				}
-			}	
-			indexDiv.show();
+	
+				return div;
+			},
+
+			destroy: function() {
+				createDestroy.destroy();
+			},
 		};
-		let hideIndex = function() {
-			indexDiv.hide();		
-			header.show();
-			footer.show();
-			body.show();
-		};
+	};
 
-		createForKey = function(key) {
-			saving.addClass("hide");
-			body.removeClass("fulldisabled");
 
-			showIndex();
+	let maySkipKey;
+	let findNextForKey;
+	let findPreviousForKey;
 
-			console.log("KEY", key);
-			if (key === null) {
-				return;
+	let map = {};
+	for (let k in data) {
+		let d = data[k];
+		if (d.type !== undefined) {
+			let p = plugins[d.type];
+			if (p === undefined) {
+				console.log("MISSING PLUGIN", d.type);
+			} else {
+				map[k] = overloadCreate(p(d, dataLanguage), d);
 			}
-			let mapped = map[key];
-			if (currentMapped !== null) {
-				currentMappedDiv.remove();
-				currentMapped.destroy();
-				currentMappedDiv = null;
-				currentMapped = null;
-				currentKey = null;
+		}
+	}
 
-				backButton.addClass("disabled");
-				forwardButton.addClass("disabled");
-			}
-			if (mapped === undefined) {
-				return; //TODO Error panel
-			}
+	let backButton = $("<div>").addClass("back");
+	let indexButton = $("<div>").addClass("menu").append($("<div>"));
+	let forwardButton = $("<div>").addClass("forward");
+	backButton.addClass("disabled");
+	forwardButton.addClass("disabled");
 
-			hideIndex();
+	let currentKey = null;
+	let currentMapped = null;
+	let currentMappedDiv = null;
 
-			currentMappedDiv = mapped.create(userData[key], function(update) {
-				currentMappedDiv.addClass("disabled");
-				i18nUpdateAll();
-
-				let event = {};
-				event[key] = (update === undefined) ? null : update;
-				saving.removeClass("hide");
-				body.addClass("fulldisabled");
-				setTimeout(function() {
-					stack(event);
-				}, 100);
-			}, userData);
-
-			currentMapped = mapped;
-			currentKey = key;
-			contentDiv.empty().append(currentMappedDiv);
-
-			backButton.removeClass("disabled");
-			forwardButton.removeClass("disabled");
-			for (let k in data) {
-				if (k === key) {
-					backButton.addClass("disabled");
-					break;
+	maySkipKey = function(key) {
+		if (data[key].type === undefined) {
+			return true;
+		}
+		if (data[key].if !== undefined) {
+			for (let kk in data[key].if) {
+				if ((userData[kk] !== undefined) && (data[key].if[kk] !== userData[kk].value)) {
+					return true;
 				}
+			}
+		}
+		return false;
+	}
+	findNextForKey = function(key) {
+		let found = false;
+		for (let k in data) {
+			if (k === key) {
+				found = true;
+			} else {
+				if (maySkipKey(k)) {
+					continue;
+				}
+				if (found) {
+					console.log("NEXT", key, k);
+					return k;
+				}
+			}
+		}
+		return null;
+	};
+	findPreviousForKey = function(key) {
+		let previous = null;
+		for (let k in data) {
+			if (k === key) {
 				break;
 			}
-			let last = null;
-			for (let k in data) {
-				last = k;
+			if (maySkipKey(k)) {
+				continue;
 			}
-			if (last === key) {
-				forwardButton.addClass("disabled");
-			}
+			previous = k;
+		}
+		console.log("PREVIOUS", key, previous);
+		return previous;
+	};
 
-			window.location.hash = "#" + key;
+	let showIndex = function() {
+		header.hide();
+		footer.hide();
+		body.hide();
+
+		window.location.hash = "";
+
+		indexDiv.empty();
+		indexDiv.append($("<div>").addClass("close").on("click", function() {
+			createForKey(currentKey);
+		}));
+		for (let k in data) {
+			if (maySkipKey(k)) {
+				continue;
+			}
+			let d = data[k];
+			if (d.title !== undefined) {
+				let div = i18n._($("<div>"), d.title).on("click", function() {
+					createForKey(k);
+				});
+				if (userData[k] !== undefined) {
+					div.addClass("filled");
+				}
+				indexDiv.append(div);
+			}
+		}	
+		indexDiv.show();
+	};
+	let hideIndex = function() {
+		indexDiv.hide();		
+		header.show();
+		footer.show();
+		body.show();
+	};
+
+	createForKey = function(key) {
+		saving.addClass("hide");
+		body.removeClass("fulldisabled");
+
+		showIndex();
+
+		console.log("KEY", key);
+		if (key === null) {
+			return;
+		}
+		let mapped = map[key];
+		if (currentMapped !== null) {
+			currentMappedDiv.remove();
+			currentMapped.destroy();
+			currentMappedDiv = null;
+			currentMapped = null;
+			currentKey = null;
+
+			backButton.addClass("disabled");
+			forwardButton.addClass("disabled");
+		}
+		if (mapped === undefined) {
+			return; //TODO Error panel
+		}
+
+		hideIndex();
+
+		currentMappedDiv = mapped.create(userData[key], function(update) {
+			currentMappedDiv.addClass("disabled");
+			i18n.update(undefined); //TODO??
+
+			let event = {};
+			event[key] = (update === undefined) ? null : update;
+			saving.removeClass("hide");
+			body.addClass("fulldisabled");
+			stack(event);
+		}, userData);
+
+		currentMapped = mapped;
+		currentKey = key;
+		contentDiv.empty().append(currentMappedDiv);
+
+		backButton.removeClass("disabled");
+		forwardButton.removeClass("disabled");
+		for (let k in data) {
+			if (k === key) {
+				backButton.addClass("disabled");
+				break;
+			}
+			break;
+		}
+		let last = null;
+		for (let k in data) {
+			last = k;
+		}
+		if (last === key) {
+			forwardButton.addClass("disabled");
+		}
+
+		window.location.hash = "#" + key;
+	};
+
+	footer.append(i18n._(backButton, dataLanguage.back).click(function() {
+		let n = findPreviousForKey(currentKey);
+		if (n !== null) {
+			createForKey(n);
+		} else {
+			createForKey(currentKey);
+		}
+	}));
+	footer.append(indexButton.click(showIndex));
+	footer.append(i18n._(forwardButton, dataLanguage.forward).click(function() {
+		let n = findNextForKey(currentKey);
+		if (n !== null) {
+			createForKey(n);
+		} else {
+			createForKey(currentKey);
+		}
+	}));
+
+	/****************/
+	/* DISCONNECT   */
+	/****************/
+
+	let disconnectButton = i18n._($("<div>"), dataLanguage.disconnect);
+	$("body").append($("<div>").addClass("disconnect").append(disconnectButton));
+	disconnectButton.on("click", function() {
+		async.run([
+			() => {
+				let userId;
+				let item = localStorage.getItem(localStoreKey);
+				if (item !== null) {
+					userId = JSON.parse(item);
+				} else {
+					userId = null;
+				}
+
+				localStorage.removeItem(localStoreKey);
+
+				if (userId !== null) {
+					return encryptionServer.clearUser(userId);
+				}
+			},
+			() => {
+				window.location.href = "/" + platform + "/";
+			}
+		]);
+	});
+
+	/****************/
+	/* INIT         */
+	/****************/
+
+	let emailSubjectText = function() {
+		return {
+			subject: i18n.getText(dataLanguage.account.email.subject, true),
+			text: "<html>"
+				+ "<body style='background:white; color:black; font-size: 14px;'>"
+
+				+ "<div style=''>"
+				+ i18n.getText(dataLanguage.account.email.pleaseconfirm, true)
+				+ "</div>"
+
+				+ "<div style=''>"
+				+ "<a href='{url}'>"
+				+ i18n.getText(dataLanguage.account.email.clickhere, true)
+				+ "</a>"
+				+ "</div>"
+
+				+ "<div style=''>"
+				+ i18n.getText(dataLanguage.account.email.pastelink, true)
+				+ "</div>"
+				+ "<div style=''>"
+				+ "{url}"
+				+ "</div>"
+
+				+ "</body>"
+				+ "</html>"
 		};
+	};
 
-		footer.append(i18n(backButton, dataLanguage.back).click(function() {
-			let n = findPreviousForKey(currentKey);
-			if (n !== null) {
-				createForKey(n);
-			} else {
-				createForKey(currentKey);
+	let navigateDirectly = function(d, finish) {
+		contentDiv.empty();
+		saving.addClass("hide");
+		body.removeClass("fulldisabled");
+
+		let mapped;
+		if (finish === undefined) {
+			mapped = plugins["stop"](d, dataLanguage);
+		} else {
+			mapped = plugins["line"](d, dataLanguage);
+		}
+		mapped = overloadCreate(mapped, d);
+
+		let createdDiv = mapped.create(undefined, function(update) {
+			createdDiv.addClass("disabled");
+			i18n.update(undefined); //TODO??
+
+			saving.removeClass("hide");
+			body.addClass("fulldisabled");
+
+			if (finish !== undefined) {
+				finish(update.value);
 			}
-		}));
-		footer.append(indexButton.click(showIndex));
-		footer.append(i18n(forwardButton, dataLanguage.forward).click(function() {
-			let n = findNextForKey(currentKey);
-			if (n !== null) {
-				createForKey(n);
-			} else {
-				createForKey(currentKey);
+		}, userData);
+		
+		contentDiv.append(createdDiv);
+	};
+
+	let recoverKey = windowParams["recover"];
+	let recoverUserId = windowParams["id"];
+	let supervise = windowParams["supervise"] !== undefined;
+
+	async.run([
+		// Recover user
+		() => {
+			if (recoverKey !== undefined) {
+				return async.try_([
+						() => encryptionServer.validateUser(recoverUserId, recoverKey, undefined, supervise),
+						() => {
+							localStorage.setItem(localStoreKey, JSON.stringify(recoverUserId));
+							window.history.replaceState(undefined, document.title, "/" + platform + "/");
+						},
+					]).catch_((_e) => async.async_((_finish, _error) => navigateDirectly(dataLanguage.account.failed)));
 			}
-		}));
+		},
 
-		updateLanguage(i18nLanguage);
+		// Load user
+		() => {
+			let userId;
+			let item = localStorage.getItem(localStoreKey);
+			if (item !== null) {
+				userId = JSON.parse(item);
+			} else {
+				userId = null;
+			}
 
-		let eventHeap = new Heap();
-		while_(true_())
-			.do_(try_(
-				sequence_(
-					Server.fullHistory(server, eventHeap),
-					// sleep_(0.1),
-					do_(function() {
-						let event = eventHeap.get();
+			console.log("USER", userId);
 
-						let cleanEvent = function(ee) {
-							delete ee.secure;
-							delete ee.signed;
-							delete ee.offset;
-							delete ee.nonce;
-							delete ee.from;
-							delete ee.to;
-						};
+			if (userId === null) {
+				let passwordHash;
+				let emailAddress;	
+				return async._([
+					EncryptionServer.generateRandom(),
+					(password) => EncryptionServer.hash(password),
+					(hash) => passwordHash = hash,
+					async.async_((finish, _error) => navigateDirectly(dataLanguage.account.create, finish)),
+					(address) => {
+						emailAddress = address;
+						userId = userRoot + emailAddress;
+					},
+					async.try_([
+						() => encryptionServer.getPublicKey(userId),
+						(publicKey) => { console.log("USER PUBLIC KEY", publicKey); },
+						() => encryptionServer.recoverUser(userId, recoverUrlBase, emailSubjectText(), userData.language, supervise),
+						async.async_((_finish, _error) => navigateDirectly(dataLanguage.account.recovery)),
+					]).catch_((_e) => [
+						encryptionServer.createNewUser(userId, passwordHash, emailAddress),
+						encryptionServer.recoverUser(userId, recoverUrlBase, emailSubjectText(), userData.language, supervise),
+						async.async_((_finish, _error) => navigateDirectly(dataLanguage.account.created)),
+					]),
+				]);
+			}
+			
+			userData.email = userId.substring(userRoot.length);
+			userData.userId = userId;
+			return encryptionServer.loadUser(userId, undefined, undefined, undefined);
+		},
 
-						cleanEvent(event);
-						console.log(event);
-
-						if (event.old !== undefined) {
-							let language = null;
-							for (let e of event.old) {
-								cleanEvent(e);
-
-								for (let k in e) {
-									if (k === "language") {
-										language = e[k];
-									} else {
-										userData[k] = e[k];
-									}
-								}
-							}
-
-							console.log("HASH", window.location.hash);
-							if (window.location.hash !== "") {
-								createForKey(window.location.hash.substring("#".length));
+		() => {
+			let eventHistory = history(encryptionServer);
+			return async._([
+				// First event in history is an event.old
+				eventHistory,
+				(event) => {
+					delete event.from;
+					delete event.to;
+					console.log("OLD", event);
+					let language = null;
+					for (let e of event.old) {
+						for (let k in e) {
+							if (k === "language") {
+								language = e[k];
 							} else {
-								let last = null;
-								for (let k in data) {
-									if (maySkipKey(k)) {
-										continue;
-									}
-									if (userData[k] === undefined) {
-										console.log("NOT YET DEFINED", k);
-										last = k;
-										break;
-									}
-								}
-								createForKey(last);
+								userData[k] = e[k];
 							}
+						}
+					}
+					console.log("LANGUAGE", language);
+					return language;
+				},
 
-							if (language !== null) {
-								updateLanguage(language);
+				// Init navigation
+				(language) => {
+					if (language !== null) {
+						updateLanguage(language);
+					}
+
+					if (window.location.hash !== "") {
+						console.log("HASH", window.location.hash);
+						createForKey(window.location.hash.substring("#".length));
+					} else {
+						let last = null;
+						for (let k in data) {
+							if (maySkipKey(k)) {
+								continue;
 							}
-						} else {
-							for (let k in event) {
-								if (k === "language") {
-									updateLanguage(event[k]);
-								} else {
-									userData[k] = event[k];
-									if (userData[k] !== null) {
-										let n = findNextForKey(k);
-										if (n !== null) {
-											createForKey(n);
-										} else {
-											createForKey(k);
-										}
+							if (userData[k] === undefined) {
+								console.log("NOT YET DEFINED", k);
+								last = k;
+								break;
+							}
+						}
+						console.log("LAST", last);
+						createForKey(last);
+					}
+				},
+
+				// Load events
+				async.while_(() => true).do_([
+					eventHistory,
+					(event) => {
+						delete event.from;
+						delete event.to;
+						console.log("EVENT", event);
+
+						for (let k in event) {
+							let eventData = event[k];
+							if (k === "language") {
+								updateLanguage(eventData);
+							} else {
+								userData[k] = eventData;
+								if (userData[k] !== null) {
+									let n = findNextForKey(k);
+									if (n !== null) {
+										createForKey(n);
 									} else {
 										createForKey(k);
 									}
+								} else {
+									createForKey(k);
 								}
 							}
 						}
-						return noop_();
-					})))
-				.catch_(function(e) {
-					return sequence_(
-						log_("ERROR", e),
-						sleep_(5));
-				}))
-		.run();
-	};
-
-	initEverything(runEverything);
-});
+					},
+				]),
+			]);
+		},
+	]);
+},
+]);
 });

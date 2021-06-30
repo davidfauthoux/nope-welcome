@@ -43,7 +43,7 @@ export function update(l) {
 		let text = JSON.parse(div.attr("data-text"));
 		div.html(getText(text));
 	});
-	document.title = getText({
+	document.title = getText({ //TODO
 		en: "The Travel Team - Registration",
 		fr: "The Travel Team - Dossier",
 		es: "The Travel Team - Archivo",

@@ -1,7 +1,7 @@
-import * as async from "../modules/async-ext.js";
+import * as async from "../modules/async.js";
 import * as i18n from "./i18n.js";
 import * as image from "../modules/image.js";
-import { Server, uuid } from "../modules/server-ext.js";
+import { Server, uuid } from "../modules/server.js";
 // jquery
 
 let globalInput;
