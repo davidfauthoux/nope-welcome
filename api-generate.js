@@ -4,7 +4,7 @@ import * as i18n from "./i18n.js";
 export default {
 	generate: function(params, language) {
 		return {
-			create: function(data, callback, allData) {
+			create: function(_data, callback, allData) {
 				let div = $("<div>");
 				let divs = $("<div>").addClass("buttons");
 

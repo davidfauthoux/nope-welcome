@@ -2,9 +2,9 @@ import * as i18n from "./i18n.js";
 // jquery
 
 export default {
-	choice: function(params, language) {
+	choice: function(params, _language) {
 		return {
-			create: function(data, callback, allData) {
+			create: function(data, callback, _allData) {
 				let divs = $("<div>").addClass("options");
 				for (let t in params.options) {
 					let div = $("<div>");

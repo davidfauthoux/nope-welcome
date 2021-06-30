@@ -2,9 +2,9 @@ import * as i18n from "./i18n.js";
 // jquery
 
 export default {
-	line: function(params, language) {
+	line: function(_params, language) {
 		return {
-			create: function(data, callback, allData) {
+			create: function(data, callback, _allData) {
 				let div = $("<div>");
 				let input = $("<input>");
 				if (data !== undefined) {

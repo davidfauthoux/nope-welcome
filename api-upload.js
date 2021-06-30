@@ -11,7 +11,7 @@ $(function() {
 });
 
 export default {
-	upload: function(params, language) {
+	upload: function(_params, language) {
 		return {
 			create: function(data, callback, allData) {
 				let div = $("<div>");

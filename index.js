@@ -47,8 +47,8 @@ new Server("/" + platform).download("data.json"),
 		}
 		u = u.substring(i + 1);
 		let p = {};
-		for (let kv of u.split(/\&/g)) {
-			let s = kv.trim().split(/\=/g);
+		for (let kv of u.split(/&/g)) {
+			let s = kv.trim().split(/=/g);
 			let key;
 			let value;
 			if (s.length === 1) {

@@ -1,5 +1,4 @@
-"use strict";
-
+/* eslint-disable no-unused-vars */
 let data = {
 	language: {
 		back: {

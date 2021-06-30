@@ -1,10 +1,9 @@
-import * as i18n from "./i18n.js";
 // jquery
 
 export default {
-	stop: function(params, language) {
+	stop: function(_params, _language) {
 		return {
-			create: function(data, callback, allData) {
+			create: function(_data, _callback, _allData) {
 				return $("<div>");
 			},
 
