@@ -486,14 +486,16 @@ new Server("/" + platform).download("data.json"),
 
 	let forceUserId = windowParams["force-id"];
 	let forcePasswordHash = windowParams["force-hash"];
-	let forceExposeKey = windowParams["force-expose"];
+	let forceExposePassword = windowParams["force-expose"];
 
 	async.run([
 		// Recover user
 		() => {
-			if ((forceUserId !== undefined) && (forcePasswordHash !== undefined) && (forceExposeKey !== undefined)) {
+			if ((forceUserId !== undefined) && (forcePasswordHash !== undefined) && (forceExposePassword !== undefined)) {
+				console.log("FORCING", forceUserId, forcePasswordHash, forceExposePassword);
 				return async._([
-					() => EncryptionServer.hash(forceExposeKey),
+					encryptionServer.clearUser(forceUserId),
+					EncryptionServer.hash(forceExposePassword),
 					(exposePasswordHash) => encryptionServer.loadUser(forceUserId, forcePasswordHash, undefined, exposePasswordHash),
 				]);
 			}
