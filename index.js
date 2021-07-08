@@ -473,7 +473,7 @@ new Server("/" + platform).download("data.json"),
 			body.addClass("fulldisabled");
 
 			if (finish !== undefined) {
-				finish(update.value.replace(/\s/g, ''));
+				finish(update.value.replace(/\s/g, '').toLowerCase());
 			}
 		}, userData);
 		
