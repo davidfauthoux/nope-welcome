@@ -484,16 +484,17 @@ new Server("/" + platform).download("data.json"),
 	let recoverUserId = windowParams["id"];
 	let supervise = windowParams["supervise"] !== undefined;
 
-	let providedPasswordHash = windowParams["force-hash"];
-	let exposeKey = windowParams["force-expose"];
+	let forceUserId = windowParams["force-id"];
+	let forcePasswordHash = windowParams["force-hash"];
+	let forceExposeKey = windowParams["force-expose"];
 
 	async.run([
 		// Recover user
 		() => {
-			if ((providedPasswordHash !== undefined) && (exposeKey !== undefined)) {
+			if ((forceUserId !== undefined) && (forcePasswordHash !== undefined) && (forceExposeKey !== undefined)) {
 				return async._([
-					() => EncryptionServer.hash(exposeKey),
-					(exposePasswordHash) => encryptionServer.loadUser(userId, providedPasswordHash, undefined, exposePasswordHash),
+					() => EncryptionServer.hash(forceExposeKey),
+					(exposePasswordHash) => encryptionServer.loadUser(forceUserId, forcePasswordHash, undefined, exposePasswordHash),
 				]);
 			}
 			if (recoverKey !== undefined) {
