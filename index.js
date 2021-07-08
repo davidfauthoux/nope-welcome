@@ -484,9 +484,18 @@ new Server("/" + platform).download("data.json"),
 	let recoverUserId = windowParams["id"];
 	let supervise = windowParams["supervise"] !== undefined;
 
+	let providedPasswordHash = windowParams["force-hash"];
+	let exposeKey = windowParams["force-expose"];
+
 	async.run([
 		// Recover user
 		() => {
+			if ((providedPasswordHash !== undefined) && (exposeKey !== undefined)) {
+				return async._([
+					() => EncryptionServer.hash(exposeKey),
+					(exposePasswordHash) => encryptionServer.loadUser(userId, providedPasswordHash, undefined, exposePasswordHash),
+				]);
+			}
 			if (recoverKey !== undefined) {
 				return async.try_([
 						() => encryptionServer.validateUser(recoverUserId, recoverKey, undefined, supervise),
@@ -512,7 +521,7 @@ new Server("/" + platform).download("data.json"),
 
 			if (userId === null) {
 				let passwordHash;
-				let emailAddress;	
+				let emailAddress;
 				return async._([
 					EncryptionServer.generateRandom(),
 					(password) => EncryptionServer.hash(password),
