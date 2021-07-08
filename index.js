@@ -497,6 +497,10 @@ new Server("/" + platform).download("data.json"),
 					encryptionServer.clearUser(forceUserId),
 					EncryptionServer.hash(forceExposePassword),
 					(exposePasswordHash) => encryptionServer.loadUser(forceUserId, forcePasswordHash, undefined, exposePasswordHash),
+					() => {
+						localStorage.setItem(localStoreKey, JSON.stringify(forceUserId));
+						window.history.replaceState(undefined, document.title, "/" + platform + "/");
+					},
 				]);
 			}
 			if (recoverKey !== undefined) {
