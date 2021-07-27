@@ -559,7 +559,7 @@ new Server("/" + platform).download("data.json"),
 					]).catch_((_e) => [
 						encryptionServer.createNewUser(userId, passwordHash, ""),
 					]),
-					encryptionServer.loadUser(userId, undefined, undefined, undefined),
+					encryptionServer.loadUser(userId, passwordHash, undefined, undefined),
 				]);
 			}
 
