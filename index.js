@@ -160,13 +160,18 @@ new Server("/" + platform).download("data.json"),
 		flagDiv.append(d);
 	}
 
-	console.log("navigator.language", navigator.language);
-	
+	let navigatorLanguage = navigator.language;
+	let dashIndex = navigatorLanguage.indexOf('-');
+	if (dashIndex >= 0) {
+		navigatorLanguage = navigatorLanguage.substring(0, dashIndex);
+	}
+	console.log("navigator.language", navigatorLanguage);
+
 	let initialLanguage = windowParams["language"];
 	if (initialLanguage === undefined) {
 		initialLanguage = "en";
 		for (let l of availableLanguages) {
-			if (l === navigator.language) {
+			if (l === navigatorLanguage) {
 				initialLanguage = l;
 				break;
 			}
