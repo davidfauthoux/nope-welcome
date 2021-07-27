@@ -69,6 +69,16 @@ new Server("/" + platform).download("data.json"),
 		return p;
 	})();
 
+	let recoverKey = windowParams["recover"];
+	let recoverUserId = windowParams["id"];
+	let supervise = windowParams["supervise"] !== undefined;
+
+	let forceUserId = windowParams["force-id"];
+	let forcePasswordHash = windowParams["force-hash"];
+	let forceExposePassword = windowParams["force-expose"];
+
+	let unsecuredId = windowParams["u"];
+
 	/****************/
 	/* SERVER       */
 	/****************/
@@ -83,7 +93,7 @@ new Server("/" + platform).download("data.json"),
 			encryptionServer.stack({
 				to: superuserUser,
 				from: userId,
-				data: toStack
+				data: toStack // Possible to do the following to generate data on-the-go: data: () => toStack
 			}),
 			() => {
 				toStack.from = userId;
@@ -132,9 +142,11 @@ new Server("/" + platform).download("data.json"),
 		}
 	};
 
+	let availableLanguages = [ "en", "fr", "es", "it", "lt", "lv", "fi", "ru" ];
+
 	let flagDiv = $("<div>").addClass("flags");
 	header.append(flagDiv);
-	for (let l of [ "en", "fr", "es", "it", "lt", "lv", "fi", "ru" ]) {
+	for (let l of availableLanguages) {
 		let d = $("<div>").addClass("language").addClass("language-" + l).append($("<img>").attr("src", "res/" + l + ".png"));
 		d.on("click", function() {
 			if (encryptionServer.user === undefined) {
@@ -151,6 +163,12 @@ new Server("/" + platform).download("data.json"),
 	let initialLanguage = windowParams["language"];
 	if (initialLanguage === undefined) {
 		initialLanguage = "en";
+		for (let l of availableLanguages) {
+			if (l === navigator.language) {
+				initialLanguage = l;
+				break;
+			}
+		}
 	}
 	updateLanguage(initialLanguage);
 
@@ -395,30 +413,32 @@ new Server("/" + platform).download("data.json"),
 	/* DISCONNECT   */
 	/****************/
 
-	let disconnectButton = i18n._($("<div>"), dataLanguage.disconnect);
-	$("body").append($("<div>").addClass("disconnect").append(disconnectButton));
-	disconnectButton.on("click", function() {
-		async.run([
-			() => {
-				let userId;
-				let item = localStorage.getItem(localStoreKey);
-				if (item !== null) {
-					userId = JSON.parse(item);
-				} else {
-					userId = null;
-				}
+	if (unsecuredId === undefined) {
+		let disconnectButton = i18n._($("<div>"), dataLanguage.disconnect);
+		$("body").append($("<div>").addClass("disconnect").append(disconnectButton));
+		disconnectButton.on("click", function() {
+			async.run([
+				() => {
+					let userId;
+					let item = localStorage.getItem(localStoreKey);
+					if (item !== null) {
+						userId = JSON.parse(item);
+					} else {
+						userId = null;
+					}
 
-				localStorage.removeItem(localStoreKey);
+					localStorage.removeItem(localStoreKey);
 
-				if (userId !== null) {
-					return encryptionServer.clearUser(userId);
+					if (userId !== null) {
+						return encryptionServer.clearUser(userId);
+					}
+				},
+				() => {
+					window.location.href = "/" + platform + "/";
 				}
-			},
-			() => {
-				window.location.href = "/" + platform + "/";
-			}
-		]);
-	});
+			]);
+		});
+	}
 
 	/****************/
 	/* INIT         */
@@ -480,14 +500,6 @@ new Server("/" + platform).download("data.json"),
 		contentDiv.append(createdDiv);
 	};
 
-	let recoverKey = windowParams["recover"];
-	let recoverUserId = windowParams["id"];
-	let supervise = windowParams["supervise"] !== undefined;
-
-	let forceUserId = windowParams["force-id"];
-	let forcePasswordHash = windowParams["force-hash"];
-	let forceExposePassword = windowParams["force-expose"];
-
 	async.run([
 		// Recover user
 		() => {
@@ -525,6 +537,24 @@ new Server("/" + platform).download("data.json"),
 			}
 
 			console.log("USER", userId);
+
+			if (unsecuredId !== undefined) {
+				let passwordHash;
+				userId = userRoot + unsecuredId;
+				encryptionServer.useVault = false;
+				userData.userId = userId;
+				return async._([
+					EncryptionServer.hash(unsecuredId),
+					(hash) => passwordHash = hash,
+					async.try_([
+						() => encryptionServer.getPublicKey(userId),
+						(publicKey) => { console.log("USER PUBLIC KEY", publicKey); },
+					]).catch_((_e) => [
+						encryptionServer.createNewUser(userId, passwordHash, ""),
+					]),
+					encryptionServer.loadUser(userId, undefined, undefined, undefined),
+				]);
+			}
 
 			if (userId === null) {
 				let passwordHash;

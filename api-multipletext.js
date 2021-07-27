@@ -21,7 +21,10 @@ export default {
 					div.append(predefined);
 					if (params.predefined !== undefined) {
 						console.log("PREDEFINED", params.predefined, allData);
-						i18n._(predefined, allData[params.predefined]);
+						if (allData[params.predefined] !== undefined) {
+							// i18n._(predefined, allData[params.predefined]);
+							predefined.text(allData[params.predefined]);
+						}
 					}
 					let input = $("<textarea>");
 					if (d !== undefined) {
