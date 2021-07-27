@@ -160,6 +160,8 @@ new Server("/" + platform).download("data.json"),
 		flagDiv.append(d);
 	}
 
+	console.log("navigator.language", navigator.language);
+	
 	let initialLanguage = windowParams["language"];
 	if (initialLanguage === undefined) {
 		initialLanguage = "en";
