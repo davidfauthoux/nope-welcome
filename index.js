@@ -578,11 +578,11 @@ new Server("/" + platform).download("data.json"),
 					async.try_([
 						() => encryptionServer.getPublicKey(userId),
 						(publicKey) => { console.log("USER PUBLIC KEY", publicKey); },
-						() => encryptionServer.recoverUser(userId, recoverUrlBase, emailSubjectText(), userData.language, supervise),
+						() => encryptionServer.recoverUser(userId, recoverUrlBase, emailSubjectText(), { language: userData.language }, supervise),
 						async.async_((_finish, _error) => navigateDirectly(dataLanguage.account.recovery)),
 					]).catch_((_e) => [
 						encryptionServer.createNewUser(userId, passwordHash, emailAddress),
-						encryptionServer.recoverUser(userId, recoverUrlBase, emailSubjectText(), userData.language, supervise),
+						encryptionServer.recoverUser(userId, recoverUrlBase, emailSubjectText(), { language: userData.language }, supervise),
 						async.async_((_finish, _error) => navigateDirectly(dataLanguage.account.created)),
 					]),
 				]);
