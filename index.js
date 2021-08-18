@@ -78,6 +78,7 @@ new Server("/" + platform).download("data.json"),
 	let forceExposePassword = windowParams["force-expose"];
 
 	let unsecuredId = windowParams["u"];
+	let unsecuredPassword = windowParams["p"];
 
 	/****************/
 	/* SERVER       */
@@ -551,7 +552,7 @@ new Server("/" + platform).download("data.json"),
 				encryptionServer.useVault = false;
 				userData.userId = userId;
 				return async._([
-					EncryptionServer.hash(unsecuredId),
+					EncryptionServer.hash((unsecuredPassword === undefined) ? unsecuredId : unsecuredPassword),
 					(hash) => passwordHash = hash,
 					async.try_([
 						() => encryptionServer.getPublicKey(userId),
