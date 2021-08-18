@@ -550,6 +550,7 @@ new Server("/" + platform).download("data.json"),
 				let passwordHash;
 				userId = userRoot + unsecuredId;
 				encryptionServer.useVault = false;
+				encryptionServer.saveUserInformation = false;
 				userData.userId = userId;
 				return async._([
 					EncryptionServer.hash((unsecuredPassword === undefined) ? unsecuredId : unsecuredPassword),
