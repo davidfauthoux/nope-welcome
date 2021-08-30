@@ -684,7 +684,7 @@ let data = {
 			yes: { en: "Yes", fr: "Oui", es: "Sí", it: "Sì" },
 			no: { en: "No", fr: "Non", es: "No", it: "Non" },
 		},
-		type: "choice",
+		_type: "choice",
 	},
 
 	funding: {
@@ -752,6 +752,80 @@ let data = {
 		example: "2021-04-06",
 	},
 
+	invitationletter: {
+		title: {
+			en: "Invitation letter",
+			fr: "Attestation",
+			es: "Carta de invitación",
+			it: "Autorizzazione genitoriale",
+		},
+		text: {
+			en: "Find here the invitation letter for your son ('Download' button below).",
+			fr: "Téléchargez l'autorisation parentale ci-dessous (bouton \"Télécharger\"), imprimez-la, complétez-la et signez-la.",
+			es: "Descargue el autorización parental debajo (botón \"Descargar\"), complételo y firme.",
+			it: "Scarica l'autorizzazione genitoriale (pulsante \"Scaricare\" di seguito), compila e firma.",
+		},
+
+		generate: [
+			{
+				image_medium: "colorlogo.png",
+			},
+			{
+				text_tab: {
+					en: "Date: {today}",
+					fr: "Date: {today}",
+					es: "Fecha :{today}",
+					it: "Data :{today}",
+				},
+			},
+			{
+				text: {
+					en: "We are pleased to invite your child {firstname} {lastname} to participate in the journey proposed by the association The Travel Team from {departuredate} to {returndate}.",
+					fr: "Nous sommes heureux d'inviter votre enfant {firstname} {lastname} né le {dateofbirth} à participer au voyage proposé par l’association The Travel Team du {departuredate} au {returndate}.",
+					es: "Estamos felices de invitar a su niño {firstname} {lastname} nacido {dateofbirth} a participar en el viaje propuesto por la asociación 3T de {departuredate} a {returndate}.",
+					it: "Siamo felici di invitare tuo figlio {firstname} {lastname} nato il {dateofbirth} partecipare al viaggio proposto dall'associazione da {departuredate} a {returndate}.",
+				},
+			},
+			{
+				text: {
+					en: "The Travel Team is an international association offering young basketball players from all over the world (between 10 and 12 years old) to play together in the same team in international tournaments. It was founded over 12 years ago and has had players from all over Europe, Russia, China, Australia, USA, Argentina, Mexico, etc ...",
+					fr: "The Travel Team est une association internationale proposant à des jeunes joueurs de basketball du monde entier (entre 10 et 12 ans) de jouer ensemble dans la même équipe lors de tournois internationaux. Elle a été fondée il y a plus de 12 ans et a compté des joueurs venus de toute l'Europe, Russie, Chine, Australie, USA, Argentine, Mexique, etc...",
+					es: "The Travel Team es una asociación internacional que ofrece a jóvenes jugadores de baloncesto de todo el mundo (entre 10 y 12 años) para jugar juntos en el mismo equipo en torneos internacionales. Fue fundada hace más de 12 años y ha tenido jugadores de toda Europa, Rusia, China, Australia, USA, Argentina, México, etc...",
+					it: "Il Travel Team è un'associazione internazionale che offre ai giovani giocatori di basket di tutto il mondo (tra i 10 ei 12 anni) di giocare insieme nella stessa squadra in tornei internazionali. È stata fondata oltre 12 anni fa e ha avuto giocatori da tutta Europa, Russia, Cina, Australia, USA, Argentina, Messico, ecc...",
+				},
+			},
+			{
+				text: {
+					en: "Children do not speak the same language and must be successful to create a group of friends and then a team in a few hours, as soon as they arrive on site. It is an exceptional sporting adventure and a great socialization challenge for them!",
+					fr: "Les enfants ne parlent pas la même langue et doivent réussir à créer un groupe d'amis puis une équipe en quelques heures, dès qu'ils arrivent sur place. C'est une aventure sportive exceptionnelle et un grand défi de sociabilisation pour eux !",
+					es: "Los niños no hablan el mismo idioma y deben tener éxito para crear un grupo de amigos y luego un equipo en unas pocas horas, tan pronto como lleguen al sitio. ¡Es una aventura deportiva excepcional y un gran desafío de socialización para ellos!",
+					it: "I bambini non parlano la stessa lingua e devono avere successo per creare un gruppo di amici e poi una squadra in poche ore, appena arrivati ​​sul posto. È un'avventura sportiva eccezionale e una grande sfida di socializzazione per loro!",
+				},
+			},
+			{
+				text_tab: {
+					en: "David Fauthoux, on behalf of Travel Team, as founder and head coach<br/>david.fauthoux@gmail.com<br/>+33 6 20 96 16 81",
+					fr: "David Fauthoux, au nom de Travel Team, en tant que fondateur et premier entraîneur<br/>david.fauthoux@gmail.com<br/>+33 6 20 96 16 81",
+					es: "David Fauthoux, en nombre de Travel Team, como fundador y primer entrenador<br/>david.fauthoux@gmail.com<br/>+33 6 20 96 16 81",
+					it: "David Fauthoux, per conto di Travel Team, come fondatore e primo allenatore<br/>david.fauthoux@gmail.com<br/>+33 6 20 96 16 81",
+				},
+			},
+			{
+				image_medium: "davidfauthouxsignature.jpg",
+			},
+			{
+				text_tab: {
+					en: "The Travel Team<br/>https://thetravel.team<br/>13 rue Louis Barthou, 64110 Mazères-Lezons, France<br/>RNA France W313015056<br/>Insurance MAIF FORF.50 SPORT CAT.3 A931 3587105 R",
+					fr: "The Travel Team<br/>https://thetravel.team<br/>13 rue Louis Barthou, 64110 Mazères-Lezons, France<br/>RNA France W313015056<br/>Insurance MAIF FORF.50 SPORT CAT.3 A931 3587105 R",
+					es: "The Travel Team<br/>https://thetravel.team<br/>13 rue Louis Barthou, 64110 Mazères-Lezons, France<br/>RNA France W313015056<br/>Insurance MAIF FORF.50 SPORT CAT.3 A931 3587105 R",
+					it: "The Travel Team<br/>https://thetravel.team<br/>13 rue Louis Barthou, 64110 Mazères-Lezons, France<br/>RNA France W313015056<br/>Insurance MAIF FORF.50 SPORT CAT.3 A931 3587105 R",
+				},
+			},
+		],
+
+		type: "generate",
+	},
+
 	parentalauthorization: {
 		title: {
 			en: "Parental Authorization",
@@ -768,7 +842,7 @@ let data = {
 
 		generate: [
 			{
-				icon: "logo",
+				image: "logo.png",
 			},
 			{
 				text: {

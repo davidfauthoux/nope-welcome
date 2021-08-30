@@ -28,39 +28,78 @@ export default {
 						if (skipped) {
 							continue;
 						}
-						if (block.icon !== undefined) {
-							render.append($("<img>").addClass("image").attr("src", "res/" + block.icon + ".png"));
-						}
-						if (block.text !== undefined) {
-							let replaceIn = function(tt, from, to) {
-								let r = {};
-								for (let kk in tt) {
-									r[kk] = tt[kk].replace("{" + from + "}", to);
-								}
-								return r;
-							};
-							let t = block.text;
-							// console.log(allData);
-							for (let k in allData) {
-								// console.log(k, allData[k]);
-								if (allData[k] !== null) {
-									// console.log("REPLACING", k, allData[k], t);
-									t = replaceIn(t, k, allData[k].value);
-								}
+						for (let suffix of [ "", "_small", "_medium", "_large", "_tab" ]) {
+							let d = null;
+							if (block["image" + suffix] !== undefined) {
+								d = $("<img>").addClass("image").attr("src", window.location.origin + window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/')) + "/res/" + block["image" + suffix]);
 							}
-							t = replaceIn(t, "today", new Date().toDateString());
-							render.append(i18n._($("<div>").addClass("block"), t, true));
-						}
-						if (block.frame !== undefined) {
-							render.append(i18n._($("<div>").addClass("frame"), block.frame, true));
+							if (block["text" + suffix] !== undefined) {
+								let replaceIn = function(tt, from, to) {
+									let r = {};
+									for (let kk in tt) {
+										r[kk] = tt[kk].replace("{" + from + "}", to);
+									}
+									return r;
+								};
+								let t = block["text" + suffix];
+								// console.log(allData);
+								for (let k in allData) {
+									// console.log(k, allData[k]);
+									if (allData[k] !== null) {
+										// console.log("REPLACING", k, allData[k], t);
+										t = replaceIn(t, k, allData[k].value);
+									}
+								}
+								t = replaceIn(t, "today", i18n.today());
+								d = i18n._($("<div>").addClass("block"), t, true);
+							}
+							if (block["frame" + suffix] !== undefined) {
+								d = $("<div>").addClass("frame");
+							}
+							if (d !== null) {
+								if (suffix !== "") {
+									d.addClass(suffix);
+								}
+								render.append(d);
+							}
 						}
 					}
 
-					let doc = "<html><head><script src='../jquery.min.js'></script><style>body { width: 500px; margin: 0 auto; font-size: 14px; } img { display: block; margin: 30px auto; width: 300px; } .block { margin-bottom: 5px; text-align: justify; } .frame { width: 300px; margin: 10px auto; border: dotted 1px gray; height: 150px; padding: 5px; background: #eee; color: gray; } </style></head><body>" + render.html() + "<script>window.focus(); $(window).on('load', window.print); window.onafterprint = function(){ window.close(); };</script></body></html>";
+					let doc = "<html>\n"
+					+ "<head>\n"
+						+ "<style>\n"
+							+ "body { width: 500px; margin: 0 auto; font-size: 14px; }\n"
+							+ "img { display: block; margin: 30px auto; width: 300px; }\n"
+							+ "img._small { width: 50px; margin: 0; }\n"
+							+ "img._medium { width: 150px; margin: 0; }\n"
+							+ "img._large { width: 300px; margin: 0; }\n"
+							+ ".block { margin-bottom: 5px; text-align: justify; }\n"
+							+ ".block._tab { font-style:italic; margin-bottom: 30px; margin-top: 20px; }\n"
+							+ ".frame { width: 300px; margin: 10px auto; border: dotted 1px gray; height: 150px; padding: 5px; background: #eee; color: gray; }\n"
+						+ "</style>\n"
+					+ "</head>\n"
+					+ "<body>\n"
+						+ render.html()
+						+ "\n"
+						+ "<script>\n"
+							+ "window.focus();\n"
+							+ "window.onload = function() { console.log('PRINTING'); window.print(); };\n"
+							// + "window.onafterprint = function() { window.close(); };\n"
+						+ "</script>\n"
+					+ "</body>\n"
+					+ "</html>\n";
 					console.log("RENDER", doc);
-					let w = window.open("", "_blank");
-					w.document.write(doc);
-					w.document.close();
+
+					var iframe = $("<iframe>").css("width", "0").css("height", "0").css("overflow", "hidden");
+					iframe.attr("src", "data:text/html;charset=utf-8," + encodeURIComponent(doc));
+					$("body").append(iframe);
+
+					// iframe.onload = function() {
+					// 	// let w = window.open("", "_blank");
+					// 	let w = iframe.contentWindow;
+					// 	w.document.write(doc);
+					// 	w.document.close();
+					// };
 				};
 
 				let printButton = $("<a>").addClass("button"); // .addClass("secondary");

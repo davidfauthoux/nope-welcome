@@ -85,7 +85,7 @@ export default {
 					}
 
 					date = year + "/" + ((month < 10) ? "0" : "") + month + "/" + ((day < 10) ? "0" : "") + day;
-					explanation.addClass("valid").text(new Date(date).toDateString());
+					explanation.addClass("valid").text(i18n.today(date));
 
 					validateButton.hide();
 					setButton.show();

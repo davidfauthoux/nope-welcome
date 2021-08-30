@@ -50,3 +50,13 @@ export function update(l) {
 		it: "The Travel Team - File",
 	});
 }
+
+export function today(date) {
+	let d;
+	if (date === undefined) {
+		d = new Date();
+	} else {
+		d = new Date(date);
+	}
+	return d.toLocaleDateString(language, { year: "numeric", month: "long", day: "numeric" });
+}
