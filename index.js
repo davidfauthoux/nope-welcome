@@ -476,17 +476,17 @@ new Server("/" + platform).download("data.json"),
 				+ "</div>"
 
 				+ "<div style=''>"
+				+ i18n.getText(dataLanguage.account.email.recoverycode, true)
+				+ "</div>"
+				+ "<div style='font-family: monospace; font-weight: bold; font-size: xx-large;'>"
+				+ "{key}"
+				+ "</div>"
+
+				+ "<div style=''>"
 				+ i18n.getText(dataLanguage.account.email.scanqrcode, true)
 				+ "</div>"
 				+ "<div style=''>"
 				+ "<img src='https://api.qrserver.com/v1/create-qr-code/?data={url:uri_encoded}&size=100x100' alt='' title=''></img>"
-				+ "</div>"
-
-				+ "<div style=''>"
-				+ i18n.getText(dataLanguage.account.email.recoverycode, true)
-				+ "</div>"
-				+ "<div style='font-family: monospace; font-weight: bold;'>"
-				+ "{key}"
 				+ "</div>"
 
 				+ "</body>"
