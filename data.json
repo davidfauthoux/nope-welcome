@@ -257,17 +257,17 @@
 					"_ee": "Konto taastamine"
 				},
 				"text": {
-					"en": "We sent you a recovery email, please check your email box.",
-					"fr": "Nous vous avons envoyé un e-mail de récupération, veuillez vérifier votre boîte e-mail.",
-					"es": "Le enviamos un correo electrónico de recuperación, verifique su casilla de correo electrónico.",
-					"it": "Ti abbiamo inviato un'e-mail di recupero, controlla la tua casella di posta elettronica.",
-					"_lt": "Išsiuntėme jums atkūrimo el. Laišką, patikrinkite el. Pašto dėžutę.",
-					"_lv": "Mēs jums nosūtījām atkopšanas e -pastu. Lūdzu, atzīmējiet savu e -pasta lodziņu.",
-					"_ru": "Мы отправили вам резервное письмо по электронной почте, проверьте свой адрес электронной почты.",
-					"_fi": "Lähetimme sinulle palautussähköpostin. Tarkista sähköpostisi.",
-					"_sv": "Vi har skickat ett e -postmeddelande för återställning, kontrollera din e -postruta.",
-					"_da": "Vi har sendt dig en gendannelses -e -mail. Kontroller venligst din e -mail -boks.",
-					"_ee": "Saatsime teile e -posti varuaadressi. Palun kontrollige oma e -posti kasti."
+					"en": "We sent you a recovery email, please check your email box. Click on the link provided in the email or enter the recovery code here.",
+					"fr": "Nous vous avons envoyé un e-mail de récupération, veuillez vérifier votre boîte e-mail. Cliquez sur le lien fourni dans l'e-mail ou entrez le code de récupération ici.",
+					"es": "Le enviamos un correo electrónico de recuperación, verifique su casilla de correo electrónico. Haga clic en el enlace proporcionado en el correo electrónico o ingrese el código de recuperación aquí.",
+					"it": "Ti abbiamo inviato un'e-mail di recupero, controlla la tua casella di posta elettronica. Fare clic sul collegamento fornito nell'e-mail o inserire qui il codice di recupero.",
+					"_lt": "Išsiuntėme jums atkūrimo el. Laišką, patikrinkite el. Pašto dėžutę. Spustelėkite el. Laiške pateiktą nuorodą arba įveskite atkūrimo kodą čia.",
+					"_lv": "Mēs jums nosūtījām atkopšanas e -pastu. Lūdzu, atzīmējiet savu e -pasta lodziņu. Noklikšķiniet uz e -pastā sniegtās saites vai ievadiet šeit atkopšanas kodu.",
+					"_ru": "Мы отправили вам резервное письмо по электронной почте, проверьте свой адрес электронной почты. Щелкните ссылку в электронном письме или введите здесь код восстановления.",
+					"_fi": "Lähetimme sinulle palautussähköpostin. Tarkista sähköpostisi. Napsauta sähköpostissa olevaa linkkiä tai kirjoita palautuskoodi tähän.",
+					"_sv": "Vi har skickat ett e -postmeddelande för återställning, kontrollera din e -postruta. Klicka på länken i e -postmeddelandet eller ange återställningskoden här.",
+					"_da": "Vi har sendt dig en gendannelses -e -mail. Kontroller venligst din e -mail -boks. Klik på linket i e -mailen, eller indtast gendannelseskoden her.",
+					"_ee": "Saatsime teile e -posti varuaadressi. Palun kontrollige oma e -posti kasti. Klõpsake e -kirjas toodud lingil või sisestage siia taastekood."
 				},
 				"type": "text"
 			},
