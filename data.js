@@ -172,6 +172,12 @@ let data = {
 					es: "O pegue este enlace en su navegador :",
 					it: "Oppure incolla questo link nel tuo browser :",
 				},
+				scanqrcode: {
+					en: "Or scan this QR code:",
+					fr: "Ou scannez ce QR code :",
+					es: "O escanea este código QR :",
+					it: "Oppure scansiona questo codice QR :",
+				},
 			}
 		}
 	},
