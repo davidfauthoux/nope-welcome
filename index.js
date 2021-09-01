@@ -469,7 +469,7 @@ new Server("/" + platform).download("data.json"),
 				+ "</div>"
 
 				+ "<div style=''>"
-				+ "<img src='https://api.qrserver.com/v1/create-qr-code/?data={url}' alt='' title=''></img>"
+				+ "<img src='https://api.qrserver.com/v1/create-qr-code/?data={url:uri_encoded}' alt='' title=''></img>"
 				+ "</div>"
 
 				+ "<div style=''>"
