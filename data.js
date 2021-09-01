@@ -110,10 +110,10 @@ let data = {
 					it: "Account creato",
 				},
 				text: {
-					en: "Your account is now created. Please check your email box to validate it.",
-					fr: "Votre compte est maintenant créé. Veuillez vérifier votre boîte e-mail pour la valider.",
-					es: "Su cuenta ya está creada. Marque su casilla de correo electrónico para validarlo.",
-					it: "Il tuo account è ora creato. Controlla la tua casella di posta elettronica per convalidarla.",
+					en: "Your account is now created. Please check your email box to validate it. Click on the link provided in the email or enter the recovery code here.",
+					fr: "Votre compte est maintenant créé. Veuillez vérifier votre boîte e-mail pour la valider. Cliquez sur le lien fourni dans l'e-mail ou entrez le code de récupération ici.",
+					es: "Su cuenta ya está creada. Marque su casilla de correo electrónico para validarlo. Haga clic en el enlace proporcionado en el correo electrónico o ingrese el código de recuperación aquí.",
+					it: "Il tuo account è ora creato. Controlla la tua casella di posta elettronica per convalidarla. Fare clic sul collegamento fornito nell'e-mail o inserire qui il codice di recupero.",
 				},
 				type: "text",
 			},
@@ -177,6 +177,12 @@ let data = {
 					fr: "Ou scannez ce QR code :",
 					es: "O escanea este código QR :",
 					it: "Oppure scansiona questo codice QR :",
+				},
+				recoverycode: {
+					en: "Or enter this recovery code into the login page:",
+					fr: "Ou entrez ce code de récupération dans la page de connexion :",
+					es: "O ingrese este código de recuperación en la página de inicio de sesión :",
+					it: "Oppure inserisci questo codice di recupero nella pagina di accesso :",
 				},
 			}
 		}

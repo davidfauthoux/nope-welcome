@@ -482,6 +482,13 @@ new Server("/" + platform).download("data.json"),
 				+ "<img src='https://api.qrserver.com/v1/create-qr-code/?data={url:uri_encoded}&size=100x100' alt='' title=''></img>"
 				+ "</div>"
 
+				+ "<div style=''>"
+				+ i18n.getText(dataLanguage.account.email.recoverycode, true)
+				+ "</div>"
+				+ "<div style='font-family: monospace; font-weight: bold;'>"
+				+ "{key}"
+				+ "</div>"
+
 				+ "</body>"
 				+ "</html>"
 		};
@@ -588,12 +595,20 @@ new Server("/" + platform).download("data.json"),
 						() => encryptionServer.getPublicKey(userId),
 						(publicKey) => { console.log("USER PUBLIC KEY", publicKey); },
 						() => encryptionServer.recoverUser(userId, recoverUrlBase, emailSubjectText(), { language: userData.language }, supervise),
-						async.async_((_finish, _error) => navigateDirectly(dataLanguage.account.recovery)),
+						async.async_((finish, _error) => navigateDirectly(dataLanguage.account.recovery, finish)),
 					]).catch_((_e) => [
 						encryptionServer.createNewUser(userId, passwordHash, emailAddress),
 						encryptionServer.recoverUser(userId, recoverUrlBase, emailSubjectText(), { language: userData.language }, supervise),
-						async.async_((_finish, _error) => navigateDirectly(dataLanguage.account.created)),
+						async.async_((finish, _error) => navigateDirectly(dataLanguage.account.created, finish)),
 					]),
+					(recoverKey) => recoverKey.toUpperCase(),
+					(recoverKey) => async.try_([
+							() => encryptionServer.validateUser(userId, recoverKey, undefined, supervise),
+							() => {
+								localStorage.setItem(localStoreKey, JSON.stringify(userId));
+								window.history.replaceState(undefined, document.title, "/" + platform + "/");
+							},
+						]).catch_((_e) => async.async_((_finish, _error) => navigateDirectly(dataLanguage.account.failed))),
 				]);
 			}
 			

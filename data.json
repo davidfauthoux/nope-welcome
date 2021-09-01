@@ -228,17 +228,17 @@
 					"_ee": "Konto on loodud"
 				},
 				"text": {
-					"en": "Your account is now created. Please check your email box to validate it.",
-					"fr": "Votre compte est maintenant créé. Veuillez vérifier votre boîte e-mail pour la valider.",
-					"es": "Su cuenta ya está creada. Marque su casilla de correo electrónico para validarlo.",
-					"it": "Il tuo account è ora creato. Controlla la tua casella di posta elettronica per convalidarla.",
-					"_lt": "Jūsų paskyra dabar sukurta. Patikrinkite savo el. Pašto dėžutę, kad ją patvirtintumėte.",
-					"_lv": "Jūsu konts tagad ir izveidots. Lūdzu, pārbaudiet savu e -pasta lodziņu, lai to apstiprinātu.",
-					"_ru": "Ваша учетная запись создана. Пожалуйста, проверьте свой электронный ящик, чтобы подтвердить его.",
-					"_fi": "Tilisi on nyt luotu. Tarkista sähköpostisi laatikko vahvistaaksesi sen.",
-					"_sv": "Ditt konto är nu skapat. Markera din e -postruta för att verifiera den.",
-					"_da": "Din konto er nu oprettet. Tjek venligst din e -mail -boks for at validere den.",
-					"_ee": "Teie konto on nüüd loodud. Palun kontrollige oma e -posti kasti selle kinnitamiseks."
+					"en": "Your account is now created. Please check your email box to validate it. Click on the link provided in the email or enter the recovery code here.",
+					"fr": "Votre compte est maintenant créé. Veuillez vérifier votre boîte e-mail pour la valider. Cliquez sur le lien fourni dans l'e-mail ou entrez le code de récupération ici.",
+					"es": "Su cuenta ya está creada. Marque su casilla de correo electrónico para validarlo. Haga clic en el enlace proporcionado en el correo electrónico o ingrese el código de recuperación aquí.",
+					"it": "Il tuo account è ora creato. Controlla la tua casella di posta elettronica per convalidarla. Fare clic sul collegamento fornito nell'e-mail o inserire qui il codice di recupero.",
+					"_lt": "Jūsų paskyra dabar sukurta. Patikrinkite savo el. Pašto dėžutę, kad ją patvirtintumėte. Spustelėkite el. Laiške pateiktą nuorodą arba įveskite atkūrimo kodą čia.",
+					"_lv": "Jūsu konts tagad ir izveidots. Lūdzu, pārbaudiet savu e -pasta lodziņu, lai to apstiprinātu. Noklikšķiniet uz e -pastā sniegtās saites vai ievadiet šeit atkopšanas kodu.",
+					"_ru": "Ваша учетная запись создана. Пожалуйста, проверьте свой электронный ящик, чтобы подтвердить его. Щелкните ссылку в электронном письме или введите здесь код восстановления.",
+					"_fi": "Tilisi on nyt luotu. Tarkista sähköpostisi laatikko vahvistaaksesi sen. Napsauta sähköpostissa olevaa linkkiä tai kirjoita palautuskoodi tähän.",
+					"_sv": "Ditt konto är nu skapat. Markera din e -postruta för att verifiera den. Klicka på länken i e -postmeddelandet eller ange återställningskoden här.",
+					"_da": "Din konto er nu oprettet. Tjek venligst din e -mail -boks for at validere den. Klik på linket i e -mailen, eller indtast gendannelseskoden her.",
+					"_ee": "Teie konto on nüüd loodud. Palun kontrollige oma e -posti kasti selle kinnitamiseks. Klõpsake e -kirjas toodud lingil või sisestage siia taastekood."
 				},
 				"type": "text"
 			},
@@ -365,6 +365,19 @@
 					"_sv": "Eller skanna den här QR -koden:",
 					"_da": "Eller scan denne QR -kode:",
 					"_ee": "Või skaneerige see QR -kood:"
+				},
+				"recoverycode": {
+					"en": "Or enter this recovery code into the login page:",
+					"fr": "Ou entrez ce code de récupération dans la page de connexion :",
+					"es": "O ingrese este código de recuperación en la página de inicio de sesión :",
+					"it": "Oppure inserisci questo codice di recupero nella pagina di accesso :",
+					"_lt": "Arba įveskite šį atkūrimo kodą prisijungimo puslapyje:",
+					"_lv": "Vai arī ievadiet šo atkopšanas kodu pieteikšanās lapā:",
+					"_ru": "Или введите этот код восстановления на странице входа в систему:",
+					"_fi": "Tai kirjoita tämä palautuskoodi kirjautumissivulle:",
+					"_sv": "Eller ange den här återställningskoden på inloggningssidan:",
+					"_da": "Eller indtast denne gendannelseskode på login -siden:",
+					"_ee": "Või sisestage sisselogimislehele see taastamiskood:"
 				}
 			}
 		}
