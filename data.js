@@ -242,31 +242,6 @@ let data = {
 		type: "date",
 	},
 
-	height: {
-		title: {
-			en: "Approximate height of your child in centimeters or inches",
-			fr: "Taille approximative de votre enfant en centimètres",
-			es: "Altura aproximada de su hijo en centímetros",
-			it: "Altezza approssimativa del tuo figlio in centimetri",
-		},
-		example: "155 cm",
-		type: "line",
-	},
-
-	leftrighthanded: {
-		text: {
-			en: "Is your son left or right handed?",
-			fr: "Votre enfant est-il gaucher ou droitier ?",
-			es: "¿ ¿Tu hijo es zurdo o diestro ?",
-			it: "Tuo figlio è mancino o destrorso ?",
-		},
-		options: {
-			left: { en: "Left handed", fr: "Gaucher", es: "Zurdo", it: "Mancino" },
-			right: { en: "Right handed", fr: "Droitier", es: "Diestro", it: "Destrorso" },
-		},
-		type: "choice",
-	},
-
 	passportface: {
 		title: {
 			en: "Passport / ID",
@@ -536,6 +511,20 @@ let data = {
 		},
 		example: "145 cm",
 		type: "line",
+	},
+
+	leftrighthanded: {
+		text: {
+			en: "Is your son left or right handed?",
+			fr: "Votre enfant est-il gaucher ou droitier ?",
+			es: "¿ ¿Tu hijo es zurdo o diestro ?",
+			it: "Tuo figlio è mancino o destrorso ?",
+		},
+		options: {
+			left: { en: "Left handed", fr: "Gaucher", es: "Zurdo", it: "Mancino" },
+			right: { en: "Right handed", fr: "Droitier", es: "Diestro", it: "Destrorso" },
+		},
+		type: "choice",
 	},
 
 	travelteam: {
