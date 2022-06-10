@@ -58,5 +58,5 @@ export function today(date) {
 	} else {
 		d = new Date(date);
 	}
-	return d.toLocaleDateString(language, { year: "numeric", month: "long", day: "numeric" });
+	return d.toLocaleDateString(language, { year: "numeric", month: "long", day: "numeric", weekday: "long" });
 }

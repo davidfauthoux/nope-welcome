@@ -58,7 +58,7 @@ let data = {
 		confirm: {
 			en: "Sure?",
 			fr: "Confirmer ?",
-			es: "¿ Seguro ?",
+			es: "¿ Seguro ?",
 			it: "Conferma ?",
 		},
 		upload: {
@@ -76,8 +76,8 @@ let data = {
 		example: {
 			en: "Example:",
 			fr: "Exemple :",
-			es: "Ejemplo :",
-			it: "Esempio :",
+			es: "Ejemplo :",
+			it: "Esempio :",
 		},
 		disconnect: {
 			en: "Disconnect",
@@ -242,12 +242,37 @@ let data = {
 		type: "date",
 	},
 
+	height: {
+		title: {
+			en: "Approximate height of your child in centimeters or inches",
+			fr: "Taille approximative de votre enfant en centimètres",
+			es: "Altura aproximada de su hijo en centímetros",
+			it: "Altezza approssimativa del tuo figlio in centimetri",
+		},
+		example: "155 cm",
+		type: "line",
+	},
+
+	leftrighthanded: {
+		text: {
+			en: "Is your son left or right handed?",
+			fr: "Votre enfant est-il gaucher ou droitier ?",
+			es: "¿ ¿Tu hijo es zurdo o diestro ?",
+			it: "Tuo figlio è mancino o destrorso ?",
+		},
+		options: {
+			left: { en: "Left handed", fr: "Gaucher", es: "Zurdo", it: "Mancino" },
+			right: { en: "Right handed", fr: "Droitier", es: "Diestro", it: "Destrorso" },
+		},
+		type: "choice",
+	},
+
 	passportface: {
 		title: {
-			en: "Passport / ID",
-			fr: "Passeport / Carte d'identité",
-			es: "Pasaporte / DNI",
-			it: "Passaporto / Carta d'identità",
+			en: "Passport / ID",
+			fr: "Passeport / Carte d'identité",
+			es: "Pasaporte / DNI",
+			it: "Passaporto / Carta d'identità",
 		},
 		text: {
 			en: "Please take a picture of the passport or ID of your child.",
@@ -261,9 +286,9 @@ let data = {
 	passportbackneeded: {
 		text: {
 			en: "Do you need to upload another picture of the passport or ID?",
-			fr: "Avez-vous besoin de fournir une photo de la face arrière du passeport ou de la carte d'identité ?",
-			es: "¿ Necesita proporcionar una foto de la parte posterior del pasaporte o del DNI ?",
-			it: "Hai bisogno di fornire una foto del retro del passaporto o della carta d'identità ?",
+			fr: "Avez-vous besoin de fournir une photo de la face arrière du passeport ou de la carte d'identité ?",
+			es: "¿ Necesita proporcionar una foto de la parte posterior del pasaporte o del DNI ?",
+			it: "Hai bisogno di fornire una foto del retro del passaporto o della carta d'identità ?",
 		},
 		options: {
 			yes: { en: "Yes", fr: "Oui", es: "Sí", it: "Sì" },
@@ -276,9 +301,9 @@ let data = {
 		if: { passportbackneeded: "yes" },
 		title: {
 			en: "Passport/ID (2)",
-			fr: "Passeport / Carte d'identité (2)",
-			es: "Pasaporte / DNI (2)",
-			it: "Passaporto / Carta d'identità (2)",
+			fr: "Passeport / Carte d'identité (2)",
+			es: "Pasaporte / DNI (2)",
+			it: "Passaporto / Carta d'identità (2)",
 		},
 		text: {
 			en: "Please upload the other picture of his passport or ID.",
@@ -484,9 +509,9 @@ let data = {
 		},
 		text: {
 			en: "Does your child know how to swim?",
-			fr: "Votre enfant sait-il nager ?",
-			es: "¿ Sabe su hijo nadar ?",
-			it: "Il tuo bambino sa nuotare ?",
+			fr: "Votre enfant sait-il nager ?",
+			es: "¿ Sabe su hijo nadar ?",
+			it: "Il tuo bambino sa nuotare ?",
 		},
 		options: {
 			swimgood: { en: "Yes", fr: "Oui", es: "Sí", it: "Sì" },
@@ -505,9 +530,9 @@ let data = {
 		},
 		text: {
 			en: "Please enter the height of your child, we'll try to find the matching uniform size for him.",
-			fr: "Donnez la taille de votre enfant. Nous essaierons de trouver un surmaillot à sa taille !",
-			es: "Da el tamaño de su hijo. ¡ Intentaremos encontrar un equipación a su tamaño !",
-			it: "Dai la misura del tuo bambino. Cercheremo di trovare una divisa alle sue dimensioni !",
+			fr: "Donnez la taille de votre enfant. Nous essaierons de trouver un surmaillot à sa taille !",
+			es: "Da el tamaño de su hijo. ¡ Intentaremos encontrar un equipación a su tamaño !",
+			it: "Dai la misura del tuo bambino. Cercheremo di trovare una divisa alle sue dimensioni !",
 		},
 		example: "145 cm",
 		type: "line",
@@ -516,9 +541,9 @@ let data = {
 	travelteam: {
 		text: {
 			en: "We state here the different principles that animate The Travel Team. You'll be welcome to give your impressions by selecting one of the three buttons under each part.",
-			fr: "Nous énonçons ici les différents principes qui animent Travel Team. Exprimez-vous en choisissant un des trois boutons sous chacune des parties !",
-			es: "Aquí expresamos los diferentes principios que animan al Travel Team. ¡ Expresarse eligiendo uno de los tres botones debajo de cada una de las partes !",
-			it: "Indichiamo qui i diversi principi che animano il Travel Team. Esprimi te stesso scegliendo uno dei tre pulsanti sotto ciascuna delle parti !",
+			fr: "Nous énonçons ici les différents principes qui animent Travel Team. Exprimez-vous en choisissant un des trois boutons sous chacune des parties !",
+			es: "Aquí expresamos los diferentes principios que animan al Travel Team. ¡ Expresarse eligiendo uno de los tres botones debajo de cada una de las partes !",
+			it: "Indichiamo qui i diversi principi che animano il Travel Team. Esprimi te stesso scegliendo uno dei tre pulsanti sotto ciascuna delle parti !",
 		},
 		icon: "idea",
 		type: "none",
@@ -533,12 +558,12 @@ let data = {
 		},
 		text: {
 			en: "The goal of 3T is both very simple and very strong: that children from all over the <span class=\"emph\">world</span> meet, become <span class=\"emph\">friends</span>, share their culture and their differences, through an authentic and outstanding sporting moment, thus requiring them for a big involvement.",
-			fr: "L'objectif de 3T est à la fois très simple et très fort : que des enfants du <span class=\"emph\">monde entier</span> se rencontrent, deviennent <span class=\"emph\">amis</span>, partagent leur culture et leurs différences, à travers un moment sportif, donc leur demandant un engagement important.",
-			es: "El objetivo de 3T es muy simple y muy fuerte : que los niños de <span class=\"emph\">todo el mundo</span> se encuentren, se hagan <span class=\"emph\">amigos</span>, compartan su cultura y sus diferencias a través de un momento deportivo, solicitándoles un compromiso importante.",
-			it: "L'obiettivo di 3T è molto semplice e molto forte : i bambini di <span class=\"emph\">tutto il mondo</span> si incontrano, diventano <span class=\"emph\">amici</span>, condividono la loro cultura e le loro differenze, attraverso un momento sportivo, chiedendo loro un impegno importante.",
+			fr: "L'objectif de 3T est à la fois très simple et très fort : que des enfants du <span class=\"emph\">monde entier</span> se rencontrent, deviennent <span class=\"emph\">amis</span>, partagent leur culture et leurs différences, à travers un moment sportif, donc leur demandant un engagement important.",
+			es: "El objetivo de 3T es muy simple y muy fuerte : que los niños de <span class=\"emph\">todo el mundo</span> se encuentren, se hagan <span class=\"emph\">amigos</span>, compartan su cultura y sus diferencias a través de un momento deportivo, solicitándoles un compromiso importante.",
+			it: "L'obiettivo di 3T è molto semplice e molto forte : i bambini di <span class=\"emph\">tutto il mondo</span> si incontrano, diventano <span class=\"emph\">amici</span>, condividono la loro cultura e le loro differenze, attraverso un momento sportivo, chiedendo loro un impegno importante.",
 		},
 		options: {
-			happy: { en: "Happy", fr: "Super !", es: "¡ Súper !", it: "Eccellente" },
+			happy: { en: "Happy", fr: "Super !", es: "¡ Súper !", it: "Eccellente" },
 			neutral: { en: "Neutral", fr: "Hum...", es: "...", it: "Non lo so..." },
 			unhappy: { en: "Unhappy", fr: "Bof", es: "Inoportuno", it: "Dissentire" },
 		},
@@ -559,7 +584,7 @@ let data = {
 			it: "<span class=\"dot\">1</span> Costruire un gruppo non è automatico, tutti dovranno fare sforzi. Scambiarsi e aiutarsi a vicenda nonostante la barriera linguistica. Sii generoso e attento agli altri. Non lasciarti andare ma invece essere attivo... <span class=\"dot\">2</span> Il momento vissuto è breve e intenso. L'avventura sarà un successo se riusciremo a creare una bolla di felicità che rimarrà ai vertici dei bambini come un momento eccezionale e magico della loro vita, un momento durante il quale saranno stati <span class=\"emph\">attori</span> importanti.",
 		},
 		options: {
-			happy: { en: "Happy", fr: "Super !", es: "¡ Súper !", it: "Eccellente" },
+			happy: { en: "Happy", fr: "Super !", es: "¡ Súper !", it: "Eccellente" },
 			neutral: { en: "Neutral", fr: "Hum...", es: "...", it: "Non lo so..." },
 			unhappy: { en: "Unhappy", fr: "Bof", es: "Inoportuno", it: "Dissentire" },
 		},
@@ -575,12 +600,12 @@ let data = {
 		},
 		text: {
 			en: "<span class=\"dot\">1</span> Our moto: a group outside the court for a team inside the court. <span class=\"dot\">2</span> Physical security + Emotional security. All our coaches check the following traits: support and listening, tolerance and caring, empathy and complicity. <span class=\"dot\">3</span> Our way of playing is based on encouragement and initiative. The team supports the initiatives of each of its elements, and each element contributes in his way to the team. Talent, energy, leadership, enthusiasm, singularity, creativity...",
-			fr: "<span class=\"dot\">1</span> Notre leitmotiv : un groupe hors du terrain pour une équipe sur le terrain. <span class=\"dot\">2</span> Sécurité physique + Sécurité affective. Nos entraîneurs ont toutes ces qualités : soutien et écoute, tolérance et bienveillance, empathie et complicité. <span class=\"dot\">3</span> Notre jeu est basé sur l'encouragement et l'initiative. L'équipe soutient les initiatives de chacun de ses éléments, et chaque élément apporte à l'équipe. Talent, énergie, leadership, enthousiasme, singularité, créativité...",
-			es: "<span class=\"dot\">1</span> Nuestro leitmotiv : un grupo fuera del campo para un equipo en el campo. <span class=\"dot\">2</span> Seguridad física + Seguridad emocional. Nuestros entrenadores tienen todas estas cualidades : apoyo y escucha, tolerancia y cuidado, empatía y complicidad. <span class=\"dot\">3</span> Nuestro juego se basa en el aliento y la iniciativa. El equipo apoya las iniciativas de cada uno de sus elementos, y cada elemento aporta al equipo. Talento, energía, liderazgo, entusiasmo, singularidad, creatividad...",
-			it: "<span class=\"dot\">1</span> Il nostro leitmotiv : un gruppo fuori dal campo per una squadra sul campo. <span class=\"dot\">2</span> Sicurezza fisica + Sicurezza emotiva. I nostri allenatori hanno tutte queste qualità : supporto e ascolto, tolleranza e cura, empatia e complicità. <span class=\"dot\">3</span> Il nostro gioco è basato su incoraggiamento e iniziativa. La squadra supporta le iniziative di ciascuno dei suoi elementi e ogni elemento porta alla squadra. Talento, energia, leadership, entusiasmo, singolarità, creatività...",
+			fr: "<span class=\"dot\">1</span> Notre leitmotiv : un groupe hors du terrain pour une équipe sur le terrain. <span class=\"dot\">2</span> Sécurité physique + Sécurité affective. Nos entraîneurs ont toutes ces qualités : soutien et écoute, tolérance et bienveillance, empathie et complicité. <span class=\"dot\">3</span> Notre jeu est basé sur l'encouragement et l'initiative. L'équipe soutient les initiatives de chacun de ses éléments, et chaque élément apporte à l'équipe. Talent, énergie, leadership, enthousiasme, singularité, créativité...",
+			es: "<span class=\"dot\">1</span> Nuestro leitmotiv : un grupo fuera del campo para un equipo en el campo. <span class=\"dot\">2</span> Seguridad física + Seguridad emocional. Nuestros entrenadores tienen todas estas cualidades : apoyo y escucha, tolerancia y cuidado, empatía y complicidad. <span class=\"dot\">3</span> Nuestro juego se basa en el aliento y la iniciativa. El equipo apoya las iniciativas de cada uno de sus elementos, y cada elemento aporta al equipo. Talento, energía, liderazgo, entusiasmo, singularidad, creatividad...",
+			it: "<span class=\"dot\">1</span> Il nostro leitmotiv : un gruppo fuori dal campo per una squadra sul campo. <span class=\"dot\">2</span> Sicurezza fisica + Sicurezza emotiva. I nostri allenatori hanno tutte queste qualità : supporto e ascolto, tolleranza e cura, empatia e complicità. <span class=\"dot\">3</span> Il nostro gioco è basato su incoraggiamento e iniziativa. La squadra supporta le iniziative di ciascuno dei suoi elementi e ogni elemento porta alla squadra. Talento, energia, leadership, entusiasmo, singolarità, creatività...",
 		},
 		options: {
-			happy: { en: "Happy", fr: "Super !", es: "¡ Súper !", it: "Eccellente" },
+			happy: { en: "Happy", fr: "Super !", es: "¡ Súper !", it: "Eccellente" },
 			neutral: { en: "Neutral", fr: "Hum...", es: "...", it: "Non lo so..." },
 			unhappy: { en: "Unhappy", fr: "Bof", es: "Inoportuno", it: "Dissentire" },
 		},
@@ -601,7 +626,7 @@ let data = {
 			it: "<span class=\"dot\">1</span> I genitori sono un sostenitore incondizionato della squadra, anche quando giocano male. Sono presenti e attivi sugli spalti. Aderiscono al progetto, con atteggiamenti positivi e solo parole (nessun messaggio negativo, anche a suo figlio). Sono invitati ad aiutarci a passare i messaggi. <span class=\"dot\">2</span> Quando il gruppo è in costruzione, i genitori incoraggiano l'autonomia. Nessun debriefing della partita, nessuna correzione eccessiva delle attitudini del bambino, rispetto dei luoghi dedicati alle squadre, rispetto per la disponibilità degli allenatori... Sono consapevoli dell'intensità delle giornate, vanno a pescare informazioni e cercano di essere presenti entrambi quando ne abbiamo bisogno e invisibili quando il gruppo di bambini lavora da solo.",
 		},
 		options: {
-			happy: { en: "Happy", fr: "Super !", es: "¡ Súper !", it: "Eccellente" },
+			happy: { en: "Happy", fr: "Super !", es: "¡ Súper !", it: "Eccellente" },
 			neutral: { en: "Neutral", fr: "Hum...", es: "...", it: "Non lo so..." },
 			unhappy: { en: "Unhappy", fr: "Bof", es: "Inoportuno", it: "Dissentire" },
 		},
@@ -628,9 +653,9 @@ let data = {
 		},
 		text: {
 			en: "Do you authorize David Fauthoux, president of the association, to take, if necessary and after phone contact with you, all the urgent necessary measures for your child (hospitalization and/or surgical operation)?",
-			fr: "Autorisez-vous David Fauthoux, président de l'association, à prendre, le cas échéant et après contact téléphonique avec vous, toutes les mesures nécessaires urgentes pour votre enfant (hospitalisation et/ou intervention chirurgicale) ?",
-			es: "¿ Autoriza a David Fauthoux, presidente de la asociación, a tomar, si es necesario y después del contacto telefónico con usted, todas las medidas urgentes necesarias para su hijo (hospitalización y/o intervención quirúrgica) ?",
-			it: "Autorizzi David Fauthoux, presidente dell'associazione, a prendere, se necessario e dopo aver contattato telefonicamente, tutte le misure urgenti necessarie per tuo bambino (ospedalizzazione e/o intervento chirurgico) ?",
+			fr: "Autorisez-vous David Fauthoux, président de l'association, à prendre, le cas échéant et après contact téléphonique avec vous, toutes les mesures nécessaires urgentes pour votre enfant (hospitalisation et/ou intervention chirurgicale) ?",
+			es: "¿ Autoriza a David Fauthoux, presidente de la asociación, a tomar, si es necesario y después del contacto telefónico con usted, todas las medidas urgentes necesarias para su hijo (hospitalización y/o intervención quirúrgica) ?",
+			it: "Autorizzi David Fauthoux, presidente dell'associazione, a prendere, se necessario e dopo aver contattato telefonicamente, tutte le misure urgenti necessarie per tuo bambino (ospedalizzazione e/o intervento chirurgico) ?",
 		},
 		options: {
 			yes: { en: "Yes", fr: "Oui", es: "Sí", it: "Sì" },
@@ -648,9 +673,9 @@ let data = {
 		},
 		text: {
 			en: "Do you authorize David Fauthoux as well as the parents of the other children and the supervisors to transport your child within their vehicles and to accompany your child during the flights?",
-			fr: "Autorisez-vous David Fauthoux ainsi que les autres parents et accompagnateurs présent sur les lieux du voyage à transporter votre enfant avec leurs véhicules ?",
-			es: "¿ Autoriza a David Fauthoux, así como a los otros padres y personas acompañantes presentes en el lugar del viaje, para transportar a su hijo con sus vehículos ?",
-			it: "Autorizzi David Fauthoux e gli altri genitori e accompagnatori presenti nel luogo del viaggio a trasportare il tuo bambino con i loro veicoli ?",
+			fr: "Autorisez-vous David Fauthoux ainsi que les autres parents et accompagnateurs présent sur les lieux du voyage à transporter votre enfant avec leurs véhicules ?",
+			es: "¿ Autoriza a David Fauthoux, así como a los otros padres y personas acompañantes presentes en el lugar del viaje, para transportar a su hijo con sus vehículos ?",
+			it: "Autorizzi David Fauthoux e gli altri genitori e accompagnatori presenti nel luogo del viaggio a trasportare il tuo bambino con i loro veicoli ?",
 		},
 		options: {
 			yes: { en: "Yes", fr: "Oui", es: "Sí", it: "Sì" },
@@ -668,35 +693,15 @@ let data = {
 		},
 		text: {
 			en: "Do you authorize David Fauthoux as well as the parents of the other children and the supervisors to publish the photos of your child taken in public places (games, training practices, travels, meals, outdoor activities) on the Facebook page?",
-			fr: "Autorisez-vous David Fauthoux ainsi que les autres parents et accompagnateurs présent sur les lieux du voyage à publier les photos de votre enfant prises dans les espaces publics (matchs, entraînements, déplacements, repas, activités de plein-air) sur la page Facebook de l'association ?",
-			es: "¿ Autoriza a David Fauthoux y otros padres y personas acompañantes presentes en el sitio de viajes para publicar las fotografías de sus hijos tomadas en áreas públicas (juegos, entrenamientos, viajes, comidas, actividades al aire libre) en la página Facebook de la asociación ?",
-			it: "Autorizzi David Fauthoux e altri genitori e accompagnatori presenti nel sito di viaggi a pubblicare le fotografie di tuo figlio scattate in aree pubbliche (giochi, formazione, viaggi, pasti, attività all'aperto) nella pagina Facebook dell'associazione ?",
+			fr: "Autorisez-vous David Fauthoux ainsi que les autres parents et accompagnateurs présent sur les lieux du voyage à publier les photos de votre enfant prises dans les espaces publics (matchs, entraînements, déplacements, repas, activités de plein-air) sur la page Facebook de l'association ?",
+			es: "¿ Autoriza a David Fauthoux y otros padres y personas acompañantes presentes en el sitio de viajes para publicar las fotografías de sus hijos tomadas en áreas públicas (juegos, entrenamientos, viajes, comidas, actividades al aire libre) en la página Facebook de la asociación ?",
+			it: "Autorizzi David Fauthoux e altri genitori e accompagnatori presenti nel sito di viaggi a pubblicare le fotografie di tuo figlio scattate in aree pubbliche (giochi, formazione, viaggi, pasti, attività all'aperto) nella pagina Facebook dell'associazione ?",
 		},
 		options: {
 			yes: { en: "Yes", fr: "Oui", es: "Sí", it: "Sì" },
 			no: { en: "No", fr: "Non", es: "No", it: "Non" },
 		},
 		type: "choice",
-	},
-
-	covid: {
-		title: {
-			en: "Health situation",
-			fr: "Situation sanitaire",
-			es: "Situación de salud",
-			it: "Situazione sanitaria",
-		},
-		text: {
-			en: "As all participants will have a negative covid test before coming, we will not wear face masks during daily life, when the group, kids, coaches and parents, will be together. Are you aware that there is a risk you are willing to take?",
-			fr: "Comme tous les participants auront un test covid négatif avant de venir, nous ne porterons pas de masque au quotidien, lorsque le groupe, les enfants, les entraîneurs et les parents seront ensemble? Êtes-vous conscient du risque et êtes-vous prêt à le prendre?",
-			es: "Como todos los participantes tendrán una prueba de covid negativa antes de venir, no usaremos mascarillas durante la vida diaria, cuando el grupo, los niños, los entrenadores y los padres estarán juntos. ¿Es consciente de que existe un riesgo que está dispuesto a correr?",
-			it: "Poiché tutti i partecipanti avranno un test covid negativo prima di venire, non indosseremo maschere per il viso durante la vita quotidiana, quando il gruppo, i bambini, gli allenatori e i genitori saranno insieme. Sei consapevole del rischio che sei disposto a correre?",
-		},
-		options: {
-			yes: { en: "Yes", fr: "Oui", es: "Sí", it: "Sì" },
-			no: { en: "No", fr: "Non", es: "No", it: "Non" },
-		},
-		_type: "choice",
 	},
 
 	funding: {
@@ -769,13 +774,13 @@ let data = {
 			en: "Invitation letter",
 			fr: "Attestation",
 			es: "Carta de invitación",
-			it: "Autorizzazione genitoriale",
+			it: "Lettera di invito",
 		},
 		text: {
 			en: "Find here the invitation letter for your son ('Download' button below).",
-			fr: "Téléchargez l'autorisation parentale ci-dessous (bouton \"Télécharger\"), imprimez-la, complétez-la et signez-la.",
-			es: "Descargue el autorización parental debajo (botón \"Descargar\"), complételo y firme.",
-			it: "Scarica l'autorizzazione genitoriale (pulsante \"Scaricare\" di seguito), compila e firma.",
+			fr: "Trouvez ici la lettre d'invitation pour votre fils (bouton \"Télécharger\" ci-dessous).",
+			es: "Encuentre aquí la carta de invitación para su hijo (botón \"Descargar\" abajo).",
+			it: "Trova qui la lettera di invito per tuo figlio (pulsante \"Download\" in basso).",
 		},
 
 		generate: [
@@ -892,15 +897,6 @@ let data = {
 				},
 			},
 			{
-				if: { covid: "yes" },
-				text: {
-					en: "I am aware that we will not wear face masks during daily life and that there is a risk I am willing to take.",
-					fr: "Je suis conscient que nous ne porterons pas de masque au quotidien et qu'il y a un risque que je suis prêt à prendre.",
-					es: "Soy consciente de que no usaremos mascarillas durante la vida diaria y que existe un riesgo que estoy dispuesto a correr.",
-					it: "Sono consapevole che non indosseremo maschere per il viso durante la vita quotidiana e che c'è un rischio che sono disposto a correre.",
-				},
-			},
-			{
 				text: {
 					en: "I understand that all of the participants and competent authorities consider the trip to be a family and friend organized trip, the association NOT being a commercial company, and the parents coming along and participating to the costs of the insurance. As a consequence, the journey is a regular stay with families and friends traveling together and does not need any further administrative declaration.",
 					fr: "J’ai parfaitement conscience que tous les participants ainsi que les autorités compétentes considèrent ce voyage comme un simple voyage entre amis et familles, l’association n’étant en aucun cas une organisation commerciale, les parents participant également au voyage et prenant à leur charge une partie du coût de l’assurance. Par conséquent, le voyage ne nécessite aucune déclaration supplémentaire.",
@@ -980,9 +976,9 @@ let data = {
 	lastinformation: {
 		text: {
 			en: "Last thing! We need a photo of your kid.",
-			fr: "Dernière chose ! Nous avons besoin d'une photo de votre enfant.",
-			es: "¡ La ultima cosa ! Necesitamos una foto de su hijo.",
-			it: "Ultima cosa ! Abbiamo bisogno di una foto di tuo figlio.",
+			fr: "Dernière chose ! Nous avons besoin d'une photo de votre enfant.",
+			es: "¡ La ultima cosa ! Necesitamos una foto de su hijo.",
+			it: "Ultima cosa ! Abbiamo bisogno di una foto di tuo figlio.",
 		},
 		icon: "smile",
 		type: "none",
@@ -1007,15 +1003,15 @@ let data = {
 	thanks: {
 		title: {
 			en: "Thank you!",
-			fr: "Merci !",
-			es: "¡ Gracias !",
-			it: "Grazie !",
+			fr: "Merci !",
+			es: "¡ Gracias !",
+			it: "Grazie !",
 		},
 		text: {
 			en: "And see you soon!",
-			fr: "Et à très vite !",
-			es: "¡ Y hasta pronto !",
-			it: "E a presto !",
+			fr: "Et à très vite !",
+			es: "¡ Y hasta pronto !",
+			it: "E a presto !",
 		},
 		type: "none",
 	},
@@ -1029,9 +1025,9 @@ let data = {
 		},
 		text: {
 			en: "Below the accounts for the journey (empty until we fill it for you). The association account number is:<div class=\"bank\">IBAN <span class=\"copiable\">FR76 1027 8022 2200 0204 4250 174</span></div><div class=\"bank\">SWIFT/BIC <span class=\"copiable\">CMCIFR2A</span></div><div class=\"bank\">(Name: The Travel Team).</div>",
-			fr: "Ci-dessous le total des coûts pour le voyage (rempli par nos soins). Le compte bancaire de l'association est le suivant :<div class=\"bank\">IBAN <span class=\"copiable\">FR76 1027 8022 2200 0204 4250 174</span></div><div class=\"bank\">SWIFT/BIC <span class=\"copiable\">CMCIFR2A</span></div><div class=\"bank\">(Nom : The Travel Team).</div>",
-			es: "Debajo de las cuentas para el viaje (vacío hasta que lo llenemos por usted). El número de cuenta de la asociación es :<div class=\"bank\">IBAN <span class=\"copiable\">FR76 1027 8022 2200 0204 4250 174</span></div><div class=\"bank\">SWIFT / BIC <span class=\"copiable\">CMCIFR2A</span></div><div class=\"bank\">(Nombre : The Travel Team).</div>",
-			it: "Sotto gli account per il viaggio (vuoto fino a quando non lo riempiamo per te). Il numero di conto dell'associazione è :<div class=\"bank\">IBAN <span class=\"copiable\">FR76 1027 8022 2200 0204 4250 174</span></div><div class=\"bank\">SWIFT / BIC <span class=\"copiable\">CMCIFR2A</span></div><div class=\"bank\">(Nome : The Travel Team).</div>",
+			fr: "Ci-dessous le total des coûts pour le voyage (rempli par nos soins). Le compte bancaire de l'association est le suivant :<div class=\"bank\">IBAN <span class=\"copiable\">FR76 1027 8022 2200 0204 4250 174</span></div><div class=\"bank\">SWIFT/BIC <span class=\"copiable\">CMCIFR2A</span></div><div class=\"bank\">(Nom : The Travel Team).</div>",
+			es: "Debajo de las cuentas para el viaje (vacío hasta que lo llenemos por usted). El número de cuenta de la asociación es :<div class=\"bank\">IBAN <span class=\"copiable\">FR76 1027 8022 2200 0204 4250 174</span></div><div class=\"bank\">SWIFT / BIC <span class=\"copiable\">CMCIFR2A</span></div><div class=\"bank\">(Nombre : The Travel Team).</div>",
+			it: "Sotto gli account per il viaggio (vuoto fino a quando non lo riempiamo per te). Il numero di conto dell'associazione è :<div class=\"bank\">IBAN <span class=\"copiable\">FR76 1027 8022 2200 0204 4250 174</span></div><div class=\"bank\">SWIFT / BIC <span class=\"copiable\">CMCIFR2A</span></div><div class=\"bank\">(Nome : The Travel Team).</div>",
 		},
 		filled: {
 			en: "We will fill it for you",

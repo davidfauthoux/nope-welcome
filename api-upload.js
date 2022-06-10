@@ -1,7 +1,8 @@
 import * as async from "../modules/async.js";
 import * as i18n from "./i18n.js";
 import * as image from "../modules/image.js";
-import { Server, uuid } from "../modules/server.js";
+import { uuid } from "../modules/uuid.js";
+import { Server } from "../modules/server.js";
 // jquery
 
 let globalInput;
@@ -14,6 +15,9 @@ export default {
 	upload: function(_params, language) {
 		return {
 			create: function(data, callback, allData) {
+				let url = new URL(window.location.href);
+				let server = new Server(url.protocol + "//" + url.host + "/" + allData.userId);
+
 				let div = $("<div>");
 				let divs = $("<div>").addClass("buttons");
 				if ((data !== undefined) && (data !== null)) {
@@ -110,7 +114,7 @@ export default {
 						(blob) => image.blobToImage(blob),
 						(img) => image.imageToCanvas(image.Op.limit(image.Op.identity(), sizeLimit, sizeLimit), img),
 						(canvas) => image.canvasToBlob(canvas, "jpeg", 0.9),
-						(blob) => new Server("/" + allData.userId).upload(path, blob, (p) => percentDiv.text(Math.round(p * 100) + "%")),
+						(blob) => server.upload(path, blob, (p) => percentDiv.text(Math.round(p * 100) + "%")),
 						() => {
 							callback({
 								path: path
