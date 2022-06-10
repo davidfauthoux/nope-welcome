@@ -10,9 +10,9 @@ import pluginMultipleText from "./api-multipletext.js";
 import pluginChoice from "./api-choice.js";
 import pluginGenerate from "./api-generate.js";
 import pluginUpload from "./api-upload.js";
-// import pluginUpload from "./api-none.js";
 
-import data from "./data.json" assert { type: "json" };
+// import data from "./data.json" assert { type: "json" };
+import { data } from "./data.json.js";
 
 console.log(data);
 
