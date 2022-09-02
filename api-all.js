@@ -303,39 +303,43 @@ createForKey = (key) => {
 
 	hideIndex();
 
-	currentMappedDiv = mapped.create(userData[key], (update) => {
-		currentMappedDiv.addClass("disabled");
-		i18n.update(undefined); //TODO??
+	contentDiv.empty();
 
-		let event = {};
-		event[key] = (update === undefined) ? null : update;
-		saving.removeClass("hide");
-		body.addClass("fulldisabled");
-		postEvent(event);
-	}, userData);
+	setTimeout(() => {
+		currentMappedDiv = mapped.create(userData[key], (update) => {
+			currentMappedDiv.addClass("disabled");
+			i18n.update(undefined); //TODO??
 
-	currentMapped = mapped;
-	currentKey = key;
-	contentDiv.empty().append(currentMappedDiv);
+			let event = {};
+			event[key] = (update === undefined) ? null : update;
+			saving.removeClass("hide");
+			body.addClass("fulldisabled");
+			postEvent(event);
+		}, userData);
 
-	backButton.removeClass("disabled");
-	forwardButton.removeClass("disabled");
-	for (let k in data) {
-		if (k === key) {
-			backButton.addClass("disabled");
+		currentMapped = mapped;
+		currentKey = key;
+		contentDiv.append(currentMappedDiv);
+
+		backButton.removeClass("disabled");
+		forwardButton.removeClass("disabled");
+		for (let k in data) {
+			if (k === key) {
+				backButton.addClass("disabled");
+				break;
+			}
 			break;
 		}
-		break;
-	}
-	let last = null;
-	for (let k in data) {
-		last = k;
-	}
-	if (last === key) {
-		forwardButton.addClass("disabled");
-	}
+		let last = null;
+		for (let k in data) {
+			last = k;
+		}
+		if (last === key) {
+			forwardButton.addClass("disabled");
+		}
 
-	setWindowHash(key);
+		setWindowHash(key);
+	}, 0);
 };
 
 let goBack = () => {
