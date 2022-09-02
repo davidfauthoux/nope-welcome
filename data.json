@@ -1365,6 +1365,21 @@
 		},
 		"type": "choice"
 	},
+	"rare": {
+		"title": {
+			"en": "Live the moment 100%",
+			"fr": "Vivez le moment à 100%",
+			"es": "Vive el momento al 100%",
+			"it": "Vivi il momento al 100%"
+		},
+		"text": {
+			"en": "A lot of players accross the globe are very keen to participate in Travel Team. Therefore we try to give the opportunity to as many players as possible, especially when we meet very motivated and friendly children. And that's why we ask everyone to expect to be invited only once, rarely two times. But even one time, one adventure, is big and life changing as much as it can be. So... enjoy this moment at a 100% level!",
+			"fr": "De nombreux joueurs à travers le monde ont très envie de participer à Travel Team. C'est pourquoi nous essayons de donner l'opportunité au plus grand nombre de joueurs possible, surtout lorsque nous rencontrons des enfants très motivés et sympathiques. Et c'est pourquoi nous demandons à chacun de s'attendre à n'être invité qu'une seule fois, rarement deux. Mais même une fois, une aventure, est grande et change la vie autant qu'elle peut l'être. Alors... profitez de ce moment à 100% !",
+			"es": "Muchos jugadores de todo el mundo están muy interesados en participar en Travel Team. Por eso tratamos de dar la oportunidad a tantos jugadores como sea posible, especialmente cuando nos encontramos con niños muy motivados y amistosos. Y es por eso que les pedimos a todos que esperen ser invitados solo una vez, rara vez dos. Pero incluso una vez, una aventura, es genial y cambia la vida tanto como puede ser. Así que... ¡disfruta este momento al 100%!",
+			"it": "Molti giocatori in tutto il mondo sono molto ansiosi di partecipare a Travel Team. Ecco perché cerchiamo di dare l'opportunità a più giocatori possibili, soprattutto quando incontriamo bambini molto motivati e amichevoli. Ed è per questo che chiediamo a tutti di aspettarsi di essere invitati una sola volta, raramente due. Ma anche una volta, un'avventura è grandiosa e la vita cambia quanto più possibile. Quindi... goditi questo momento al 100%!"
+		},
+		"type": "none"
+	},
 	"signatures": {
 		"text": {
 			"en": "We also need your approval for a few things.",
