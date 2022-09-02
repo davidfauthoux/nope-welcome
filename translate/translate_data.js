@@ -75,4 +75,8 @@ for (let t in tasks) {
 
 	let output = JSON.stringify(data, null, '\t');
 	fs.writeFileSync("../data.json", output, "utf8");
+	fs.writeFileSync("../data.json.js", "export let data = " + output + ";\n", "utf8");
+
+	
+
 })();
