@@ -151,14 +151,17 @@ export default {
 				});
 
 				if (data !== undefined) {
-					for (let p of data.value) {
-						if (p === null) {
-							context.beginPath();
-						} else {
-							points.push(p);
-							context.lineTo(p.x, p.y);
-							context.stroke();
+					try {
+						for (let p of data.value) {
+							if (p === null) {
+								context.beginPath();
+							} else {
+								points.push(p);
+								context.lineTo(p.x, p.y);
+								context.stroke();
+							}
 						}
+					} catch (ee) { // TODO Remove when everyone is updated (no more upload like before)
 					}
 				}
 

@@ -258,7 +258,7 @@
 					"fr": "Votre compte est maintenant créé. Veuillez vérifier votre boîte e-mail pour la valider. Cliquez sur le lien fourni dans l'e-mail ou entrez le code de récupération ici.",
 					"es": "Su cuenta ya está creada. Marque su casilla de correo electrónico para validarlo. Haga clic en el enlace proporcionado en el correo electrónico o ingrese el código de recuperación aquí.",
 					"it": "Il tuo account è ora creato. Controlla la tua casella di posta elettronica per convalidarla. Fare clic sul collegamento fornito nell'e-mail o inserire qui il codice di recupero.",
-					"_lt": "Jūsų paskyra dabar sukurta. Patikrinkite el. pašto dėžutę, kad ją patvirtintumėte. Spustelėkite el. laiške pateiktą nuorodą arba įveskite atkūrimo kodą čia.",
+					"_lt": "Jūsų paskyra dabar sukurta. Patikrinkite savo el. pašto dėžutę, kad ją patvirtintumėte. Spustelėkite el. laiške pateiktą nuorodą arba įveskite atkūrimo kodą čia.",
 					"_lv": "Jūsu konts tagad ir izveidots. Lūdzu, pārbaudiet savu e-pasta lodziņu, lai to apstiprinātu. Noklikšķiniet uz e-pastā norādītās saites vai ievadiet atkopšanas kodu šeit.",
 					"_ru": "Теперь ваша учетная запись создана. Пожалуйста, проверьте свой электронный ящик, чтобы подтвердить его. Нажмите на ссылку, указанную в письме, или введите здесь код восстановления.",
 					"_fi": "Tilisi on nyt luotu. Tarkista sähköpostilaatikkosi vahvistaaksesi se. Napsauta sähköpostissa olevaa linkkiä tai kirjoita palautuskoodi tähän.",
@@ -919,7 +919,7 @@
 			"_ru": "Если ваш ребенок придерживается специальной диеты, сообщите нам об этом здесь.",
 			"_fi": "Jos lapsellasi on erityisruokavalio, kerro siitä meille täällä.",
 			"_sv": "Om ditt barn har en speciell diet, berätta för oss här.",
-			"_da": "Hvis dit barn har en speciel diæt, så fortæl os her.",
+			"_da": "Hvis dit barn har en særlig diæt, så fortæl os her.",
 			"_ee": "Kui teie lapsel on eridieet, andke meile sellest teada siin."
 		},
 		"example": {
@@ -973,7 +973,7 @@
 			"_lv": "Vai jūsu bērns zina, kā peldēt?",
 			"_ru": "Ваш ребенок умеет плавать?",
 			"_fi": "Osaako lapsesi uida?",
-			"_sv": "Vet ditt barn hur man simmar?",
+			"_sv": "Kan ditt barn simma?",
 			"_da": "Ved dit barn, hvordan man svømmer?",
 			"_ee": "Kas teie laps oskab ujuda?"
 		},
@@ -2016,7 +2016,7 @@
 					"_lt": "Suprantu, kad visi dalyviai ir kompetentingos institucijos kelionę laiko šeimos ir draugų organizuota kelione, o jaunimo programa NE komercinė įmonė, o kartu atvykę tėvai apmoka draudimo išlaidas. Todėl kelionė yra įprastas buvimas kartu su šeimomis ir draugais, todėl nereikia jokių papildomų administracinių deklaracijų.",
 					"_lv": "Es saprotu, ka visi dalībnieki un kompetentās iestādes uzskata braucienu par ģimenes un draugu organizētu braucienu, jauniešu programma NAV komercsabiedrība, un vecāki, kas nāk līdzi un piedalās apdrošināšanas izmaksās. Tādējādi ceļojums ir regulāra uzturēšanās kopā ar ģimenēm un draugiem, kas ceļo kopā, un tam nav nepieciešama papildu administratīvā deklarācija.",
 					"_ru": "Я понимаю, что все участники и компетентные органы рассматривают поездку как поездку, организованную семьей и друзьями, молодежная программа НЕ является коммерческой компанией, а родители приходят и участвуют в расходах на страхование. Как следствие, поездка представляет собой обычное пребывание с семьями и друзьями, путешествующими вместе, и не требует дополнительной административной декларации.",
-					"_fi": "Ymmärrän, että kaikki osallistujat ja toimivaltaiset viranomaiset pitävät matkaa perheen ja ystävän järjestämänä matkana, nuorten ohjelma EI ole kaupallinen yritys ja mukana tulevat vanhemmat osallistuvat vakuutuksen kustannuksiin. Tästä johtuen matka on säännöllistä oleskelua yhdessä matkustavien perheiden ja ystävien kanssa, eikä se vaadi muita hallinnollisia ilmoituksia.",
+					"_fi": "Ymmärrän, että kaikki osallistujat ja toimivaltaiset viranomaiset pitävät matkaa perheen ja ystävän järjestämänä matkana, nuoriso-ohjelma EI ole kaupallinen yritys ja mukana tulevat vanhemmat osallistuvat vakuutuksen kustannuksiin. Tästä johtuen matka on säännöllistä oleskelua yhdessä matkustavien perheiden ja ystävien kanssa, eikä se vaadi muita hallinnollisia ilmoituksia.",
 					"_sv": "Jag förstår att alla deltagare och behöriga myndigheter anser att resan är en familje- och vänorganiserad resa, där ungdomsprogrammet INTE är ett kommersiellt företag, och att föräldrarna kommer och deltar i försäkringskostnaderna. Som en konsekvens är resan en vanlig vistelse med familjer och vänner som reser tillsammans och behöver ingen ytterligare administrativ deklaration.",
 					"_da": "Jeg forstår, at alle deltagere og kompetente myndigheder anser turen for at være en familie- og vennerejse, hvor ungdomsprogrammet IKKE er en kommerciel virksomhed, og at forældrene kommer med og deltager i udgifterne til forsikringen. Som en konsekvens heraf er rejsen et almindeligt ophold med familier og venner, der rejser sammen og kræver ikke yderligere administrativ erklæring.",
 					"_ee": "Saan aru, et kõik osalejad ja pädevad asutused peavad reisi pere ja sõbra organiseeritud reisiks, noorteprogramm EI ole äriettevõte ning kaasa tulevad vanemad ja osalevad kindlustuse kuludes. Sellest tulenevalt on reis regulaarne viibimine koos reisivate perede ja sõpradega ning see ei vaja täiendavat haldusdeklaratsiooni."
@@ -2070,9 +2070,9 @@
 			{
 				"frame": {
 					"en": "Sign here",
-					"fr": "Signature",
-					"es": "Firma",
-					"it": "Firma",
+					"fr": "Signer ici",
+					"es": "Firma aqui",
+					"it": "Firmare qui",
 					"_lt": "Pasirašyti čia",
 					"_lv": "Parakstieties šeit",
 					"_ru": "Подпишите здесь",
@@ -2099,50 +2099,6 @@
 			}
 		],
 		"type": "signature"
-	},
-	"_signedparentalauthorization": {
-		"title": {
-			"en": "Sign and upload",
-			"fr": "À signer puis envoyer",
-			"es": "Firme y envíe",
-			"it": "Firma e invia",
-			"_lt": "Pasirašykite ir įkelkite",
-			"_lv": "Parakstiet un augšupielādējiet",
-			"_ru": "Подписать и загрузить",
-			"_fi": "Allekirjoita ja lataa",
-			"_sv": "Signera och ladda upp",
-			"_da": "Signer og upload",
-			"_ee": "Allkirjastage ja laadige üles"
-		},
-		"text": {
-			"en": "Please sign and upload the parental authorization you printed previously.",
-			"fr": "Merci de signer et envoyer une photo de l'autorisation parentale téléchargée précédemment.",
-			"es": "Firme y envíe una foto de la autorización parental cargada anteriormente.",
-			"it": "Firma e invia una foto dell'autorizzazione dei genitori caricata in precedenza.",
-			"_lt": "Pasirašykite ir įkelkite anksčiau atspausdintą tėvų įgaliojimą.",
-			"_lv": "Lūdzu, parakstiet un augšupielādējiet iepriekš izdrukāto vecāku pilnvarojumu.",
-			"_ru": "Пожалуйста, подпишите и загрузите родительское разрешение, которое вы распечатали ранее.",
-			"_fi": "Allekirjoita ja lataa aiemmin tulostamasi vanhemman valtuutus.",
-			"_sv": "Vänligen underteckna och ladda upp föräldratillståndet som du skrev ut tidigare.",
-			"_da": "Underskriv og upload den forældreautorisation, du tidligere har udskrevet.",
-			"_ee": "Palun allkirjastage ja laadige üles vanemlik volitus, mille olete varem printinud."
-		},
-		"back": {
-			"parentalauthorization": {
-				"en": "Print again",
-				"fr": "Imprimer à nouveau",
-				"es": "Imprimir de nuevo",
-				"it": "Stampa di nuovo",
-				"_lt": "Spausdinkite dar kartą",
-				"_lv": "Drukājiet vēlreiz",
-				"_ru": "Распечатать снова",
-				"_fi": "Tulosta uudelleen",
-				"_sv": "Skriv ut igen",
-				"_da": "Udskriv igen",
-				"_ee": "Printige uuesti"
-			}
-		},
-		"type": "upload"
 	},
 	"lastinformation": {
 		"text": {
@@ -2209,7 +2165,7 @@
 			"fr": "Et à très vite !",
 			"es": "¡ Y hasta pronto !",
 			"it": "E a presto !",
-			"_lt": "Ir iki greito pasimatymo!",
+			"_lt": "Ir iki pasimatymo!",
 			"_lv": "Un uz drīzu tikšanos!",
 			"_ru": "И увижу вас скоро!",
 			"_fi": "Ja nähdään pian!",

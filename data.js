@@ -977,30 +977,6 @@ let data = {
 		type: "signature",
 	},
 
-	_signedparentalauthorization: {
-		title: {
-			en: "Sign and upload",
-			fr: "À signer puis envoyer",
-			es: "Firme y envíe",
-			it: "Firma e invia",
-		},
-		text: {
-			en: "Please sign and upload the parental authorization you printed previously.",
-			fr: "Merci de signer et envoyer une photo de l'autorisation parentale téléchargée précédemment.",
-			es: "Firme y envíe una foto de la autorización parental cargada anteriormente.",
-			it: "Firma e invia una foto dell'autorizzazione dei genitori caricata in precedenza.",
-		},
-		back: {
-			parentalauthorization: {
-				en: "Print again",
-				fr: "Imprimer à nouveau",
-				es: "Imprimir de nuevo",
-				it: "Stampa di nuovo",
-			},
-		},
-		type: "upload",
-	},
-
 	lastinformation: {
 		text: {
 			en: "Last thing! We need a photo of your kid.",
