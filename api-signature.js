@@ -58,7 +58,7 @@ export default {
 										t = replaceIn(t, k, allData[k].value);
 									}
 								}
-								t = replaceIn(t, "today", (data === undefined) ? i18n.today() : data.date);
+								t = replaceIn(t, "today", ((data === undefined) && (data.date !== undefined)) ? i18n.today() : data.date);
 
 								let replaceUnknown = function(tt, to) {
 									let r = {};
@@ -151,13 +151,15 @@ export default {
 				});
 
 				if (data !== undefined) {
-					for (let p of data.signature) {
-						if (p === null) {
-							context.beginPath();
-						} else {
-							points.push(p);
-							context.lineTo(p.x, p.y);
-							context.stroke();
+					if (data.signature !== undefined) {
+						for (let p of data.signature) {
+							if (p === null) {
+								context.beginPath();
+							} else {
+								points.push(p);
+								context.lineTo(p.x, p.y);
+								context.stroke();
+							}
 						}
 					}
 				}
