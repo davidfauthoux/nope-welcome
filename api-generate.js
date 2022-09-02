@@ -81,32 +81,28 @@ export default {
 					+ "<body>\n"
 						+ render.html()
 						+ "\n"
-						+ "<script>\n"
-							+ "window.focus();\n"
-							+ "window.onload = function() { console.log('PRINTING'); window.print(); };\n"
-							// + "window.onafterprint = function() { window.close(); };\n"
-						+ "</script>\n"
+						// + "<script>\n"
+						// 	+ "window.focus();\n"
+						// 	+ "window.onload = function() { console.log('PRINTING'); window.print(); };\n"
+						// + "</script>\n"
 					+ "</body>\n"
 					+ "</html>\n";
 					console.log("RENDER", doc);
 
-					var iframe = $("<iframe>").css("width", "0").css("height", "0").css("overflow", "hidden");
-					iframe.attr("src", "data:text/html;charset=utf-8," + encodeURIComponent(doc));
-					$("body").append(iframe);
+					// var iframe = $("<iframe>").css("width", "0").css("height", "0").css("overflow", "hidden");
+					// iframe.attr("src", "data:text/html;charset=utf-8," + encodeURIComponent(doc));
+					// $("body").append(iframe);
 
-					// iframe.onload = function() {
-					// 	// let w = window.open("", "_blank");
-					// 	let w = iframe.contentWindow;
-					// 	w.document.write(doc);
-					// 	w.document.close();
-					// };
+					return doc;
 				};
 
 				let printButton = $("<a>").addClass("button"); // .addClass("secondary");
 				i18n._(printButton, language.download);
 				divs.append(printButton);
 				printButton.on("click", function() {
-					renderIt();
+					let w = window.open("");
+			        w.document.write(renderIt());
+					// renderIt();
 					return false;
 				});
 				let continueButton = i18n._($("<div>").addClass("button").addClass("secondary"), language.continue);

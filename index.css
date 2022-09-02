@@ -444,3 +444,54 @@ span.translation {
 	margin-right: 10px;
 	color: #999;
 }
+
+
+.signaturerender {
+	font-size: 11px;
+	background: #dedede;
+	background: repeating-linear-gradient(-45deg, #e5e5e5, #e5e5e5 10px, #e8e8e8 10px, #e8e8e8 20px);
+	padding: 10px;
+	border: dotted 1px black;
+}
+.signaturerender img {
+	display: block;
+	margin: 0 auto 10px;
+	width: 300px;
+}
+.signaturerender img._small {
+	width: 50px; margin: 0;
+}
+.signaturerender img._medium {
+	width: 150px; margin: 0;
+}
+.signaturerender img._large {
+	width: 300px; margin: 0;
+}
+.signaturerender .block {
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	text-align: justify;
+	border-bottom: dashed 1px #bfbfbf;
+}
+.signaturerender .block._tab {
+	font-style: italic;
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+.signaturerender .frame {
+	margin: 10px auto;
+	border: dotted 1px gray;
+	background: #eee;
+	width: 250px;
+	box-sizing: content-box;
+}
+.signaturerender .inframe {
+	padding: 0 7px;
+	color: #ddb4b4;
+	font-style: italic;
+	font-size: 24px;
+	background: transparent;
+	pointer-events: none;
+	height: 0;
+	user-select: none;
+}

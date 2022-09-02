@@ -49,6 +49,12 @@ let data = {
 			es: "Seguir",
 			it: "Continuare",
 		},
+		erase: {
+			en: "Erase",
+			fr: "Effacer",
+			es: "Borrar",
+			it: "Pulire",
+		},
 		delete: {
 			en: "Delete",
 			fr: "Supprimer",
@@ -84,6 +90,12 @@ let data = {
 			fr: "Déconnexion",
 			es: "Cerrar sesión",
 			it: "Disconnettersi",
+		},
+		mustbefilled: {
+			en: "MUST BE FILLED",
+			fr: "DOIT ÊTRE REMPLI",
+			es: "DEBE SER LLENADO",
+			it: "DEVE ESSERE RIEMPITO",
 		},
 		account: {
 			create: {
@@ -668,7 +680,7 @@ let data = {
 			it: "Misure urgenti",
 		},
 		text: {
-			en: "Do you authorize David Fauthoux, president of the association, to take, if necessary and after phone contact with you, all the urgent necessary measures for your child (hospitalization and/or surgical operation)?",
+			en: "Do you authorize David Fauthoux, president of the youth program, to take, if necessary and after phone contact with you, all the urgent necessary measures for your child (hospitalization and/or surgical operation)?",
 			fr: "Autorisez-vous David Fauthoux, président de l'association, à prendre, le cas échéant et après contact téléphonique avec vous, toutes les mesures nécessaires urgentes pour votre enfant (hospitalisation et/ou intervention chirurgicale) ?",
 			es: "¿ Autoriza a David Fauthoux, presidente de la asociación, a tomar, si es necesario y después del contacto telefónico con usted, todas las medidas urgentes necesarias para su hijo (hospitalización y/o intervención quirúrgica) ?",
 			it: "Autorizzi David Fauthoux, presidente dell'associazione, a prendere, se necessario e dopo aver contattato telefonicamente, tutte le misure urgenti necessarie per tuo bambino (ospedalizzazione e/o intervento chirurgico) ?",
@@ -813,15 +825,15 @@ let data = {
 			},
 			{
 				text: {
-					en: "We are pleased to invite your child {firstname} {lastname} to participate in the journey proposed by the association The Travel Team from {departuredate} to {returndate}.",
-					fr: "Nous sommes heureux d'inviter votre enfant {firstname} {lastname} né le {dateofbirth} à participer au voyage proposé par l’association The Travel Team du {departuredate} au {returndate}.",
-					es: "Estamos felices de invitar a su niño {firstname} {lastname} nacido {dateofbirth} a participar en el viaje propuesto por la asociación 3T de {departuredate} a {returndate}.",
-					it: "Siamo felici di invitare tuo figlio {firstname} {lastname} nato il {dateofbirth} partecipare al viaggio proposto dall'associazione da {departuredate} a {returndate}.",
+					en: "We are pleased to invite your child {firstname} {lastname} to participate in the journey proposed by The Travel Team from {departuredate} to {returndate}.",
+					fr: "Nous sommes heureux d'inviter votre enfant {firstname} {lastname} né le {dateofbirth} à participer au voyage proposé par The Travel Team du {departuredate} au {returndate}.",
+					es: "Estamos felices de invitar a su niño {firstname} {lastname} nacido {dateofbirth} a participar en el viaje propuesto por The Travel Team de {departuredate} a {returndate}.",
+					it: "Siamo felici di invitare tuo figlio {firstname} {lastname} nato il {dateofbirth} partecipare al viaggio proposto da The Travel Team da {departuredate} a {returndate}.",
 				},
 			},
 			{
 				text: {
-					en: "The Travel Team is an international association offering young basketball players from all over the world (between 10 and 12 years old) to play together in the same team in international tournaments. It was founded over 12 years ago and has had players from all over Europe, Russia, China, Australia, USA, Argentina, Mexico, etc ...",
+					en: "The Travel Team is an international youth program offering young basketball players from all over the world (between 10 and 12 years old) to play together in the same team in international tournaments. It was founded over 12 years ago and has had players from all over Europe, USA, Australia, South America, etc ...",
 					fr: "The Travel Team est une association internationale proposant à des jeunes joueurs de basketball du monde entier (entre 10 et 12 ans) de jouer ensemble dans la même équipe lors de tournois internationaux. Elle a été fondée il y a plus de 12 ans et a compté des joueurs venus de toute l'Europe, Russie, Chine, Australie, USA, Argentine, Mexique, etc...",
 					es: "The Travel Team es una asociación internacional que ofrece a jóvenes jugadores de baloncesto de todo el mundo (entre 10 y 12 años) para jugar juntos en el mismo equipo en torneos internacionales. Fue fundada hace más de 12 años y ha tenido jugadores de toda Europa, Rusia, China, Australia, USA, Argentina, México, etc...",
 					it: "Il Travel Team è un'associazione internazionale che offre ai giovani giocatori di basket di tutto il mondo (tra i 10 ei 12 anni) di giocare insieme nella stessa squadra in tornei internazionali. È stata fondata oltre 12 anni fa e ha avuto giocatori da tutta Europa, Russia, Cina, Australia, USA, Argentina, Messico, ecc...",
@@ -867,10 +879,10 @@ let data = {
 			it: "Autorizzazione genitoriale",
 		},
 		text: {
-			en: "Please download the parental authorization ('Download' button below), print it, fill and sign it.",
-			fr: "Téléchargez l'autorisation parentale ci-dessous (bouton \"Télécharger\"), imprimez-la, complétez-la et signez-la.",
-			es: "Descargue el autorización parental debajo (botón \"Descargar\"), complételo y firme.",
-			it: "Scarica l'autorizzazione genitoriale (pulsante \"Scaricare\" di seguito), compila e firma.",
+			en: "Please sign below by drawing your signature.",
+			fr: "Merci de signer ci-dessous en traçant votre signature.",
+			es: "Por favor firme abajo trazando su firma.",
+			it: "Si prega di firmare di seguito tracciando la propria firma.",
 		},
 
 		generate: [
@@ -879,17 +891,17 @@ let data = {
 			},
 			{
 				text: {
-					en: "I undersigned, {signingparent}, authorize my child {firstname} {lastname} been born {dateofbirth} to participate in the journey proposed by the association from {departuredate} to {returndate}.",
-					fr: "Je soussigné(e), {signingparent}, autorise mon enfant {firstname} {lastname} né le {dateofbirth} à participer au voyage proposé par l’association du {departuredate} au {returndate}.",
-					es: "Yo firmado, {signingparent}, autorizo a mi niño {firstname} {lastname} nacido {dateofbirth} a participar en el viaje propuesto por la asociación 3T de {departuredate} a {returndate}.",
-					it: "Io sottoscritto, {signingparent}, autorizzo mio figlio {firstname} {lastname} nato il {dateofbirth} partecipare al viaggio proposto dall'associazione da {departuredate} a {returndate}.",
+					en: "I undersigned, {signingparent}, authorize my child {firstname} {lastname} been born {dateofbirth} to participate in the journey proposed by the youth program The Travel Team from {departuredate} to {returndate}.",
+					fr: "Je soussigné(e), {signingparent}, autorise mon enfant {firstname} {lastname} né le {dateofbirth} à participer au voyage proposé par l'association The Travel Team du {departuredate} au {returndate}.",
+					es: "Yo firmado, {signingparent}, autorizo a mi niño {firstname} {lastname} nacido {dateofbirth} a participar en el viaje propuesto por la asociación The Travel Team de {departuredate} a {returndate}.",
+					it: "Io sottoscritto, {signingparent}, autorizzo mio figlio {firstname} {lastname} nato il {dateofbirth} partecipare al viaggio proposto dall'associazione The Travel Team da {departuredate} a {returndate}.",
 				},
 			},
 			{
 				if: { urgentmeasures: "yes" },
 				text: {
-					en: "I authorize David Fauthoux, president of the association, to take, if necessary and after phone contact with me, all the urgent necessary measures for my child (hospitalization and/or surgical operation).",
-					fr: "J'autorise M. David Fauthoux, président de l’association, à prendre, le cas échéant et après contact téléphonique avec moi, toutes les mesures nécessaires urgentes pour mon enfant (hospitalisation et/ou intervention chirurgicale).",
+					en: "I authorize David Fauthoux, president of the youth program, to take, if necessary and after phone contact with me, all the urgent necessary measures for my child (hospitalization and/or surgical operation).",
+					fr: "J'autorise M. David Fauthoux, président de l'association, à prendre, le cas échéant et après contact téléphonique avec moi, toutes les mesures nécessaires urgentes pour mon enfant (hospitalisation et/ou intervention chirurgicale).",
 					es: "Autorizo a David Fauthoux, presidente de la asociación, a tomar, si es necesario y después del contacto telefónico con usted, todas las medidas urgentes necesarias para su hijo (hospitalización y/o intervención quirúrgica).",
 					it: "Autorizzo David Fauthoux, presidente dell'associazione, a prendere, se necessario e dopo aver contattato telefonicamente, tutte le misure urgenti necessarie per tuo bambino (ospedalizzazione e/o intervento chirurgico).",
 				},
@@ -914,8 +926,8 @@ let data = {
 			},
 			{
 				text: {
-					en: "I understand that all of the participants and competent authorities consider the trip to be a family and friend organized trip, the association NOT being a commercial company, and the parents coming along and participating to the costs of the insurance. As a consequence, the journey is a regular stay with families and friends traveling together and does not need any further administrative declaration.",
-					fr: "J’ai parfaitement conscience que tous les participants ainsi que les autorités compétentes considèrent ce voyage comme un simple voyage entre amis et familles, l’association n’étant en aucun cas une organisation commerciale, les parents participant également au voyage et prenant à leur charge une partie du coût de l’assurance. Par conséquent, le voyage ne nécessite aucune déclaration supplémentaire.",
+					en: "I understand that all of the participants and competent authorities consider the trip to be a family and friend organized trip, the youth program NOT being a commercial company, and the parents coming along and participating to the costs of the insurance. As a consequence, the journey is a regular stay with families and friends traveling together and does not need any further administrative declaration.",
+					fr: "J'ai parfaitement conscience que tous les participants ainsi que les autorités compétentes considèrent ce voyage comme un simple voyage entre amis et familles, l'association n'étant en aucun cas une organisation commerciale, les parents participant également au voyage et prenant à leur charge une partie du coût de l'assurance. Par conséquent, le voyage ne nécessite aucune déclaration supplémentaire.",
 					es: "Soy plenamente consciente de que todos los participantes y las autoridades competentes consideran este viaje como un viaje simple entre amigos y familiares, la asociación no es de ninguna manera una organización comercial, los padres también participan en el viaje y asumen una parte del costo del seguro. Por lo tanto, el viaje no requiere ninguna declaración adicional.",
 					it: "Sono pienamente consapevole che tutti i partecipanti e le autorità competenti considerano questo viaggio come un semplice viaggio tra amici e famiglie, l'associazione non è in alcun modo un'organizzazione commerciale, i genitori prendono parte al viaggio e prendono in carico parte del costo dell'assicurazione. Pertanto, il viaggio non richiede alcuna dichiarazione aggiuntiva.",
 				},
@@ -947,9 +959,9 @@ let data = {
 			{
 				frame: {
 					en: "Sign here",
-					fr: "Signature",
-					es: "Firma",
-					it: "Firma",
+					fr: "Signer ici",
+					es: "Firma aqui",
+					it: "Firmare qui",
 				},
 			},
 			{
@@ -962,10 +974,10 @@ let data = {
 			},
 		],
 
-		type: "generate",
+		type: "signature",
 	},
 
-	signedparentalauthorization: {
+	_signedparentalauthorization: {
 		title: {
 			en: "Sign and upload",
 			fr: "À signer puis envoyer",
@@ -1040,7 +1052,7 @@ let data = {
 			it: "Account",
 		},
 		text: {
-			en: "Below the accounts for the journey (empty until we fill it for you). The association account number is:<div class=\"bank\">IBAN <span class=\"copiable\">FR76 1027 8022 2200 0204 4250 174</span></div><div class=\"bank\">SWIFT/BIC <span class=\"copiable\">CMCIFR2A</span></div><div class=\"bank\">(Name: The Travel Team).</div>",
+			en: "Below the accounts for the journey (empty until we fill it for you). The account number is:<div class=\"bank\">IBAN <span class=\"copiable\">FR76 1027 8022 2200 0204 4250 174</span></div><div class=\"bank\">SWIFT/BIC <span class=\"copiable\">CMCIFR2A</span></div><div class=\"bank\">(Name: The Travel Team).</div>",
 			fr: "Ci-dessous le total des coûts pour le voyage (rempli par nos soins). Le compte bancaire de l'association est le suivant :<div class=\"bank\">IBAN <span class=\"copiable\">FR76 1027 8022 2200 0204 4250 174</span></div><div class=\"bank\">SWIFT/BIC <span class=\"copiable\">CMCIFR2A</span></div><div class=\"bank\">(Nom : The Travel Team).</div>",
 			es: "Debajo de las cuentas para el viaje (vacío hasta que lo llenemos por usted). El número de cuenta de la asociación es :<div class=\"bank\">IBAN <span class=\"copiable\">FR76 1027 8022 2200 0204 4250 174</span></div><div class=\"bank\">SWIFT / BIC <span class=\"copiable\">CMCIFR2A</span></div><div class=\"bank\">(Nombre : The Travel Team).</div>",
 			it: "Sotto gli account per il viaggio (vuoto fino a quando non lo riempiamo per te). Il numero di conto dell'associazione è :<div class=\"bank\">IBAN <span class=\"copiable\">FR76 1027 8022 2200 0204 4250 174</span></div><div class=\"bank\">SWIFT / BIC <span class=\"copiable\">CMCIFR2A</span></div><div class=\"bank\">(Nome : The Travel Team).</div>",

@@ -10,6 +10,7 @@ import pluginMultipleText from "./api-multipletext.js";
 import pluginChoice from "./api-choice.js";
 import pluginGenerate from "./api-generate.js";
 import pluginUpload from "./api-upload.js";
+import pluginSignature from "./api-signature.js";
 
 // import data from "./data.json" assert { type: "json" };
 import { data } from "./data.json.js";
@@ -17,7 +18,7 @@ import { data } from "./data.json.js";
 console.log(data);
 
 let plugins = {};
-for (let plugin of [ pluginNone, pluginStop, pluginLine, pluginDate, pluginText, pluginMultipleText, pluginChoice, pluginGenerate, pluginUpload ]) {
+for (let plugin of [ pluginNone, pluginStop, pluginLine, pluginDate, pluginText, pluginMultipleText, pluginChoice, pluginGenerate, pluginUpload, pluginSignature ]) {
 	for (let typeName in plugin) {
 		plugins[typeName] = plugin[typeName];
 	}

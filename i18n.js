@@ -34,6 +34,10 @@ export function _(div, text, simplified) {
 	return div;
 }
 
+export function get() {
+	return language;
+}
+
 export function update(l) {
 	if (l !== undefined) {
 		language = l;
