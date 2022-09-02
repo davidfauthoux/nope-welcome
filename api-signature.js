@@ -103,11 +103,12 @@ export default {
 				context.lineWidth = 2;
 				context.strokeStyle = "black";
 				
+				let preventDefault = (e) => e.preventDefault();
 				let disableScroll = () => {
-					document.body.addEventListener("touchmove", (e) => e.preventDefault(), { passive: false });
+					document.body.addEventListener("touchmove", preventDefault, { passive: false });
 				};
 				let enableScroll = () => {
-					document.body.removeEventListener("touchmove", (e) => e.preventDefault());
+					document.body.removeEventListener("touchmove", preventDefault);
 				};
 				
 				let dragging = false;
