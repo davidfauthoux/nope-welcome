@@ -514,6 +514,12 @@ let data = {
 	},
 
 	leftrighthanded: {
+		title: {
+			en: "Shooting hand",
+			fr: "Main forte",
+			es: "Mano de tiro",
+			it: "Mano di tiro",
+		},
 		text: {
 			en: "Is your son left or right handed?",
 			fr: "Votre enfant est-il gaucher ou droitier ?",
@@ -635,7 +641,12 @@ let data = {
 			es: "Muchos jugadores de todo el mundo están muy interesados en participar en Travel Team. Por eso tratamos de dar la oportunidad a tantos jugadores como sea posible, especialmente cuando nos encontramos con niños muy motivados y amistosos. Y es por eso que les pedimos a todos que esperen ser invitados solo una vez, rara vez dos. Pero incluso una vez, una aventura, es genial y cambia la vida tanto como puede ser. Así que... ¡disfruta este momento al 100%!",
 			it: "Molti giocatori in tutto il mondo sono molto ansiosi di partecipare a Travel Team. Ecco perché cerchiamo di dare l'opportunità a più giocatori possibili, soprattutto quando incontriamo bambini molto motivati e amichevoli. Ed è per questo che chiediamo a tutti di aspettarsi di essere invitati una sola volta, raramente due. Ma anche una volta, un'avventura è grandiosa e la vita cambia quanto più possibile. Quindi... goditi questo momento al 100%!"
 		},
-		type: "none",
+		options: {
+			happy: { en: "Happy", fr: "Super !", es: "¡ Súper !", it: "Eccellente" },
+			neutral: { en: "Neutral", fr: "Hum...", es: "...", it: "Non lo so..." },
+			unhappy: { en: "Unhappy", fr: "Bof", es: "Inoportuno", it: "Dissentire" },
+		},
+		type: "choice",
 	},
 
 	signatures: {
