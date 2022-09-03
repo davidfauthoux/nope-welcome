@@ -10,7 +10,7 @@ export default {
 				let height = 200;
 				
 				let canvas = document.createElement("canvas");
-				let scale = 4;
+				let scale = 2;
 				let gap = 2 * scale;
 				canvas.width  = width * scale;
 				canvas.height = height * scale;
