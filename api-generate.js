@@ -96,16 +96,16 @@ export default {
 					return doc;
 				};
 
-				let printButton = $("<a>").addClass("button"); // .addClass("secondary");
-				i18n._(printButton, language.download);
-				divs.append(printButton);
-				printButton.on("click", function() {
+				let downloadButton = $("<a>").addClass("button").addClass("secondary");
+				i18n._(downloadButton, language.download);
+				divs.append(downloadButton);
+				downloadButton.on("click", function() {
 					let w = window.open("");
 			        w.document.write(renderIt());
 					// renderIt();
 					return false;
 				});
-				let continueButton = i18n._($("<div>").addClass("button").addClass("secondary"), language.continue);
+				let continueButton = i18n._($("<div>").addClass("button"), language.continue);
 				divs.append(continueButton);
 				continueButton.on("click", function() {
 					callback("");

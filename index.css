@@ -495,3 +495,7 @@ span.translation {
 	height: 0;
 	user-select: none;
 }
+.signaturerender .canvas {
+	width: 250px;
+	height: 200px;
+}
