@@ -103,7 +103,7 @@ export default {
 				}
 
 				let rendered = renderIt(date);
-				if ((data.document !== undefined) && (data.document !== rendered)) {
+				if ((data !== undefined) && (data.document !== undefined) && (data.document !== rendered)) {
 					console.log("INVALIDATING DOCUMENT, IT HAS CHANGED", data.document, rendered);
 					signature = undefined;
 					date =  i18n.today();
