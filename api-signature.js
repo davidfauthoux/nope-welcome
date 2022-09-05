@@ -227,7 +227,7 @@ export default {
 				clearInterval(intervalId);
 			},
 
-			admin: (data, _allData) => {
+			admin: (data, allData) => {
 				let date = undefined;
 				if (data !== undefined) {
 					date = data.date;
