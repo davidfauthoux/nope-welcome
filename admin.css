@@ -1,0 +1,20 @@
+.admin {
+	padding: 10px;
+}
+
+.admin .table {
+	display: table;
+	border-collapse: collapse;
+	margin-top: 10px;
+}
+
+.admin .row {
+	display: table-row;
+}
+
+.admin .cell {
+	display: table-cell;
+	font-size: 11px;
+	border: 1px solid white;
+	padding: 2px;
+}

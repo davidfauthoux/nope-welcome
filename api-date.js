@@ -103,7 +103,11 @@ export default {
 			},
 
 			destroy: function() {
-			}
+			},
+
+			admin: (data, _allData) => {
+				return $("<div>").text((data.value === undefined) ? "" : data.value.replaceAll('/', ' '));
+			},
 		};
 	},
 };

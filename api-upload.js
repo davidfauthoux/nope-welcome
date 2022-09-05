@@ -126,7 +126,14 @@ export default {
 			},
 
 			destroy: function() {
-			}
+			},
+
+			admin: (data, allData) => {
+				if (data.path === undefined) {
+					return $("<div>");
+				}
+				return $("<a>").attr("href", "/" + allData.userId + "/" + data.path).text("dL");
+			},
 		};
 	},
 };

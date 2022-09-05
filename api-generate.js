@@ -117,7 +117,7 @@ export default {
 			},
 
 			destroy: function() {
-			}
+			},
 		};
 	},
 };

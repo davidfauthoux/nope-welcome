@@ -4,6 +4,77 @@ import * as i18n from "./i18n.js";
 export default {
 	signature: function(params, language) {
 		let intervalId = undefined;
+
+		let renderIt = function(date, allData) {
+			let render = $("<div>");
+
+			for (let block of params.generate) {
+				let skipped = false;
+				if (block.if !== undefined) {
+					for (let kk in block.if) {
+						if ((allData[kk] !== undefined) && (block.if[kk] !== allData[kk].value)) {
+							skipped = true;
+						}
+					}
+				}
+				if (skipped) {
+					continue;
+				}
+				for (let suffix of [ "", "_small", "_medium", "_large", "_tab" ]) {
+					let d = null;
+					if (block["image" + suffix] !== undefined) {
+						d = $("<img>").addClass("image").attr("src", window.location.origin + window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/')) + "/res/" + block["image" + suffix]);
+					}
+					if (block["text" + suffix] !== undefined) {
+						let replaceIn = function(tt, from, to) {
+							let r = {};
+							for (let kk in tt) {
+								r[kk] = tt[kk].replace("{" + from + "}", to);
+							}
+							return r;
+						};
+						let t = block["text" + suffix];
+						// console.log(allData);
+						for (let k in allData) {
+							// console.log(k, allData[k]);
+							if (allData[k] !== null) {
+								// console.log("REPLACING", k, allData[k], t);
+								t = replaceIn(t, k, allData[k].value);
+							}
+						}
+						t = replaceIn(t, "today", (date === undefined) ? "/" : date);
+
+						let replaceUnknown = function(tt, to) {
+							let r = {};
+							for (let kk in tt) {
+								r[kk] = tt[kk].replace(/\{[a-z]+\}/g, to);
+							}
+							return r;
+						};
+						;
+
+						t = replaceUnknown(t, "[" + i18n.getText(language.mustbefilled, true) + "]");
+						d = i18n._($("<div>").addClass("block"), t, true);
+					}
+					if (block["frame" + suffix] !== undefined) {
+						d = $("<div>").addClass("frame");
+						let t = block["frame" + suffix];
+						let td = i18n._($("<div>").addClass("inframe"), t, true);
+						d.append(td);
+						d.append($("<div>").addClass("canvas").attr("id", "canvas"));
+					}
+					if (d !== null) {
+						if (suffix !== "") {
+							d.addClass(suffix);
+						}
+						render.append(d);
+					}
+				}
+			}
+
+			return render.html();
+		};
+
 		return {
 			create: function(data, callback, allData) {
 				let width = 250;
@@ -18,76 +89,6 @@ export default {
 				canvas.style.width = width + "px";
 				canvas.style.height = height + "px";
 				
-				let renderIt = function(date) {
-					let render = $("<div>");
-
-					for (let block of params.generate) {
-						let skipped = false;
-						if (block.if !== undefined) {
-							for (let kk in block.if) {
-								if ((allData[kk] !== undefined) && (block.if[kk] !== allData[kk].value)) {
-									skipped = true;
-								}
-							}
-						}
-						if (skipped) {
-							continue;
-						}
-						for (let suffix of [ "", "_small", "_medium", "_large", "_tab" ]) {
-							let d = null;
-							if (block["image" + suffix] !== undefined) {
-								d = $("<img>").addClass("image").attr("src", window.location.origin + window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/')) + "/res/" + block["image" + suffix]);
-							}
-							if (block["text" + suffix] !== undefined) {
-								let replaceIn = function(tt, from, to) {
-									let r = {};
-									for (let kk in tt) {
-										r[kk] = tt[kk].replace("{" + from + "}", to);
-									}
-									return r;
-								};
-								let t = block["text" + suffix];
-								// console.log(allData);
-								for (let k in allData) {
-									// console.log(k, allData[k]);
-									if (allData[k] !== null) {
-										// console.log("REPLACING", k, allData[k], t);
-										t = replaceIn(t, k, allData[k].value);
-									}
-								}
-								t = replaceIn(t, "today", (date === undefined) ? "/" : date);
-
-								let replaceUnknown = function(tt, to) {
-									let r = {};
-									for (let kk in tt) {
-										r[kk] = tt[kk].replace(/\{[a-z]+\}/g, to);
-									}
-									return r;
-								};
-								;
-
-								t = replaceUnknown(t, "[" + i18n.getText(language.mustbefilled, true) + "]");
-								d = i18n._($("<div>").addClass("block"), t, true);
-							}
-							if (block["frame" + suffix] !== undefined) {
-								d = $("<div>").addClass("frame");
-								let t = block["frame" + suffix];
-								let td = i18n._($("<div>").addClass("inframe"), t, true);
-								d.append(td);
-								d.append($("<div>").addClass("canvas").attr("id", "canvas"));
-							}
-							if (d !== null) {
-								if (suffix !== "") {
-									d.addClass(suffix);
-								}
-								render.append(d);
-							}
-						}
-					}
-
-					return render.html();
-				};
-
 				let div = $("<div>");
 				let renderDiv = $("<div>").addClass("signaturerender");
 				div.append(renderDiv);
@@ -102,12 +103,12 @@ export default {
 					date = i18n.today();
 				}
 
-				let rendered = renderIt(date);
+				let rendered = renderIt(date, allData);
 				if ((data !== undefined) && (data.document !== undefined) && (data.document !== rendered)) {
 					console.log("INVALIDATING DOCUMENT, IT HAS CHANGED", data.document, rendered);
 					signature = undefined;
-					date =  i18n.today();
-					rendered = renderIt(date);
+					date = i18n.today();
+					rendered = renderIt(date, allData);
 				}
 
 				renderDiv.append(rendered);
@@ -206,7 +207,7 @@ export default {
 					context.clearRect(0, 0, canvas.width, canvas.height);
 					points = [];
 					date =  i18n.today();
-					rendered = renderIt(date);
+					rendered = renderIt(date, allData);
 					renderDiv.empty().append(rendered);
 					renderDiv.find("#canvas").append($(canvas));
 				});
@@ -224,7 +225,23 @@ export default {
 
 			destroy: function() {
 				clearInterval(intervalId);
-			}
+			},
+
+			admin: (data, _allData) => {
+				let date = undefined;
+				if (data !== undefined) {
+					date = data.date;
+				}
+				if ((date !== undefined) && (data.document !== undefined)) {
+					if (data.document !== renderIt(date, allData)) {
+						date = undefined;
+					}
+				}
+				if (date === undefined) {
+					return $("<div>").text("UNSIGNED");
+				}
+				return $("<div>").text(date);
+			},
 		};
 	},
 };
