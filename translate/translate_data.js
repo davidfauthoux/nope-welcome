@@ -42,7 +42,7 @@ for (let t in tasks) {
 }
 
 (async function() {
-	for (let target of [ "lt", "lv", "ru", "fi", "sv", "da", "et:ee" ]) {
+	for (let target of [ "fr", "es", "it", "lt", "lv", "ru", "fi", "sv", "da", "et:ee" ]) {
 		let countryCode = target;
 		let k = target.indexOf(':');
 		if (k >= 0) {

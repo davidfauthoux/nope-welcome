@@ -4,7 +4,7 @@ import * as i18n from "./i18n.js";
 export default {
 	line: function(_params, language) {
 		return {
-			create: function(data, callback, _allData) {
+			create: function(data, callback, allData) {
 				let div = $("<div>");
 				let input = $("<input>");
 				if (data !== undefined) {

@@ -17,6 +17,9 @@ import { data } from "./data.json.js";
 
 console.log(data);
 
+let admin = new URL(window.location.href).searchParams.get("admin") !== null;
+console.log(admin);
+
 let plugins = {};
 for (let plugin of [ pluginNone, pluginStop, pluginLine, pluginDate, pluginText, pluginMultipleText, pluginChoice, pluginGenerate, pluginUpload, pluginSignature ]) {
 	for (let typeName in plugin) {
@@ -138,6 +141,16 @@ let overloadCreate = (createDestroy, d) => {
 			if (d.text !== undefined) {
 				div.append(i18n._($("<div>").addClass("description"), d.text));
 			}
+
+			if (d.link !== undefined) {
+				for (let l of d.link) {
+					let linkData = allData[l];
+					if (linkData !== undefined) {
+						div.append($("<img>").attr("src", "/" + allData.userId + "/" + linkData.path));
+					}
+				}
+			}
+
 			div.append(createDestroy.create(userData, callback, allData).addClass("sub"));
 			if (d.example !== undefined) {
 				let exampleDiv = $("<div>").addClass("example");
@@ -198,6 +211,9 @@ let currentMappedDiv = null;
 
 maySkipKey = (key) => {
 	if (data[key].type === undefined) {
+		return true;
+	}
+	if ((data[key].admin === true) && !admin) {
 		return true;
 	}
 	if (data[key].if !== undefined) {

@@ -301,6 +301,46 @@ let data = {
 		type: "upload",
 	},
 
+	jerseynumber: {
+		title: {
+			en: "Jersey number",
+		},
+		type: "line",
+		admin: true,
+	},
+	passportnumber: {
+		title: {
+			en: "Passport / ID number",
+		},
+		type: "line",
+		link: [ "passportface", "passportback" ],
+		admin: true,
+	},
+	passportissue: {
+		title: {
+			en: "Passport / ID issue",
+		},
+		type: "date",
+		link: [ "passportface", "passportback" ],
+		admin: true,
+	},
+	passportexpiry: {
+		title: {
+			en: "Passport / ID expiry",
+		},
+		type: "date",
+		link: [ "passportface", "passportback" ],
+		admin: true,
+	},
+	nationality: {
+		title: {
+			en: "Nationality",
+		},
+		type: "line",
+		link: [ "passportface", "passportback" ],
+		admin: true,
+	},
+
 	parentinformation: {
 		text: {
 			en: "We also need to have the contact details of the parents.",
