@@ -70,6 +70,10 @@ export default {
 			return render.html();
 		};
 
+		let compare = (a, b) => {
+			return a.replace(/\s/g, '') === b.replace(/\s/g, '');
+		};
+
 		return {
 			create: function(data, callback, allData) {
 				let width = 250;
@@ -101,7 +105,7 @@ export default {
 				}
 
 				let rendered = renderIt(date, allData, usedLanguage);
-				if ((data !== undefined) && (data.document !== undefined) && (data.document !== rendered)) {
+				if ((data !== undefined) && (data.document !== undefined) && !compare(data.document, rendered)) {
 					console.log("INVALIDATING DOCUMENT, IT HAS CHANGED", data.document, rendered);
 					signature = undefined;
 					date = i18n.today();
@@ -233,7 +237,7 @@ export default {
 					date = data.date;
 				}
 				if ((date !== undefined) && (data.document !== undefined)) {
-					if (data.document !== renderIt(date, allData, data.language || allData.language)) {
+					if (!compare(data.document, renderIt(date, allData, data.language || allData.language))) {
 						date = undefined;
 					}
 				}
