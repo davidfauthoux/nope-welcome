@@ -957,7 +957,7 @@
 			"_lv": "Lūdzu, ievadiet pilnu pasta adresi.",
 			"_ru": "Пожалуйста, введите полный почтовый адрес.",
 			"_fi": "Anna täydellinen postiosoite.",
-			"_sv": "Ange hela postadressen.",
+			"_sv": "Vänligen ange hela postadressen.",
 			"_da": "Indtast venligst hele postadressen.",
 			"_ee": "Palun sisestage täielik postiaadress."
 		},
@@ -1281,7 +1281,7 @@
 			"_lv": "Vai jūsu bērns zina, kā peldēt?",
 			"_ru": "Ваш ребенок умеет плавать?",
 			"_fi": "Osaako lapsesi uida?",
-			"_sv": "Vet ditt barn hur man simmar?",
+			"_sv": "Kan ditt barn simma?",
 			"_da": "Ved dit barn, hvordan man svømmer?",
 			"_ee": "Kas teie laps oskab ujuda?"
 		},
@@ -1485,7 +1485,7 @@
 			"es": "El objetivo de 3T es muy simple y muy fuerte : que los niños de <span class=\"emph\">todo el mundo</span> se encuentren, se hagan <span class=\"emph\">amigos</span>, compartan su cultura y sus diferencias a través de un momento deportivo, solicitándoles un compromiso importante.",
 			"it": "L'obiettivo di 3T è molto semplice e molto forte : i bambini di <span class=\"emph\">tutto il mondo</span> si incontrano, diventano <span class=\"emph\">amici</span>, condividono la loro cultura e le loro differenze, attraverso un momento sportivo, chiedendo loro un impegno importante.",
 			"_fr": "L'objectif de 3T est à la fois très simple et très fort : que les enfants du <span class=\"emph\">monde</span> se rencontrent, deviennent <span class=\"emph\">amis</span>, partagent leurs culture et leurs différences, à travers un moment sportif authentique et hors du commun, exigeant ainsi d'eux une grande implication.",
-			"_es": "El objetivo de 3T es muy simple y muy fuerte: que los niños de todo el <span class=\"emph\">mundo</span> se conozcan, se hagan <span class=\"emph\">amigos</span>, compartan sus la cultura y sus diferencias, a través de un auténtico y destacado momento deportivo, requiriendo por tanto de ellos una gran implicación.",
+			"_es": "El objetivo de 3T es muy simple y muy sólido: que los niños de todo el <span class=\"emph\">mundo</span> se conozcan, se hagan <span class=\"emph\">amigos</span>, compartan sus la cultura y sus diferencias, a través de un auténtico y destacado momento deportivo, requiriendo por tanto de ellos una gran implicación.",
 			"_it": "L'obiettivo di 3T è sia molto semplice che molto forte: che i bambini di tutto il <span class=\"emph\">mondo</span> si incontrino, diventino <span class=\"emph\">amici</span>, condividano i loro cultura e le loro differenze, attraverso un momento sportivo autentico ed eccezionale, richiedendo loro quindi un grande coinvolgimento.",
 			"_lt": "3T tikslas yra labai paprastas ir labai stiprus: kad vaikai iš viso <span class=\"emph\">pasaulio</span> susitiktų, taptų <span class=\"emph\">draugais</span>, pasidalintų savo kultūrą ir jų skirtumus per autentišką ir išskirtinį sportinį momentą, todėl jiems reikia didelio įsitraukimo.",
 			"_lv": "3T mērķis ir gan ļoti vienkāršs, gan ļoti spēcīgs: lai bērni no visas <span class=\"emph\">pasaules</span> satiktos, kļūtu par <span class=\"emph\">draugiem</span>, dalītos savās kultūru un to atšķirības caur autentisku un izcilu sportisku brīdi, tādējādi pieprasot viņiem lielu iesaistīšanos.",
@@ -1505,7 +1505,7 @@
 				"_es": "Contento",
 				"_it": "Felice",
 				"_lt": "laimingas",
-				"_lv": "Priecīgs",
+				"_lv": "Laimīgs",
 				"_ru": "Счастливый",
 				"_fi": "Onnellinen",
 				"_sv": "Lycklig",
@@ -1578,7 +1578,7 @@
 			"_fi": "<span class=\"dot\">1</span> Ryhmän rakentaminen ei ole automaattista, vaan jokaisen on ponnisteltava. Keskustele, vaihda ja auta toisiamme kielimuurista huolimatta. Ole antelias ja huomaavainen muille. Älä päästä itseäsi irti, vaan ole aktiivinen... <span class=\"dot\">2</span> Eletty hetki on lyhyt ja intensiivinen. Seikkailu onnistuu, jos onnistumme luomaan onnenkuplan, joka jää lasten mieleen poikkeuksellisena ja maagisena hetkenä heidän elämästään, hetkenä, jonka aikana he ovat olleet tärkeitä <span class=\"emph\" >näyttelijät</span>.",
 			"_sv": "<span class=\"dot\">1</span> Att bygga en grupp är inte automatiskt, alla måste anstränga sig. Prata, utbyt och hjälp varandra trots språkbarriären. Var generös och uppmärksam på andra. Släpp inte dig själv, utan var i stället aktiv... <span class=\"dot\">2</span> Ögonblicket som levts är kort och intensivt. Äventyret kommer att bli en framgång om vi lyckas skapa en bubbla av lycka som kommer att finnas kvar i barnens sinne som ett exceptionellt och magiskt ögonblick i deras liv, ett ögonblick då de kommer att ha varit stora <span class=\"emph\" >skådespelare</span>.",
 			"_da": "<span class=\"dot\">1</span> Opbygning af en gruppe er ikke automatisk, alle bliver nødt til at gøre en indsats. Tal, udveksle og hjælp hinanden på trods af sprogbarrieren. Vær generøs og opmærksom på andre. Slip ikke dig selv, men vær i stedet aktiv... <span class=\"dot\">2</span> Øjeblikket levede er kort og intenst. Eventyret bliver en succes, hvis det lykkes os at skabe en boble af lykke, der forbliver i børnenes sind som et exceptionelt og magisk øjeblik i deres liv, et øjeblik, hvor de vil have været store <span class=\"emph\" >skuespillere</span>.",
-			"_ee": "<span class=\"dot\">1</span> Grupi loomine ei ole automaatne, kõik peavad pingutama. Rääkige, vahetage ja aidake üksteist hoolimata keelebarjäärist. Ole teiste suhtes helde ja tähelepanelik. Ärge laske end lahti, vaid olge aktiivne... <span class=\"dot\">2</span> Elatud hetk on lühike ja intensiivne. Seiklus saab olema edukas, kui õnnestub luua õnnemull, mis jääb lastele meelde nende elu erakordse ja maagilise hetkena, hetkena, mille jooksul nad on olnud olulised <span class=\"emph\" >näitlejad</span>."
+			"_ee": "<span class=\"dot\">1</span> Grupi loomine ei ole automaatne, kõik peavad pingutama. Rääkige, vahetage ja aidake üksteist hoolimata keelebarjäärist. Ole teiste suhtes helde ja tähelepanelik. Ärge laske end lahti, vaid olge aktiivne... <span class=\"dot\">2</span> Elatud hetk on lühike ja intensiivne. Seiklus saab olema edukas, kui meil õnnestub luua õnnemull, mis jääb lastele meelde nende elu erakordse ja maagilise hetkena, hetkena, mille jooksul nad on olnud olulised <span class=\"emph\" >näitlejad</span>."
 		},
 		"options": {
 			"happy": {
@@ -1590,7 +1590,7 @@
 				"_es": "Contento",
 				"_it": "Felice",
 				"_lt": "laimingas",
-				"_lv": "Priecīgs",
+				"_lv": "Laimīgs",
 				"_ru": "Счастливый",
 				"_fi": "Onnellinen",
 				"_sv": "Lycklig",
@@ -1675,7 +1675,7 @@
 				"_es": "Contento",
 				"_it": "Felice",
 				"_lt": "laimingas",
-				"_lv": "Priecīgs",
+				"_lv": "Laimīgs",
 				"_ru": "Счастливый",
 				"_fi": "Onnellinen",
 				"_sv": "Lycklig",
@@ -1760,7 +1760,7 @@
 				"_es": "Contento",
 				"_it": "Felice",
 				"_lt": "laimingas",
-				"_lv": "Priecīgs",
+				"_lv": "Laimīgs",
 				"_ru": "Счастливый",
 				"_fi": "Onnellinen",
 				"_sv": "Lycklig",
@@ -1817,7 +1817,7 @@
 			"_fi": "Elä hetki 100%",
 			"_sv": "Lev nuet 100%",
 			"_da": "Lev nuet 100%",
-			"_ee": "Ela hetkes 100%"
+			"_ee": "Ela hetke 100%"
 		},
 		"text": {
 			"en": "A lot of players accross the globe are very keen to participate in Travel Team. Therefore we try to give the opportunity to as many players as possible, especially when we meet very motivated and friendly children. And that's why we ask everyone to expect to be invited only once, rarely two times. But even one time, one adventure, is big and life changing as much as it can be. So... enjoy this moment at a 100% level!",
@@ -1845,7 +1845,7 @@
 				"_es": "Contento",
 				"_it": "Felice",
 				"_lt": "laimingas",
-				"_lv": "Priecīgs",
+				"_lv": "Laimīgs",
 				"_ru": "Счастливый",
 				"_fi": "Onnellinen",
 				"_sv": "Lycklig",
@@ -1937,7 +1937,7 @@
 			"_ru": "Уполномочиваете ли вы Дэвида Фоту, президента молодежной программы, предпринять, в случае необходимости и после телефонного контакта с вами, все неотложные необходимые меры для вашего ребенка (госпитализация и/или хирургическая операция)?",
 			"_fi": "Valtuutatko nuoriso-ohjelman johtajan David Fauthouxin ryhtymään tarvittaessa kaikkiin kiireellisiin tarvittaviin toimenpiteisiin lapsesi hyväksi (sairaala ja/tai leikkaus)?",
 			"_sv": "Tillåter du David Fauthoux, ordförande för ungdomsprogrammet, att vid behov och efter telefonkontakt med dig vidta alla akuta nödvändiga åtgärder för ditt barn (sjukhusvård och/eller kirurgisk operation)?",
-			"_da": "Giver du David Fauhoux, formand for ungdomsprogrammet, tilladelse til, om nødvendigt og efter telefonisk kontakt med dig, at træffe alle de påtrængende nødvendige foranstaltninger for dit barn (indlæggelse og/eller kirurgisk operation)?",
+			"_da": "Giver du David Fauthoux, formand for ungdomsprogrammet, tilladelse til, om nødvendigt og efter telefonisk kontakt med dig, at træffe alle de påtrængende nødvendige foranstaltninger for dit barn (indlæggelse og/eller kirurgisk operation)?",
 			"_ee": "Kas annate noorteprogrammi presidendile David Fauthoux'ile volituse võtta vajadusel ja pärast teiega telefonikontakti kõiki teie lapse jaoks vajalikke kiireloomulisi meetmeid (haiglaravi ja/või kirurgiline operatsioon)?"
 		},
 		"options": {
@@ -2076,7 +2076,7 @@
 			"_fi": "Valtuutatko David Fauthouxin sekä muiden lasten vanhempien ja valvojien julkaisemaan lapsestasi julkisilla paikoilla (pelit, harjoitukset, matkat, ruokailut, ulkoilu) otettuja kuvia Facebook-sivulla?",
 			"_sv": "Tillåter du David Fauthoux samt föräldrarna till de andra barnen och tillsynsmännen att publicera bilder på ditt barn tagna på offentliga platser (spel, träning, resor, måltider, utomhusaktiviteter) på Facebook-sidan?",
 			"_da": "Giver du David Fauthoux samt forældrene til de andre børn og supervisorerne tilladelse til at offentliggøre billeder af dit barn taget på offentlige steder (spil, træning, rejser, måltider, udendørsaktiviteter) på Facebook-siden?",
-			"_ee": "Kas annate David Fauthoux'le ja ka teiste laste vanematele ja juhendajatele loa avaldada Facebooki lehel teie lapsest avalikes kohtades tehtud fotosid (mängud, treeningud, reisid, söögid, õuestegevused)?"
+			"_ee": "Kas lubate nii David Fauthoux'l kui ka teiste laste vanematel ja juhendajatel avaldada Facebooki lehel teie lapsest avalikes kohtades tehtud fotosid (mängud, treeningud, reisid, söögid, õuestegevused)?"
 		},
 		"options": {
 			"yes": {
@@ -2365,7 +2365,7 @@
 					"_fr": "J'autorise David Fauthoux ainsi que les parents des autres enfants et les encadrants à publier sur la page Facebook les photos de mon enfant prises dans des lieux publics (jeux, entraînements, voyages, repas, activités extérieures).",
 					"_es": "Autorizo a David Fauthoux, así como a los padres de los demás niños y a los supervisores a publicar las fotos de mi hijo tomadas en lugares públicos (juegos, prácticas de entrenamiento, viajes, comidas, actividades al aire libre) en la página de Facebook.",
 					"_it": "Autorizzo David Fauthoux così come i genitori degli altri bambini e i supervisori a pubblicare le foto di mio figlio scattate in luoghi pubblici (giochi, pratiche di allenamento, viaggi, pasti, attività all'aperto) sulla pagina Facebook.",
-					"_lt": "Įgalioju David Fauthoux, taip pat kitų vaikų tėvus ir prižiūrėtojus paskelbti mano vaiko nuotraukas viešose vietose (žaidimai, treniruotės, kelionės, maitinimas, veikla lauke) Facebook puslapyje.",
+					"_lt": "Įgalioju David Fauthoux, taip pat kitų vaikų tėvus ir prižiūrėtojus paskelbti mano vaiko nuotraukas, darytas viešose vietose (žaidimai, treniruotės, kelionės, maitinimas, veikla lauke) Facebook puslapyje.",
 					"_lv": "Es pilnvaroju Deividu Fotu, kā arī pārējo bērnu vecākus un uzraugus publicēt mana bērna fotogrāfijas, kas uzņemtas sabiedriskās vietās (spēles, treniņi, ceļojumi, ēdienreizes, aktivitātes brīvā dabā) Facebook lapā.",
 					"_ru": "Я разрешаю Дэвиду Фоту, а также родителям других детей и воспитателям публиковать фотографии моего ребенка, сделанные в общественных местах (игры, тренировки, путешествия, питание, активный отдых) на странице в Facebook.",
 					"_fi": "Valtuutan David Fauthouxin sekä muiden lasten vanhempien ja valvojien julkaisemaan lapsestani julkisilla paikoilla (pelit, harjoitukset, matkat, ruokailut, ulkoilu) otettuja kuvia Facebook-sivulla.",
@@ -2384,7 +2384,7 @@
 					"_es": "Entiendo que todos los participantes y las autoridades competentes consideran que el viaje es un viaje organizado por familiares y amigos, el programa de jóvenes NO es una empresa comercial y los padres vienen y participan en los costos del seguro. En consecuencia, el viaje es una estancia regular con familias y amigos que viajan juntos y no necesita ninguna declaración administrativa adicional.",
 					"_it": "Comprendo che tutti i partecipanti e le autorità competenti considerano il viaggio un viaggio organizzato con la famiglia e gli amici, il programma per i giovani NON è una società commerciale e i genitori che si presentano e partecipano ai costi dell'assicurazione. Di conseguenza, il viaggio è un soggiorno regolare con famiglie e amici che viaggiano insieme e non necessita di ulteriore dichiarazione amministrativa.",
 					"_lt": "Suprantu, kad visi dalyviai ir kompetentingos institucijos kelionę laiko šeimos ir draugų organizuota kelione, o jaunimo programa NE komercinė įmonė, o kartu atvykę tėvai apmoka draudimo išlaidas. Todėl kelionė yra įprastas buvimas kartu su šeimomis ir draugais, todėl nereikia jokių papildomų administracinių deklaracijų.",
-					"_lv": "Es saprotu, ka visi dalībnieki un kompetentās iestādes uzskata braucienu par ģimenes un draugu organizētu braucienu, jauniešu programma NAV komercsabiedrība, un vecāki, kas nāk līdzi un piedalās apdrošināšanas izmaksās. Tādējādi ceļojums ir regulāra uzturēšanās kopā ar ģimenēm un draugiem, kas ceļo kopā, un tam nav nepieciešama papildu administratīvā deklarācija.",
+					"_lv": "Es saprotu, ka visi dalībnieki un kompetentās iestādes uzskata braucienu par ģimenes un draugu organizētu braucienu, jauniešu programma NAV komercsabiedrība, un vecāki, kas nāk līdzi un piedalās apdrošināšanas izmaksās. Līdz ar to ceļojums ir regulāra uzturēšanās kopā ar ģimenēm un draugiem, un tam nav nepieciešama papildu administratīvā deklarācija.",
 					"_ru": "Я понимаю, что все участники и компетентные органы рассматривают поездку как поездку, организованную семьей и друзьями, молодежная программа НЕ является коммерческой компанией, а родители приходят и участвуют в расходах на страхование. Как следствие, поездка представляет собой обычное пребывание с семьями и друзьями, путешествующими вместе, и не требует дополнительной административной декларации.",
 					"_fi": "Ymmärrän, että kaikki osallistujat ja toimivaltaiset viranomaiset pitävät matkaa perheen ja ystävän järjestämänä matkana, nuorten ohjelma EI ole kaupallinen yritys ja mukana tulevat vanhemmat osallistuvat vakuutuksen kustannuksiin. Tästä johtuen matka on säännöllistä oleskelua yhdessä matkustavien perheiden ja ystävien kanssa, eikä se vaadi muita hallinnollisia ilmoituksia.",
 					"_sv": "Jag förstår att alla deltagare och behöriga myndigheter anser att resan är en familje- och vänorganiserad resa, där ungdomsprogrammet INTE är ett kommersiellt företag, och att föräldrarna kommer och deltar i försäkringskostnaderna. Som en konsekvens är resan en vanlig vistelse med familjer och vänner som reser tillsammans och behöver ingen ytterligare administrativ deklaration.",
@@ -2431,9 +2431,9 @@
 			{
 				"text": {
 					"en": "Date: {today}",
-					"fr": "Date: {today}",
-					"es": "Fecha :{today}",
-					"it": "Data :{today}",
+					"fr": "Date : {today}",
+					"es": "Fecha : {today}",
+					"it": "Data : {today}",
 					"_fr": "Date d'aujourd'hui}",
 					"_es": "La fecha de hoy}",
 					"_it": "Data: {oggi}",
@@ -2525,9 +2525,9 @@
 			{
 				"text_tab": {
 					"en": "Date: {today}",
-					"fr": "Date: {today}",
-					"es": "Fecha :{today}",
-					"it": "Data :{today}",
+					"fr": "Date : {today}",
+					"es": "Fecha : {today}",
+					"it": "Data : {today}",
 					"_fr": "Date d'aujourd'hui}",
 					"_es": "La fecha de hoy}",
 					"_it": "Data: {oggi}",

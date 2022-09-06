@@ -917,9 +917,9 @@ let data = {
 			{
 				text: {
 					en: "Date: {today}",
-					fr: "Date: {today}",
-					es: "Fecha :{today}",
-					it: "Data :{today}",
+					fr: "Date : {today}",
+					es: "Fecha : {today}",
+					it: "Data : {today}",
 				},
 			},
 			{
@@ -964,9 +964,9 @@ let data = {
 			{
 				text_tab: {
 					en: "Date: {today}",
-					fr: "Date: {today}",
-					es: "Fecha :{today}",
-					it: "Data :{today}",
+					fr: "Date : {today}",
+					es: "Fecha : {today}",
+					it: "Data : {today}",
 				},
 			},
 			{
