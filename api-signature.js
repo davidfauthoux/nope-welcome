@@ -8,7 +8,7 @@ export default {
 		let renderIt = function(date, allData, usedLanguage) {
 			console.log("RENDERING USING LANGUAGE: ", usedLanguage);
 
-			let _i18n = (t) => t[usedLanguage] || t['_' + usedLanguage];
+			let _i18n = (t) => t[usedLanguage] || t[fallbackLanguage];
 
 			let render = $("<div>");
 
