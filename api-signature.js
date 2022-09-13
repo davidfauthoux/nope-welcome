@@ -7,6 +7,9 @@ export default {
 
 		let renderIt = function(date, allData, usedLanguage) {
 			console.log("RENDERING USING LANGUAGE: ", usedLanguage);
+
+			let _i18n = (t) => t[usedLanguage] || t['_' + usedLanguage];
+
 			let render = $("<div>");
 
 			for (let block of params.generate) {
@@ -53,13 +56,13 @@ export default {
 					};
 					;
 
-					t = replaceUnknown(t, "[" + language.mustbefilled[usedLanguage] + "]");
-					d = $("<div>").addClass("block").html(t[usedLanguage]).addClass("i18n-simplified");
+					t = replaceUnknown(t, "[" + _i18n(language.mustbefilled) + "]");
+					d = $("<div>").addClass("block").html(_i18n(t)).addClass("i18n-simplified");
 				}
 				if (block["frame"] !== undefined) {
 					d = $("<div>").addClass("frame");
 					let t = block["frame"];
-					let td = $("<div>").addClass("inframe").html(t[usedLanguage]).addClass("i18n-simplified");
+					let td = $("<div>").addClass("inframe").html(_i18n(t)).addClass("i18n-simplified");
 					d.append(td);
 					d.append($("<div>").addClass("canvas").attr("id", "canvas"));
 				}
