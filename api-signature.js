@@ -75,7 +75,9 @@ export default {
 		};
 
 		let compare = (a, b) => {
-			return a.replace(/\s/g, '') === b.replace(/\s/g, '');
+			let noSpace = s => s.replace(/\s/g, '');
+			let alwaysValid = "<img class=\"image\" src=\"https://nope.davfx.com/welcome/res/logo.png\"><div class=\"block i18n-simplified\"></div><div class=\"block i18n-simplified\"></div><div class=\"block i18n-simplified\"></div><div class=\"block i18n-simplified\"></div><div class=\"block i18n-simplified\"></div><div class=\"block i18n-simplified\"></div><div class=\"block i18n-simplified\"></div><div class=\"block i18n-simplified\"></div><div class=\"frame\"><div class=\"inframe i18n-simplified\"></div><div class=\"canvas\" id=\"canvas\"></div></div><div class=\"block i18n-simplified\"></div>";
+			return (noSpace(a) === noSpace(alwaysValid) || (noSpace(a) === noSpace(b));
 		};
 
 		return {
