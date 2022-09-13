@@ -165,10 +165,7 @@ $(function() {
 									let d = data[k];
 									if (d.type !== undefined) {
 										let p = plugins[d.type];
-										let dd = userData[k];
-										if (dd === undefined) {
-											dd = {};
-										}
+										let dd = userData[k] || {};
 										let create = p(d, data.language).admin;
 										if (create !== undefined) {
 											let cell = $("<div>").addClass("cell");
