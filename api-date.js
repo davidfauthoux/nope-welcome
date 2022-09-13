@@ -106,7 +106,7 @@ export default {
 			},
 
 			admin: (data, _allData) => {
-				return $("<div>").text((data.value === undefined) ? "" : data.value.replaceAll('/', ' '));
+				return (data.value === undefined) ? "" : data.value.replaceAll('/', ' ');
 			},
 		};
 	},

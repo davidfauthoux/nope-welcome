@@ -130,9 +130,9 @@ export default {
 
 			admin: (data, allData) => {
 				if (data.path === undefined) {
-					return $("<div>");
+					return undefined;
 				}
-				return $("<a>").attr("href", "/" + allData.userId + "/" + data.path).text("dL");
+				return "/" + allData.userId + "/" + data.path;
 			},
 		};
 	},

@@ -49,9 +49,20 @@ $(function() {
 
 	$("body").append(div);
 
+	let tables = $("<div>").addClass("tables");
 	let table = $("<div>").addClass("table");
-	div.append(table);
+	tables.append($("<div>").addClass("noscroll").append(table));
+	let extraTable = $("<div>").addClass("table");
+	tables.append($("<div>").addClass("scroll").append(extraTable));
+	div.append(tables);
 	
+	let leftCells = ["firstname", "lastname", "jerseynumber"];
+	let copyCells = [
+		"jerseynumber", "jerseyanimal", "firstname", "lastname", "dateofbirth",
+		"passportnumber", "passportissue", "passportexpiry", "nationality",
+		"phone", "emails", "postaladdress",
+	];
+
 	button.on("click", function() {
 		let allUrls = [];
 		for (let line of urls.val().split('\n')) {
@@ -61,28 +72,72 @@ $(function() {
 			}
 		}
 		table.empty();
+		extraTable.empty();
 		{
-			let row = $("<div>").addClass("row");
+			let row = $("<div>").addClass("row").addClass("header");
+			let extraRow = $("<div>").addClass("row").addClass("header");
+			{
+				let cell = $("<div>").addClass("cell");
+				cell.append($("<div>").text(""));
+				row.append(cell);
+			}
+			{
+				let cell = $("<div>").addClass("cell");
+				cell.append($("<div>").text(""));
+				row.append(cell);
+			}
+			table.append(row);
+			extraTable.append(extraRow);
 			for (let k in data) {
+				if (k.startsWith('_')) {
+					continue;
+				}
 				let d = data[k];
 				if (d.type !== undefined) {
 					let p = plugins[d.type];
 					let create = p(d, data.language).admin;
 					if (create !== undefined) {
 						let cell = $("<div>").addClass("cell").text(k);
-						row.append(cell);
+						let usedRow;
+						if (leftCells.includes(k)) {
+							usedRow = row;
+						} else {
+							usedRow = extraRow;
+						}
+						usedRow.append(cell);
 					}
 				}
 			}
-			table.append(row);
 		}
+		let even = true;
 		for (let u of allUrls) {
-			let row = $("<div>").addClass("row");
+			let row = $("<div>").addClass("row").addClass(even ? "even" : "odd");
+			let extraRow = $("<div>").addClass("row").addClass(even ? "even" : "odd");
+			even = !even;
 			table.append(row);
+			extraTable.append(extraRow);
+			let loadingCell = $("<div>").addClass("cell");
+			loadingCell.append($("<div>").text("..."));
+			extraRow.append(loadingCell);
 			async.run(
 				nope.launch(u),
 				(history) => {
 					if (history !== null) {
+						let dataToCopy = () => null;
+						{
+							let cell = $("<div>").addClass("cell");
+							cell.append($("<div>").text(history.userId).addClass("clickable").click(() => {
+								window.open(u);
+							}));
+							row.append(cell);
+						}
+						{
+							let cell = $("<div>").addClass("cell");
+							cell.append($("<div>").text("[copy]").addClass("clickable").click(() => {
+								console.log(dataToCopy().join(", "));
+							}));
+							row.append(cell);
+						}
 						console.log(history.userId);
 						return [
 							history.history(),
@@ -102,7 +157,11 @@ $(function() {
 									}
 								}
 
+								loadingCell.remove();
 								for (let k in data) {
+									if (k.startsWith('_')) {
+										continue;
+									}
 									let d = data[k];
 									if (d.type !== undefined) {
 										let p = plugins[d.type];
@@ -113,11 +172,52 @@ $(function() {
 										let create = p(d, data.language).admin;
 										if (create !== undefined) {
 											let cell = $("<div>").addClass("cell");
-											cell.append(create(dd, userData));
-											row.append(cell);
+											let t = create(dd, userData);
+											let inner;
+											if (t === undefined) {
+												inner = $("<div>").text("-");
+												cell.addClass("incomplete");
+											} else if (t.startsWith('/')) {
+												inner = $("<a>").attr("href", t).text("[open]");
+											} else {
+												inner = $("<div>").text(t);
+											}
+											if (inner !== null) {
+												cell.append(inner);
+											}
+											let usedRow;
+											if (leftCells.includes(k)) {
+												usedRow = row;
+											} else {
+												usedRow = extraRow;
+											}
+											usedRow.append(cell);
 										}
 									}
 								}
+								dataToCopy = () => {
+									let toCopy = [];
+									for (let k of copyCells) {
+										console.log(k, data[k]);
+										let d = data[k];
+										if ((d !== undefined) && (d.type !== undefined)) {
+											let p = plugins[d.type];
+											let dd = userData[k];
+											if (dd === undefined) {
+												dd = {};
+											}
+											let create = p(d, data.language).admin;
+											if (create !== undefined) {
+												let t = create(dd, userData);
+												if (t === undefined) {
+													t = "xxx";
+												}
+												toCopy.push(t);
+											}
+										}
+									}
+									return toCopy;
+								};
 							},
 						];
 					}

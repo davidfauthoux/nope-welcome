@@ -254,6 +254,25 @@ let data = {
 		type: "date",
 	},
 
+	jerseynumber: {
+		title: {
+			en: "Jersey number",
+		},
+		text: {
+			en: "What is the number your son would like to have on his team uniform?",
+		},
+		type: "line",
+	},
+	jerseyanimal: {
+		title: {
+			en: "Jersey animal",
+		},
+		text: {
+			en: "For each of the kids, we produce unique uniform with the animal they want on the front. What is the animal your son would like to have? The more original, the better it is!",
+		},
+		type: "line",
+	},
+
 	passportface: {
 		title: {
 			en: "Passport / ID",
@@ -301,13 +320,6 @@ let data = {
 		type: "upload",
 	},
 
-	jerseynumber: {
-		title: {
-			en: "Jersey number",
-		},
-		type: "line",
-		admin: true,
-	},
 	passportnumber: {
 		title: {
 			en: "Passport / ID number",
@@ -1060,7 +1072,7 @@ let data = {
 		type: "none",
 	},
 
-	accounts: {
+	_accounts: {
 		title: {
 			en: "Accounts",
 			fr: "Comptes",

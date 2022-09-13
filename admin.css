@@ -5,16 +5,49 @@
 .admin .table {
 	display: table;
 	border-collapse: collapse;
-	margin-top: 10px;
 }
 
 .admin .row {
 	display: table-row;
 }
+.admin .row.header {
+	background: #AAA;
+	color: black;
+}
+.admin .row.even {
+	background: #333;
+}
+.admin .row.odd {
+	background: #444;
+}
 
 .admin .cell {
 	display: table-cell;
 	font-size: 11px;
-	border: 1px solid white;
-	padding: 2px;
+	border: 1px solid black;
+	padding: 2px 5px;
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.scroll {
+	overflow: scroll;
+}
+.noscroll {
+	border-right: solid 3px #333;
+}
+.admin .tables {
+	display: flex;
+	margin-top: 10px;
+}
+
+.admin .cell.incomplete {
+	background: #a01c1c;
 }

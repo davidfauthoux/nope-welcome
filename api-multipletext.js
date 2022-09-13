@@ -56,7 +56,14 @@ export default {
 			},
 			
 			destroy: function() {
-			}
+			},
+
+			admin: (data, _allData) => {
+				if (data.values === undefined) {
+					return undefined;
+				}
+				return data.values.join('\n').replace(/\n/g, "; ").replace(/\s/g, ' ');
+			},
 		};
 	},
 };

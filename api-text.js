@@ -54,7 +54,10 @@ export default {
 			},
 
 			admin: (data, _allData) => {
-				return $("<div>").text(data.value);
+				if (data.value === undefined) {
+					return undefined;
+				}
+				return data.value.replace(/\n/g, "; ").replace(/\s/g, ' ');
 			},
 		};
 	},

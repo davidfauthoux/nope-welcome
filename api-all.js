@@ -210,6 +210,9 @@ let currentMapped = null;
 let currentMappedDiv = null;
 
 maySkipKey = (key) => {
+	if (key.startsWith('_')) {
+		return true;
+	}
 	if (data[key].type === undefined) {
 		return true;
 	}

@@ -318,7 +318,7 @@
 					"_fr": "Votre compte est maintenant créé. Veuillez vérifier votre boîte email pour le valider. Cliquez sur le lien fourni dans l'e-mail ou entrez le code de récupération ici.",
 					"_es": "Su cuenta ya está creada. Por favor, compruebe su casilla de correo electrónico para validarlo. Haga clic en el enlace provisto en el correo electrónico o ingrese el código de recuperación aquí.",
 					"_it": "Il tuo account è ora creato. Controlla la tua casella di posta elettronica per convalidarla. Fare clic sul collegamento fornito nell'e-mail o inserire qui il codice di ripristino.",
-					"_lt": "Jūsų paskyra dabar sukurta. Patikrinkite savo el. pašto dėžutę, kad ją patvirtintumėte. Spustelėkite el. laiške pateiktą nuorodą arba įveskite atkūrimo kodą čia.",
+					"_lt": "Jūsų paskyra dabar sukurta. Patikrinkite el. pašto dėžutę, kad ją patvirtintumėte. Spustelėkite el. laiške pateiktą nuorodą arba įveskite atkūrimo kodą čia.",
 					"_lv": "Jūsu konts tagad ir izveidots. Lūdzu, pārbaudiet savu e-pasta lodziņu, lai to apstiprinātu. Noklikšķiniet uz e-pastā norādītās saites vai ievadiet atkopšanas kodu šeit.",
 					"_ru": "Теперь ваша учетная запись создана. Пожалуйста, проверьте свой электронный ящик, чтобы подтвердить его. Нажмите на ссылку, указанную в письме, или введите здесь код восстановления.",
 					"_fi": "Tilisi on nyt luotu. Tarkista sähköpostilaatikkosi vahvistaaksesi se. Napsauta sähköpostissa olevaa linkkiä tai kirjoita palautuskoodi tähän.",
@@ -608,6 +608,64 @@
 		"example": "2009-02-13",
 		"type": "date"
 	},
+	"jerseynumber": {
+		"title": {
+			"en": "Jersey number",
+			"_fr": "numéro Jersey",
+			"_es": "Número de camiseta",
+			"_it": "Numero di maglia",
+			"_lt": "Džersio numeris",
+			"_lv": "Džersijas numurs",
+			"_ru": "Номер Джерси",
+			"_fi": "Jerseyn numero",
+			"_sv": "Jerseynummer",
+			"_da": "Jersey nummer",
+			"_ee": "Jersey number"
+		},
+		"text": {
+			"en": "What is the number your son would like to have on his team uniform?",
+			"_fr": "Quel est le numéro que votre fils aimerait avoir sur son uniforme d'équipe ?",
+			"_es": "¿Cuál es el número que a su hijo le gustaría tener en el uniforme de su equipo?",
+			"_it": "Qual è il numero che tuo figlio vorrebbe avere sulla divisa della sua squadra?",
+			"_lt": "Kokį numerį jūsų sūnus norėtų turėti ant savo komandos uniformos?",
+			"_lv": "Kādu numuru tavs dēls vēlētos uz savas komandas formas?",
+			"_ru": "Какой номер ваш сын хотел бы иметь на форме своей команды?",
+			"_fi": "Minkä numeron poikasi haluaisi joukkuepuvussaan?",
+			"_sv": "Vilket nummer skulle din son vilja ha på sin lagdress?",
+			"_da": "Hvad er det nummer, din søn gerne vil have på sin holddragt?",
+			"_ee": "Mis on number, mida teie poeg oma meeskonnavormil sooviks saada?"
+		},
+		"type": "line"
+	},
+	"jerseyanimal": {
+		"title": {
+			"en": "Jersey animal",
+			"_fr": "Animal Jersey",
+			"_es": "Jersey de animales",
+			"_it": "Animale in jersey",
+			"_lt": "Džersio gyvūnas",
+			"_lv": "Džersijas dzīvnieks",
+			"_ru": "Джерси животное",
+			"_fi": "Jersey eläin",
+			"_sv": "Jersey djur",
+			"_da": "Jersey dyr",
+			"_ee": "Jersey loom"
+		},
+		"text": {
+			"en": "For each of the kids, we produce unique uniform with the animal they want on the front. What is the animal your son would like to have? The more original, the better it is!",
+			"_fr": "Pour chacun des enfants, nous produisons un uniforme unique avec l'animal qu'ils veulent sur le devant. Quel est l'animal que votre fils aimerait avoir ? Plus c'est original, mieux c'est !",
+			"_es": "Para cada uno de los niños, producimos un uniforme único con el animal que quieren en el frente. ¿Cuál es el animal que le gustaría tener a tu hijo? ¡Cuanto más original, mejor!",
+			"_it": "Per ognuno dei bambini produciamo un'uniforme unica con l'animale che vogliono sul davanti. Qual è l'animale che tuo figlio vorrebbe avere? Più è originale, meglio è!",
+			"_lt": "Kiekvienam vaikui gaminame unikalią uniformą su norimu gyvūnu priekyje. Kokį gyvūną norėtų turėti jūsų sūnus? Kuo originalesnis, tuo geriau!",
+			"_lv": "Katram no bērniem mēs izgatavojam unikālu formastērpu ar viņu vēlamo dzīvnieku priekšpusē. Kādu dzīvnieku vēlētos tavs dēls? Jo oriģinālāks, jo labāk!",
+			"_ru": "Для каждого из детей мы производим уникальную форму с животным, которое они хотят, спереди. Какое животное хотел бы завести ваш сын? Чем оригинальнее, тем лучше!",
+			"_fi": "Valmistamme jokaiselle lapselle ainutlaatuisen univormun, jonka edessä on heidän haluamansa eläin. Minkä eläimen poikasi haluaisi? Mitä omaperäisempi, sitä parempi!",
+			"_sv": "För vart och ett av barnen producerar vi unik uniform med det djur de vill ha på framsidan. Vilket djur skulle din son vilja ha? Ju mer original, desto bättre är det!",
+			"_da": "Til hvert af børnene producerer vi unik uniform med det dyr, de ønsker på forsiden. Hvad er det dyr, din søn gerne vil have? Jo mere originalt, jo bedre er det!",
+			"_ee": "Valmistame igale lapsele ainulaadse vormiriietuse, mille esiküljel on soovitud loom. Millist looma teie poeg tahaks saada? Mida originaalsem, seda parem!"
+		},
+		"type": "line"
+	},
 	"passportface": {
 		"title": {
 			"en": "Passport / ID",
@@ -733,23 +791,6 @@
 			"_ee": "Palun laadige üles tema passi või isikutunnistuse teine pilt."
 		},
 		"type": "upload"
-	},
-	"jerseynumber": {
-		"title": {
-			"en": "Jersey number",
-			"_fr": "numéro Jersey",
-			"_es": "Número de camiseta",
-			"_it": "Numero di maglia",
-			"_lt": "Džersio numeris",
-			"_lv": "Džersijas numurs",
-			"_ru": "Номер Джерси",
-			"_fi": "Jerseyn numero",
-			"_sv": "Jerseynummer",
-			"_da": "Jersey nummer",
-			"_ee": "Jersey number"
-		},
-		"type": "line",
-		"admin": true
 	},
 	"passportnumber": {
 		"title": {
@@ -1485,7 +1526,7 @@
 			"es": "El objetivo de 3T es muy simple y muy fuerte : que los niños de <span class=\"emph\">todo el mundo</span> se encuentren, se hagan <span class=\"emph\">amigos</span>, compartan su cultura y sus diferencias a través de un momento deportivo, solicitándoles un compromiso importante.",
 			"it": "L'obiettivo di 3T è molto semplice e molto forte : i bambini di <span class=\"emph\">tutto il mondo</span> si incontrano, diventano <span class=\"emph\">amici</span>, condividono la loro cultura e le loro differenze, attraverso un momento sportivo, chiedendo loro un impegno importante.",
 			"_fr": "L'objectif de 3T est à la fois très simple et très fort : que les enfants du <span class=\"emph\">monde</span> se rencontrent, deviennent <span class=\"emph\">amis</span>, partagent leurs culture et leurs différences, à travers un moment sportif authentique et hors du commun, exigeant ainsi d'eux une grande implication.",
-			"_es": "El objetivo de 3T es muy simple y muy sólido: que los niños de todo el <span class=\"emph\">mundo</span> se conozcan, se hagan <span class=\"emph\">amigos</span>, compartan sus la cultura y sus diferencias, a través de un auténtico y destacado momento deportivo, requiriendo por tanto de ellos una gran implicación.",
+			"_es": "El objetivo de 3T es muy simple y muy fuerte: que los niños de todo el <span class=\"emph\">mundo</span> se conozcan, se hagan <span class=\"emph\">amigos</span>, compartan sus la cultura y sus diferencias, a través de un auténtico y destacado momento deportivo, requiriendo por tanto de ellos una gran implicación.",
 			"_it": "L'obiettivo di 3T è sia molto semplice che molto forte: che i bambini di tutto il <span class=\"emph\">mondo</span> si incontrino, diventino <span class=\"emph\">amici</span>, condividano i loro cultura e le loro differenze, attraverso un momento sportivo autentico ed eccezionale, richiedendo loro quindi un grande coinvolgimento.",
 			"_lt": "3T tikslas yra labai paprastas ir labai stiprus: kad vaikai iš viso <span class=\"emph\">pasaulio</span> susitiktų, taptų <span class=\"emph\">draugais</span>, pasidalintų savo kultūrą ir jų skirtumus per autentišką ir išskirtinį sportinį momentą, todėl jiems reikia didelio įsitraukimo.",
 			"_lv": "3T mērķis ir gan ļoti vienkāršs, gan ļoti spēcīgs: lai bērni no visas <span class=\"emph\">pasaules</span> satiktos, kļūtu par <span class=\"emph\">draugiem</span>, dalītos savās kultūru un to atšķirības caur autentisku un izcilu sportisku brīdi, tādējādi pieprasot viņiem lielu iesaistīšanos.",
@@ -1505,7 +1546,7 @@
 				"_es": "Contento",
 				"_it": "Felice",
 				"_lt": "laimingas",
-				"_lv": "Laimīgs",
+				"_lv": "Priecīgs",
 				"_ru": "Счастливый",
 				"_fi": "Onnellinen",
 				"_sv": "Lycklig",
@@ -1578,7 +1619,7 @@
 			"_fi": "<span class=\"dot\">1</span> Ryhmän rakentaminen ei ole automaattista, vaan jokaisen on ponnisteltava. Keskustele, vaihda ja auta toisiamme kielimuurista huolimatta. Ole antelias ja huomaavainen muille. Älä päästä itseäsi irti, vaan ole aktiivinen... <span class=\"dot\">2</span> Eletty hetki on lyhyt ja intensiivinen. Seikkailu onnistuu, jos onnistumme luomaan onnenkuplan, joka jää lasten mieleen poikkeuksellisena ja maagisena hetkenä heidän elämästään, hetkenä, jonka aikana he ovat olleet tärkeitä <span class=\"emph\" >näyttelijät</span>.",
 			"_sv": "<span class=\"dot\">1</span> Att bygga en grupp är inte automatiskt, alla måste anstränga sig. Prata, utbyt och hjälp varandra trots språkbarriären. Var generös och uppmärksam på andra. Släpp inte dig själv, utan var i stället aktiv... <span class=\"dot\">2</span> Ögonblicket som levts är kort och intensivt. Äventyret kommer att bli en framgång om vi lyckas skapa en bubbla av lycka som kommer att finnas kvar i barnens sinne som ett exceptionellt och magiskt ögonblick i deras liv, ett ögonblick då de kommer att ha varit stora <span class=\"emph\" >skådespelare</span>.",
 			"_da": "<span class=\"dot\">1</span> Opbygning af en gruppe er ikke automatisk, alle bliver nødt til at gøre en indsats. Tal, udveksle og hjælp hinanden på trods af sprogbarrieren. Vær generøs og opmærksom på andre. Slip ikke dig selv, men vær i stedet aktiv... <span class=\"dot\">2</span> Øjeblikket levede er kort og intenst. Eventyret bliver en succes, hvis det lykkes os at skabe en boble af lykke, der forbliver i børnenes sind som et exceptionelt og magisk øjeblik i deres liv, et øjeblik, hvor de vil have været store <span class=\"emph\" >skuespillere</span>.",
-			"_ee": "<span class=\"dot\">1</span> Grupi loomine ei ole automaatne, kõik peavad pingutama. Rääkige, vahetage ja aidake üksteist hoolimata keelebarjäärist. Ole teiste suhtes helde ja tähelepanelik. Ärge laske end lahti, vaid olge aktiivne... <span class=\"dot\">2</span> Elatud hetk on lühike ja intensiivne. Seiklus saab olema edukas, kui meil õnnestub luua õnnemull, mis jääb lastele meelde nende elu erakordse ja maagilise hetkena, hetkena, mille jooksul nad on olnud olulised <span class=\"emph\" >näitlejad</span>."
+			"_ee": "<span class=\"dot\">1</span> Grupi loomine ei ole automaatne, kõik peavad pingutama. Rääkige, vahetage ja aidake üksteist hoolimata keelebarjäärist. Ole teiste suhtes helde ja tähelepanelik. Ärge laske end lahti, vaid olge aktiivne... <span class=\"dot\">2</span> Elatud hetk on lühike ja intensiivne. Seiklus saab olema edukas, kui õnnestub luua õnnemull, mis jääb lastele meelde nende elu erakordse ja maagilise hetkena, hetkena, mille jooksul nad on olnud olulised <span class=\"emph\" >näitlejad</span>."
 		},
 		"options": {
 			"happy": {
@@ -1590,7 +1631,7 @@
 				"_es": "Contento",
 				"_it": "Felice",
 				"_lt": "laimingas",
-				"_lv": "Laimīgs",
+				"_lv": "Priecīgs",
 				"_ru": "Счастливый",
 				"_fi": "Onnellinen",
 				"_sv": "Lycklig",
@@ -1675,7 +1716,7 @@
 				"_es": "Contento",
 				"_it": "Felice",
 				"_lt": "laimingas",
-				"_lv": "Laimīgs",
+				"_lv": "Priecīgs",
 				"_ru": "Счастливый",
 				"_fi": "Onnellinen",
 				"_sv": "Lycklig",
@@ -1760,7 +1801,7 @@
 				"_es": "Contento",
 				"_it": "Felice",
 				"_lt": "laimingas",
-				"_lv": "Laimīgs",
+				"_lv": "Priecīgs",
 				"_ru": "Счастливый",
 				"_fi": "Onnellinen",
 				"_sv": "Lycklig",
@@ -1845,7 +1886,7 @@
 				"_es": "Contento",
 				"_it": "Felice",
 				"_lt": "laimingas",
-				"_lv": "Laimīgs",
+				"_lv": "Priecīgs",
 				"_ru": "Счастливый",
 				"_fi": "Onnellinen",
 				"_sv": "Lycklig",
@@ -2076,7 +2117,7 @@
 			"_fi": "Valtuutatko David Fauthouxin sekä muiden lasten vanhempien ja valvojien julkaisemaan lapsestasi julkisilla paikoilla (pelit, harjoitukset, matkat, ruokailut, ulkoilu) otettuja kuvia Facebook-sivulla?",
 			"_sv": "Tillåter du David Fauthoux samt föräldrarna till de andra barnen och tillsynsmännen att publicera bilder på ditt barn tagna på offentliga platser (spel, träning, resor, måltider, utomhusaktiviteter) på Facebook-sidan?",
 			"_da": "Giver du David Fauthoux samt forældrene til de andre børn og supervisorerne tilladelse til at offentliggøre billeder af dit barn taget på offentlige steder (spil, træning, rejser, måltider, udendørsaktiviteter) på Facebook-siden?",
-			"_ee": "Kas lubate nii David Fauthoux'l kui ka teiste laste vanematel ja juhendajatel avaldada Facebooki lehel teie lapsest avalikes kohtades tehtud fotosid (mängud, treeningud, reisid, söögid, õuestegevused)?"
+			"_ee": "Kas annate David Fauthoux'le ja ka teiste laste vanematele ja juhendajatele loa avaldada Facebooki lehel teie lapsest avalikes kohtades tehtud fotosid (mängud, treeningud, reisid, söögid, õuestegevused)?"
 		},
 		"options": {
 			"yes": {
@@ -2384,7 +2425,7 @@
 					"_es": "Entiendo que todos los participantes y las autoridades competentes consideran que el viaje es un viaje organizado por familiares y amigos, el programa de jóvenes NO es una empresa comercial y los padres vienen y participan en los costos del seguro. En consecuencia, el viaje es una estancia regular con familias y amigos que viajan juntos y no necesita ninguna declaración administrativa adicional.",
 					"_it": "Comprendo che tutti i partecipanti e le autorità competenti considerano il viaggio un viaggio organizzato con la famiglia e gli amici, il programma per i giovani NON è una società commerciale e i genitori che si presentano e partecipano ai costi dell'assicurazione. Di conseguenza, il viaggio è un soggiorno regolare con famiglie e amici che viaggiano insieme e non necessita di ulteriore dichiarazione amministrativa.",
 					"_lt": "Suprantu, kad visi dalyviai ir kompetentingos institucijos kelionę laiko šeimos ir draugų organizuota kelione, o jaunimo programa NE komercinė įmonė, o kartu atvykę tėvai apmoka draudimo išlaidas. Todėl kelionė yra įprastas buvimas kartu su šeimomis ir draugais, todėl nereikia jokių papildomų administracinių deklaracijų.",
-					"_lv": "Es saprotu, ka visi dalībnieki un kompetentās iestādes uzskata braucienu par ģimenes un draugu organizētu braucienu, jauniešu programma NAV komercsabiedrība, un vecāki, kas nāk līdzi un piedalās apdrošināšanas izmaksās. Līdz ar to ceļojums ir regulāra uzturēšanās kopā ar ģimenēm un draugiem, un tam nav nepieciešama papildu administratīvā deklarācija.",
+					"_lv": "Es saprotu, ka visi dalībnieki un kompetentās iestādes uzskata braucienu par ģimenes un draugu organizētu braucienu, jauniešu programma NAV komercsabiedrība, un vecāki, kas nāk līdzi un piedalās apdrošināšanas izmaksās. Tādējādi ceļojums ir regulāra uzturēšanās kopā ar ģimenēm un draugiem, kas ceļo kopā, un tam nav nepieciešama papildu administratīvā deklarācija.",
 					"_ru": "Я понимаю, что все участники и компетентные органы рассматривают поездку как поездку, организованную семьей и друзьями, молодежная программа НЕ является коммерческой компанией, а родители приходят и участвуют в расходах на страхование. Как следствие, поездка представляет собой обычное пребывание с семьями и друзьями, путешествующими вместе, и не требует дополнительной административной декларации.",
 					"_fi": "Ymmärrän, että kaikki osallistujat ja toimivaltaiset viranomaiset pitävät matkaa perheen ja ystävän järjestämänä matkana, nuorten ohjelma EI ole kaupallinen yritys ja mukana tulevat vanhemmat osallistuvat vakuutuksen kustannuksiin. Tästä johtuen matka on säännöllistä oleskelua yhdessä matkustavien perheiden ja ystävien kanssa, eikä se vaadi muita hallinnollisia ilmoituksia.",
 					"_sv": "Jag förstår att alla deltagare och behöriga myndigheter anser att resan är en familje- och vänorganiserad resa, där ungdomsprogrammet INTE är ett kommersiellt företag, och att föräldrarna kommer och deltar i försäkringskostnaderna. Som en konsekvens är resan en vanlig vistelse med familjer och vänner som reser tillsammans och behöver ingen ytterligare administrativ deklaration.",
@@ -2726,7 +2767,7 @@
 		},
 		"type": "none"
 	},
-	"accounts": {
+	"_accounts": {
 		"title": {
 			"en": "Accounts",
 			"fr": "Comptes",
@@ -2749,7 +2790,7 @@
 			"es": "Debajo de las cuentas para el viaje (vacío hasta que lo llenemos por usted). El número de cuenta de la asociación es :<div class=\"bank\">IBAN <span class=\"copiable\">FR76 1027 8022 2200 0204 4250 174</span></div><div class=\"bank\">SWIFT / BIC <span class=\"copiable\">CMCIFR2A</span></div><div class=\"bank\">(Nombre : The Travel Team).</div>",
 			"it": "Sotto gli account per il viaggio (vuoto fino a quando non lo riempiamo per te). Il numero di conto dell'associazione è :<div class=\"bank\">IBAN <span class=\"copiable\">FR76 1027 8022 2200 0204 4250 174</span></div><div class=\"bank\">SWIFT / BIC <span class=\"copiable\">CMCIFR2A</span></div><div class=\"bank\">(Nome : The Travel Team).</div>",
 			"_fr": "Ci-dessous les comptes du trajet (vide jusqu'à ce que nous le remplissions pour vous). Le numéro de compte est :<div class=\"bank\">IBAN <span class=\"copiable\">FR76 1027 8022 2200 0204 4250 174</span></div><div class=\"bank\">SWIFT/BIC <span class=\"copiable\">CMCIFR2A</span></div><div class=\"bank\">(Nom : L'équipe de voyage).</div>",
-			"_es": "Abajo las cuentas del viaje (vacío hasta que te lo llenemos). El número de cuenta es:<div class=\"banco\">IBAN <span class=\"copiable\">FR76 1027 8022 2200 0204 4250 174</span></div><div class=\"banco\">SWIFT/BIC <span class=\"copiable\">CMCIFR2A</span></div><div class=\"bank\">(Nombre: El equipo de viaje).</div>",
+			"_es": "Abajo las cuentas del viaje (vacío hasta que te lo llenemos). El número de cuenta es:<div class=\"banco\">IBAN <span class=\"copiable\">FR76 1027 8022 2200 0204 4250 174</span></div><div class=\"banco\">SWIFT/BIC <span class=\"copiable\">CMCIFR2A</span></div><div class=\"bank\">(Nombre: El equipo de viajes).</div>",
 			"_it": "Di seguito i conti del viaggio (vuoto finché non lo riempiamo per te). Il numero di conto è:<div class=\"bank\">IBAN <span class=\"copiable\">FR76 1027 8022 2200 0204 4250 174</span></div><div class=\"bank\">SWIFT/BIC <span class=\"copiable\">CMCIFR2A</span></div><div class=\"bank\">(Nome: The Travel Team).</div>",
 			"_lt": "Žemiau kelionės sąskaitos (tuščios, kol užpildysime už jus). Sąskaitos numeris yra:<div class=\"bank\">IBAN <span class=\"copiable\">FR76 1027 8022 2200 0204 4250 174</span></div><div class=\"bank\">SWIFT / BIC <span class=\"copiable\">CMCIFR2A</span></div><div class=\"bank\">(Pavadinimas: Kelionių komanda).</div>",
 			"_lv": "Zem ceļojuma kontiem (tukšs, līdz mēs to aizpildīsim jūsu vietā). Konta numurs ir:<div class=\"bank\">IBAN <span class=\"copiable\">FR76 1027 8022 2200 0204 4250 174</span></div><div class=\"bank\">SWIFT/BIC <span class=\"copiable\">CMCIFR2A</span></div><div class=\"bank\">(Nosaukums: Ceļojumu komanda).</div>",

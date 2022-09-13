@@ -241,10 +241,7 @@ export default {
 						date = undefined;
 					}
 				}
-				if (date === undefined) {
-					return $("<div>").text("UNSIGNED");
-				}
-				return $("<div>").text(date);
+				return date;
 			},
 		};
 	},

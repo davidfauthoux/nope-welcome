@@ -27,7 +27,7 @@ export default {
 			},
 
 			admin: (data, _allData) => {
-				return $("<div>").text(data.value);
+				return data.value;
 			},
 		};
 	},
