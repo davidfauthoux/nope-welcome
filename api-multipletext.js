@@ -1,11 +1,26 @@
 import * as i18n from "./i18n.js";
 // jquery
 
+let _fix = data => {
+	if (data === undefined) {
+		return undefined;
+	}
+	if (data.values instanceof Array) {
+		return data;
+	}
+	let a = [];
+	for (let k in data.values) {
+		a.push(data.values[k]);
+	}
+	return { values: a };
+}
+
 export default {
 	multipletext: function(params, language) {
 		return {
 			create: function(data, callback, allData) {
-				console.log("DATA: ", data);
+				data = _fix(data);
+
 				let div = $("<div>");
 
 				let dataList = [];
@@ -60,6 +75,8 @@ export default {
 			},
 
 			admin: (data, _allData) => {
+				data = _fix(data);
+
 				if (data.values === undefined) {
 					return undefined;
 				}
