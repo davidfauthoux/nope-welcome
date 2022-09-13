@@ -6,6 +6,7 @@ export default {
 		let intervalId = undefined;
 
 		let renderIt = function(date, allData, usedLanguage) {
+			console.log("RENDERING USING LANGUAGE: ", usedLanguage);
 			let render = $("<div>");
 
 			for (let block of params.generate) {
