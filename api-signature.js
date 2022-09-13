@@ -110,7 +110,9 @@ export default {
 
 				let rendered = renderIt(date, allData, usedLanguage);
 				if ((data !== undefined) && (data.document !== undefined) && !compare(data.document, rendered)) {
-					console.log("INVALIDATING DOCUMENT, IT HAS CHANGED", data.document, rendered);
+					console.log("INVALIDATING DOCUMENT, IT HAS CHANGED");
+					console.log(data.document);
+					console.log(rendered);
 					signature = undefined;
 					date = i18n.today();
 					usedLanguage = allData.language;
