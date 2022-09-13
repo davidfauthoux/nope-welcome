@@ -5,6 +5,7 @@ export default {
 	multipletext: function(params, language) {
 		return {
 			create: function(data, callback, allData) {
+				console.log("DATA: ", data);
 				let div = $("<div>");
 
 				let dataList = [];
