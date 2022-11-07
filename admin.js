@@ -61,6 +61,10 @@ $(function() {
 		for (let line of urls.val().split('\n')) {
 			line = line.trim();
 			if (line !== "") {
+				let i = line.indexOf('#');
+				if (i >= 0) {
+					line = line.substring(0, i);
+				}
 				allUrls.push(line);
 			}
 		}
@@ -130,7 +134,7 @@ $(function() {
 						{
 							let cell = $("<div>").addClass("cell");
 							cell.append($("<div>").text(history.userId).addClass("clickable").click(() => {
-								window.open(u);
+								window.open(u + "&admin=");
 							}));
 							row.append(cell);
 						}
