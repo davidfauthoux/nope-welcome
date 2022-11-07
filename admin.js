@@ -81,7 +81,7 @@ $(function() {
 			{
 				let cell = $("<div>").addClass("cell");
 				cell.append($("<div>").text("[copy]").addClass("clickable").click(() => {
-					let t = "";
+					let t = (["url"].concat(copyCells)).join(", ") + "\n";
 					for (let dataToCopy of allDataToCopy) {
 						if (dataToCopy !== null) {
 							t += dataToCopy().join(", ") + "\n";
