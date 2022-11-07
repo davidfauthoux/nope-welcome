@@ -56,6 +56,7 @@ $(function() {
 	];
 
 	button.on("click", function() {
+		let allDataToCopy = [];
 		let allUrls = [];
 		for (let line of urls.val().split('\n')) {
 			line = line.trim();
@@ -75,7 +76,15 @@ $(function() {
 			}
 			{
 				let cell = $("<div>").addClass("cell");
-				cell.append($("<div>").text(""));
+				cell.append($("<div>").text("[copy]").addClass("clickable").click(() => {
+					let t = "";
+					for (let dataToCopy of allDataToCopy) {
+						if (dataToCopy !== null) {
+							t += dataToCopy().join(", ") + "\n";
+						}
+					}
+					navigator.clipboard.writeText(t);
+				}));
 				row.append(cell);
 			}
 			table.append(row);
@@ -103,6 +112,8 @@ $(function() {
 		}
 		let even = true;
 		for (let u of allUrls) {
+			let indexAllDataToCopy = allDataToCopy.length;
+			allDataToCopy.push(null);
 			let row = $("<div>").addClass("row").addClass(even ? "even" : "odd");
 			let extraRow = $("<div>").addClass("row").addClass(even ? "even" : "odd");
 			even = !even;
@@ -186,6 +197,7 @@ $(function() {
 								}
 								dataToCopy = () => {
 									let toCopy = [];
+									toCopy.push(u);
 									for (let k of copyCells) {
 										console.log(k, data[k]);
 										let d = data[k];
@@ -207,6 +219,7 @@ $(function() {
 									}
 									return toCopy;
 								};
+								allDataToCopy[indexAllDataToCopy] = dataToCopy;
 							},
 						];
 					}
