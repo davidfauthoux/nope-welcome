@@ -217,6 +217,9 @@ $(function() {
 												if (t === undefined) {
 													t = "xxx";
 												}
+												if (t.startsWith('+') || t.startsWith('=')) {
+													t = "'" + t;
+												}
 												toCopy.push(t);
 											}
 										}
