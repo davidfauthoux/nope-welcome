@@ -30,15 +30,7 @@ for (let plugin of [ pluginNone, pluginStop, pluginLine, pluginDate, pluginText,
 $(function() {
 	let div = $("<div>").addClass("admin");
 	let urls = $("<textarea>");
-	urls.val("http://localhost:8880/welcome/?u=savelij2011&p=1298729872498742#presentation\n" +
-		"http://localhost:8880/welcome/?u=adrians2011&p=127868741638196871681#presentation\n" +
-		"http://localhost:8880/welcome/?u=emils2011&p=93873987741638196871681#presentation\n" +
-		"http://localhost:8880/welcome/?u=kristians2011&p=130893793793873987#presentation\n" +
-		"http://localhost:8880/welcome/?u=regnars2011&p=12980868741638196871681#presentation\n" +
-		"http://localhost:8880/welcome/?u=sohan2012&p=113990871398749#presentation\n" +
-		"http://localhost:8880/welcome/?u=kristofers2012&p=1129879137987413#presentation\n" +
-		"http://localhost:8880/welcome/?u=sasha2011&p=123368741638196871681#presentation\n" +
-		"http://localhost:8880/welcome/?u=kristupas2011&p=19872393632987623897#presentation\n");
+	urls.val("");
 	div.append(urls);
 	let divs = $("<div>").addClass("buttons");
 	div.append(divs);
@@ -134,7 +126,7 @@ $(function() {
 						{
 							let cell = $("<div>").addClass("cell");
 							cell.append($("<div>").text("[copy]").addClass("clickable").click(() => {
-								console.log(dataToCopy().join(", "));
+								navigator.clipboard.writeText(dataToCopy().join(", "));
 							}));
 							row.append(cell);
 						}
