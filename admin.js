@@ -185,17 +185,15 @@ $(function() {
 											let cell = $("<div>").addClass("cell");
 											let t = create(dd, userData);
 											let inner;
-                                            if (t === unexpected[k]) {
-												inner = $("<div>").text(t || "-");
+                                            if ((t !== undefined) && t.startsWith('/')) {
+                                                inner = $("<a>").attr("href", t).text("[open]");
+                                            } else if (t === unexpected[k]) {
+												inner = $("<div>").text(t || "---");
 												cell.addClass(unexpectedClass[k] || "incomplete");
-											} else if (t.startsWith('/')) {
-												inner = $("<a>").attr("href", t).text("[open]");
 											} else {
-												inner = $("<div>").text(t);
+												inner = $("<div>").text(t || "-");
 											}
-											if (inner !== null) {
-												cell.append(inner);
-											}
+                                            cell.append(inner);
 											let usedRow;
 											if (leftCells.includes(k)) {
 												usedRow = row;
