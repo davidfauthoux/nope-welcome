@@ -72,7 +72,7 @@ $(function() {
                 return false;
             }
             let ss = s.split(' ');
-            return (new Date(parseInt(ss[0]), parseInt(ss[1]) - 1, parseInt(ss[2]))).getTime() > (Date.now() + (3 * 30 * 24 * 60 * 60 * 1000));
+            return (new Date(parseInt(ss[0]), parseInt(ss[1]) - 1, parseInt(ss[2]))).getTime() > (Date.now() + (6 * 30 * 24 * 60 * 60 * 1000));
         },
     };
     let unexpectedClass = {
