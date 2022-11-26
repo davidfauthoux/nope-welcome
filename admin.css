@@ -52,3 +52,6 @@ a {
 .admin .cell.incomplete {
 	background: #a01c1c;
 }
+.admin .cell.exception {
+	background: #1c90a0;
+}

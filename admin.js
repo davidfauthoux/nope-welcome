@@ -54,6 +54,13 @@ $(function() {
 		"passportnumber", "passportissue", "passportexpiry", "nationality",
 		"phone", "emails", "postaladdress",
 	];
+    let unexpected = {
+        "passportback": "",
+        "leftrighthanded": "left",
+    };
+    let unexpectedClass = {
+        "leftrighthanded": "exception",
+    };
 
 	button.on("click", function() {
 		let allDataToCopy = [];
@@ -178,9 +185,9 @@ $(function() {
 											let cell = $("<div>").addClass("cell");
 											let t = create(dd, userData);
 											let inner;
-											if (t === undefined) {
-												inner = $("<div>").text("-");
-												cell.addClass("incomplete");
+                                            if (t === unexpected[k]) {
+												inner = $("<div>").text(t || "-");
+												cell.addClass(unexpectedClass[k] || "incomplete");
 											} else if (t.startsWith('/')) {
 												inner = $("<a>").attr("href", t).text("[open]");
 											} else {
