@@ -202,7 +202,7 @@ $(function() {
                                             if ((t !== undefined) && t.startsWith('/')) {
                                                 inner = $("<a>").attr("href", t).text("[open]");
 											} else {
-                                                if (((expected[k] === undefined) && (t === undefined)) || !expected[k](t)) {
+                                                if (((expected[k] === undefined) && (t === undefined)) || ((expected[k] !== undefined) && !expected[k](t))) {
                                                     cell.addClass(unexpectedClass[k] || "incomplete");
                                                 }
 												inner = $("<div>").text(t || "-");
