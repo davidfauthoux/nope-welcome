@@ -57,6 +57,22 @@ $(function() {
     let unexpected = {
         "passportback": "",
         "leftrighthanded": "left",
+        "swim": "swimgood",
+        "philosophy": "happy",
+        "commitment": "happy",
+        "pedagogy": "happy",
+        "parents": "happy",
+        "rare": "happy",
+        "urgentmeasures": "yes",
+        "vehicles": "yes",
+        "publishphotos": "yes",
+
+    };
+    let expected = {
+        "passportexpiry": s => {
+            let ss = s.split(' ');
+            return (new Date(parseInt(ss[0]), parseInt(ss[1]), parseInt(ss[2]))).getTime() < ((new Date()).getTime() - (3 * 30 * 24 * 60 * 60 * 1000));
+        },
     };
     let unexpectedClass = {
         "leftrighthanded": "exception",
@@ -191,6 +207,9 @@ $(function() {
 												inner = $("<div>").text(t || "---");
 												cell.addClass(unexpectedClass[k] || "incomplete");
 											} else {
+                                                if ((expected[k] !== undefined) && !expected[k](t)) {
+                                                    cell.addClass(unexpectedClass[k] || "incomplete");
+                                                }
 												inner = $("<div>").text(t || "-");
 											}
                                             cell.append(inner);
