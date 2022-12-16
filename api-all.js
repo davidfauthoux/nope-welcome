@@ -145,7 +145,7 @@ let overloadCreate = (createDestroy, d) => {
 			if (d.link !== undefined) {
 				for (let l of d.link) {
 					let linkData = allData[l];
-					if (linkData !== undefined) {
+					if ((linkData !== undefined) && (linkData !== null)) {
 						div.append($("<img>").attr("src", "/" + allData.userId + "/" + linkData.path));
 					}
 				}

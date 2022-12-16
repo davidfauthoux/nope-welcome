@@ -55,3 +55,8 @@ a {
 .admin .cell.exception {
 	background: #1c90a0;
 }
+
+textarea {
+    font-size: 10px;
+    height: 200px;
+}
