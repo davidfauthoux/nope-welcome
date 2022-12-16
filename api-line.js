@@ -35,7 +35,7 @@ export default {
 				if (data.value === undefined) {
 					return undefined;
 				}
-				return data.value.replace(/\n/g, "; ").replace(/\s/g, ' ');
+				return data.value.replace(/,/g, ";").replace(/\n/g, "; ").replace(/\s+/g, ' ');
 			},
 		};
 	},
