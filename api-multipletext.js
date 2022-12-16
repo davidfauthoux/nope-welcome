@@ -80,7 +80,7 @@ export default {
 				if (data.values === undefined) {
 					return undefined;
 				}
-				return data.value.join('\n').replace(/,/g, ";").replace(/\n/g, "; ").replace(/\s+/g, ' ');
+				return data.values.join('\n').replace(/,/g, ";").replace(/\n/g, "; ").replace(/\s+/g, ' ');
 			},
 		};
 	},
