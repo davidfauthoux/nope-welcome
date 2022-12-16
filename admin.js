@@ -53,6 +53,7 @@ $(function() {
 		"jerseynumber", "jerseyanimal", "firstname", "lastname", "dateofbirth",
 		"passportnumber", "passportissue", "passportexpiry", "nationality",
 		"phone", "emails", "postaladdress",
+        "health", "injuries", "allergies", "diet", "swim", "height", "leftrighthanded", 
 	];
     let expected = {
         "passportback": s => true,
